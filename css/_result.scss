@@ -1,0 +1,55 @@
+#result {
+  margin: 0 5rem;
+  // common box
+  .result__box {
+    display: flex;
+    justify-content: center;
+    border: 3px solid $section-title;
+    border-radius: 2em;
+
+    .result__box__text {
+      padding: 5% 5rem;
+      font-size: 1.4rem;
+      text-align: left;
+      line-height: 2;
+      .box__title {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      span {
+        color: $section-title;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  img {
+    max-width: 50%;
+  }
+  .flight__box {
+    margin-bottom: 5rem;
+    p {
+      &:nth-child(3) {
+        border-bottom: 6px solid;
+        // border-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        // border-image-slice: 1;
+        border: 1px black;
+        span {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  .restaurant__box {
+    p {
+      &:nth-child(3) {
+        border-bottom: 6px solid;
+        // border-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        // border-image-slice: 1;
+        border: 1px black;
+        span {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

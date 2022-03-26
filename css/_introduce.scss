@@ -1,0 +1,113 @@
+#introduce {
+  .intro__outer {
+    display: flex;
+    justify-content: space-around;
+  }
+  margin-top: 25rem;
+  font-size: 1.8rem;
+  .intro__box__left {
+    p {
+      border-bottom: 2px solid black;
+    }
+    div {
+      font-size: 3rem;
+      font-weight: bold;
+
+      &:first-of-type {
+        color: rgb(56, 123, 246);
+      }
+    }
+  }
+
+  #solution {
+    .solution__heading__logo {
+      width: 26rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      img {
+        @include heading-border;
+      }
+      h2 {
+        border: none;
+      }
+    }
+
+    .solution__text {
+      margin-top: 4rem;
+      p {
+        &:last-child {
+          display: inline;
+          background: linear-gradient(transparent 60%, #6cf 60%);
+        }
+      }
+      span {
+        color: $light-blue;
+      }
+    }
+
+    .card__container {
+      .solve-card {
+        margin: auto;
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        padding: 1rem;
+        // 円　枠色
+        background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        position: relative;
+        z-index: 1;
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          box-sizing: border-box;
+          border-radius: 50%;
+          padding: 2px;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          background-clip: content-box;
+          content: "";
+        }
+
+        .card__title {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+  .step {
+    h2 {
+      font-size: 2rem;
+      span {
+        font-size: 3rem;
+        color: $light-blue;
+      }
+    }
+    .step__container {
+      margin-top: 5rem;
+      .step-card {
+        border-right: 1px $purple solid;
+        max-width: 24%;
+        padding: 1rem;
+        &:last-child {
+          border: none;
+        }
+        p {
+          font-size: 4rem;
+          color: $purple;
+          span {
+            font-size: 7rem;
+          }
+        }
+        div {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+#plan {
+  background-color: rgba(255, 255, 255, 0.671);
+  .plan__container {
+    margin-top: 5rem;
+
+    .plan-card {
+      color: $section-title;
+      font-size: 1.4rem;
+      padding: 1.4rem 1rem;
+      padding-top: 2rem;
+      margin: auto;
+      min-width: 24%;
+      background-color: #fff;
+      border: 1px solid $section-title;
+      border-radius: 3%;
+      &:nth-child(2) {
+        //2個目のcard
+        color: white;
+        background-color: $section-title;
+        p {
+          border-radius: 3%;
+          color: $section-title;
+          background-color: #fff;
+        }
+      }
+
+      p {
+        border: solid 1px $section-title;
+        padding: 4px 4rem;
+        border-radius: 3%;
+      }
+      .plan-card__title {
+        margin-top: 1rem;
+      }
+      .plan-card__price {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        span {
+          font-size: 3rem;
+        }
+      }
+      ul {
+        height: 15rem;
+        font-size: 1rem;
+        list-style: none;
+        text-align: left;
+      }
+    }
+  }
+}
