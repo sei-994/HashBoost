@@ -1,0 +1,32 @@
+footer {
+  background-image: linear-gradient(
+    90deg,
+    rgba(253, 187, 203, 1),
+    rgba(141, 139, 226, 1)
+  );
+  ul {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+
+    li {
+      margin-right: 3rem;
+      &::after {
+        content: "|";
+        color: white;
+        margin-left: 3rem;
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}

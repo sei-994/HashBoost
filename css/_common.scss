@@ -18,3 +18,68 @@
   display: flex;
   justify-content: center;
 }
+
+.gg-shape-circle {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid;
+  border-radius: 100px;
+}
+.gg-close {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid transparent;
+  border-radius: 40px;
+}
+.gg-close::after,
+.gg-close::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  top: 8px;
+  left: 1px;
+}
+.gg-close::after {
+  transform: rotate(-45deg);
+}
+
+.gg-shape-triangle {
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 17px;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid;
+}
+.gg-shape-triangle,
+.gg-shape-triangle::before {
+  display: block;
+  box-sizing: border-box;
+  border-right: 3px solid transparent;
+}
+.gg-shape-triangle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid;
+  border-top: 3px solid;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  left: -2px;
+  bottom: -13px;
+}
