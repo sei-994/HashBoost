@@ -1,10 +1,28 @@
 // 見出し線
 @mixin heading-border {
   border-bottom: 6px solid;
-  border-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
   border-image-slice: 1;
 }
 
+// 装飾線
+.line__decorated {
+  position: relative;
+  right: 0;
+  padding: 2rem 14rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#209cff),
+    to(#68e0cf)
+  );
+  background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+}
 // 3カラム
 .card {
   display: flex;
@@ -82,4 +100,34 @@
   transform: rotate(45deg) skew(10deg, 10deg);
   left: -2px;
   bottom: -13px;
+}
+
+// 無料キャンペーンボタン
+.campaign-btn {
+  margin: 7rem auto;
+
+  width: 50rem;
+  height: 7rem;
+  line-height: 7rem;
+}
+.campaign-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: #0099ff;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  letter-spacing: 0.3em;
+  border-radius: 39px;
+  -webkit-border-radius: 39px;
+  -moz-border-radius: 39px;
+}
+.campaign-btn a:hover {
+  background: #0099ff;
+  color: #e1e1e1;
+  margin-left: 0px;
+  margin-top: 0px;
+  box-shadow: none;
 }

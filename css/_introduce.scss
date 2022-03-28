@@ -1,41 +1,113 @@
 #introduce {
+  .mainvisual {
+    background-image: url(../images/mainvisual.jpg);
+    background-size: cover;
+  }
   .intro__outer {
     display: flex;
     justify-content: space-around;
-  }
-  margin-top: 25rem;
-  font-size: 1.8rem;
-  .intro__box__left {
-    p {
-      border-bottom: 2px solid black;
-    }
-    div {
-      font-size: 3rem;
-      font-weight: bold;
+    padding-top: 5rem;
+    font-size: 5rem;
+    font-family: $font1;
+    .intro__box__left {
+      p {
+        font-size: 3rem;
+        display: inline-block;
+        border-bottom: 2px solid black;
+        margin-bottom: 4.5rem;
+      }
+      div {
+        line-height: 100px;
 
-      &:first-of-type {
-        color: rgb(56, 123, 246);
+        &:first-of-type {
+          color: rgb(56, 123, 246);
+        }
+      }
+    }
+    .intro__box__right {
+      height: 70rem;
+      max-width: 33rem;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
+  #problem {
+    font-size: 4rem;
+    margin-top: 12rem;
+    .problem__container {
+      margin: 0;
+    }
+    .column-box {
+      display: flex;
+      .text-box {
+        min-width: 29rem;
+        p {
+          font-size: 1.4rem;
+          text-align: center;
+          max-height: 12rem;
+          padding: 2rem 1.5rem;
+          margin-bottom: 12rem;
+          border-style: Solid;
+          border-color: $light-blue;
+          border-width: 3px;
+          border-radius: 23px;
+        }
+      }
+      .box__left {
+        p {
+          &:first-child {
+            padding: 2.5rem 1.5rem;
+          }
+        }
+      }
+    }
+    .box__middle {
+      height: 44rem;
+      width: 24rem;
+      margin: auto 2%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
 
+    .box__right {
+      min-width: 35rem;
+      p {
+        &:last-child {
+          padding: 2.5rem 1.5rem;
+        }
+      }
+    }
+  }
   #solution {
+    line-height: 2;
+
     .solution__heading__logo {
-      width: 26rem;
+      position: relative;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       flex-direction: column;
+
       img {
-        @include heading-border;
+        top: -20%;
+        left: 61rem;
+        position: absolute;
+        width: 26rem;
       }
       h2 {
         border: none;
+        margin-bottom: 0;
+        margin-right: 3rem;
       }
     }
 
     .solution__text {
-      margin-top: 4rem;
+      font-size: 1.8rem;
+      margin-top: 9rem;
       p {
         &:last-child {
           display: inline;
@@ -48,15 +120,21 @@
     }
 
     .card__container {
+      margin: 3rem auto 0;
+
+      display: block;
+      display: -webkit-box;
       .solve-card {
-        margin: auto;
-        width: 25rem;
-        height: 25rem;
+        margin: 1%;
+        width: 39rem;
+        height: 39rem;
         border-radius: 50%;
-        font-size: 1rem;
+        font-size: 1.4rem;
         padding: 1rem;
+        line-height: 1.8;
+
         // 円　枠色
-        background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        background: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
         position: relative;
         z-index: 1;
         &::before {
@@ -75,37 +153,68 @@
         }
 
         .card__title {
+          margin-top: 2rem;
           color: $light-blue;
+          font-size: 2rem;
+        }
+        img {
+          width: 8rem;
+          height: 8rem;
         }
       }
     }
   }
   .step {
+    margin-top: 10rem;
     h2 {
       font-size: 2rem;
+      margin-bottom: 1rem;
       span {
-        font-size: 3rem;
+        font-size: 5rem;
+        font-weight: 500;
         color: $light-blue;
       }
     }
     .step__container {
       margin-top: 5rem;
+
       .step-card {
-        border-right: 1px $purple solid;
+        border-right: 1px solid;
+        border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+        border-image-slice: 1;
         max-width: 24%;
-        padding: 1rem;
+        padding: 3rem;
+        padding-bottom: 0;
+        display: inline-block;
+        min-width: 25rem;
+        height: 48rem;
         &:last-child {
           border: none;
         }
         p {
+          line-height: 1.2d;
           font-size: 4rem;
-          color: $purple;
+
+          background: -webkit-linear-gradient(
+            0deg,
+            #cb9bfe 0%,
+            #9cdefb
+          ); //背景色にグラデーションを指定
+          -webkit-background-clip: text; //テキストでくり抜く
+          -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
           span {
-            font-size: 7rem;
+            font-family: $font2;
+            font-size: 8rem;
+            margin-left: 1.5rem;
           }
         }
         div {
           font-size: 1.4rem;
+          margin-bottom: 5rem;
+        }
+        img {
+          max-width: 90%;
+          max-height: 58%;
         }
       }
     }

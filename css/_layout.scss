@@ -2,8 +2,7 @@ html {
   font-size: 62.5%;
 }
 main {
-  // font-family: ;
-  // width: 100vw;
+  font-family: $font1;
   font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -11,7 +10,7 @@ main {
 // セクション見出し
 h2 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   display: inline-block;
   margin-bottom: 5rem;
   @include heading-border;
