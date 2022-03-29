@@ -752,12 +752,19 @@ header .nav__menu .btn a:hover {
   background-color: rgba(255, 255, 255, 0.671);
 }
 
+#plan h2 span {
+  font-family: Acumin Variable Concept;
+  font-size: 5rem;
+  line-height: 0.8;
+}
+
 #plan .plan__container {
   margin-top: 5rem;
 }
 
 #plan .plan__container .plan-card {
   color: cornflowerblue;
+  height: 37rem;
   font-size: 1.4rem;
   padding: 1.4rem 1rem;
   padding-top: 2rem;
@@ -765,7 +772,7 @@ header .nav__menu .btn a:hover {
   min-width: 24%;
   background-color: #fff;
   border: 1px solid cornflowerblue;
-  border-radius: 3%;
+  border-radius: 0.8em;
 }
 
 #plan .plan__container .plan-card:nth-child(2) {
@@ -774,35 +781,76 @@ header .nav__menu .btn a:hover {
 }
 
 #plan .plan__container .plan-card:nth-child(2) p {
-  border-radius: 3%;
   color: cornflowerblue;
   background-color: #fff;
 }
 
 #plan .plan__container .plan-card p {
-  border: solid 1px cornflowerblue;
+  border: 1px solid;
+  -o-border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#cb9bfe), to(#9cdefb));
+     border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+  border-image-slice: 1;
   padding: 4px 4rem;
-  border-radius: 3%;
+  border-radius: 0.3em;
 }
 
 #plan .plan__container .plan-card .plan-card__title {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#plan .plan__container .plan-card .card__title__last {
+  margin-top: 4.7rem;
 }
 
 #plan .plan__container .plan-card .plan-card__price {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0 1.5rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
 }
 
 #plan .plan__container .plan-card .plan-card__price span {
+  font-family: 小塚ゴシック Pr6N;
   font-size: 3rem;
 }
 
-#plan .plan__container .plan-card ul {
+#plan .plan__container .plan-card .card__detail {
+  height: 20rem;
+}
+
+#plan .plan__container .plan-card .card__detail ul {
   height: 15rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   list-style: none;
   text-align: left;
+}
+
+#plan .plan__container .plan-card .plan__btn {
+  height: 20px;
+  margin-bottom: 2.5rem;
+}
+
+#plan .plan__container .plan-card .plan__btn a {
+  display: block;
+  padding: 0.5rem 2rem;
+  height: 100%;
+  text-decoration: none;
+  background: #61b3f9;
+  text-align: center;
+  color: #ffffff;
+  font: size 1.4rem;
+  border-radius: 0.4em;
+}
+
+#plan .plan__container .plan-card .middle-btn a {
+  color: #61b3f9;
+  background-color: white;
+}
+
+#plan .plan__container .plan-card .plan__btn a:hover {
+  opacity: 0.7;
 }
 
 #comparison table {
