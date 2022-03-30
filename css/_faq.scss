@@ -8,7 +8,9 @@
     flex-direction: column;
     padding-bottom: 8rem;
     .faq__box {
-      border-top: 1px solid gray;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+      border-image-slice: 1;
       padding: 2.5rem;
       display: flex;
       .box__icon {
@@ -66,7 +68,9 @@
     //   padding: 28px 80px 28px 30px;
     cursor: pointer;
     &:last-child {
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+      border-image-slice: 1;
     }
   }
   // .qa-list dl:first-child {
