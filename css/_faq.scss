@@ -2,10 +2,11 @@
   font-size: 1.4rem;
   padding-top: 3rem;
   background-color: #dff2ff;
+  // position: relative;
   .faq__container {
     text-align: left;
     flex-direction: column;
-
+    padding-bottom: 8rem;
     .faq__box {
       border-top: 1px solid gray;
       padding: 2.5rem;
@@ -14,10 +15,25 @@
         //Q-icon
         width: 4.5rem;
         height: 4.5rem;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.4;
         background-color: #ffffff;
         border: $section-title solid 1px;
         border-radius: 50%;
         display: inline-block;
+        font-weight: 500;
+        color: #000;
+      }
+      .box__icon_a {
+        color: #acb6e5; //非対応のブラウザでの文字色を設定
+        background: -webkit-linear-gradient(
+          0deg,
+          #acb6e5,
+          #86fde8
+        ); //背景色にグラデーションを指定
+        -webkit-background-clip: text; //テキストでくり抜く
+        -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
       }
       .box__common {
         display: flex;
@@ -25,6 +41,7 @@
           margin: auto 0;
           margin-left: 3rem;
           max-width: 88%;
+          font-size: 1.5rem;
         }
       }
       .box__question {
