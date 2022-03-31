@@ -52,6 +52,7 @@
           max-height: 12rem;
           padding: 2rem 1.5rem;
           margin-bottom: 12rem;
+          font-weight: 500;
           border-style: Solid;
           border-color: $light-blue;
           border-width: 3px;
@@ -87,7 +88,7 @@
   }
   #solution {
     line-height: 2;
-
+    letter-spacing: -1px;
     .solution__heading__logo {
       position: relative;
       margin: 0 auto;
@@ -214,6 +215,11 @@
         div {
           font-size: 1.4rem;
           margin-bottom: 5rem;
+        }
+        .card__text {
+          div {
+            letter-spacing: -0.3px;
+          }
         }
         img {
           max-width: 90%;

@@ -101,17 +101,21 @@ input, select {
   vertical-align: middle;
 }
 
-.line__decorated {
+.line__container {
   position: relative;
-  right: 10rem;
+  background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+}
+
+.line__container .line__decorated_1 .line__decorated_2 .line__decorated_3 .line__decorated_4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+  position: relative;
+  right: 10%;
   top: -10rem;
   padding: 2rem 4rem;
   width: 20rem;
   -webkit-transform: skew(-15deg);
   transform: skew(-15deg);
-  color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
-  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
 }
 
 .card {
@@ -255,7 +259,7 @@ html {
 }
 
 main {
-  font-family: A P-OTF A1ゴシック Std;
+  font-family: "A P-OTF A1ゴシック Std";
   font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -306,7 +310,7 @@ header {
 
 header img {
   margin-left: 5%;
-  width: 22.5rem;
+  width: 22rem;
   height: 9rem;
 }
 
@@ -319,7 +323,7 @@ header .nav__menu {
 header .nav__menu li {
   margin: 4rem 2rem;
   margin-bottom: 0;
-  font-family: A P-OTF A1ゴシック Std;
+  font-family: "A P-OTF A1ゴシック Std";
   font-weight: 400;
   white-space: nowrap;
 }
@@ -363,7 +367,7 @@ header .nav__menu .btn a:hover {
       justify-content: space-around;
   padding-top: 5rem;
   font-size: 5rem;
-  font-family: A P-OTF A1ゴシック Std;
+  font-family: "A P-OTF A1ゴシック Std";
 }
 
 #introduce .intro__outer .intro__box__left p {
@@ -420,6 +424,7 @@ header .nav__menu .btn a:hover {
   max-height: 12rem;
   padding: 2rem 1.5rem;
   margin-bottom: 12rem;
+  font-weight: 500;
   border-style: Solid;
   border-color: #479ef7;
   border-width: 3px;
@@ -451,6 +456,7 @@ header .nav__menu .btn a:hover {
 
 #introduce #solution {
   line-height: 2;
+  letter-spacing: -1px;
 }
 
 #introduce #solution .solution__heading__logo {
@@ -590,7 +596,7 @@ header .nav__menu .btn a:hover {
 }
 
 #introduce .step .step__container .step-card p span {
-  font-family: Acumin Variable Concept;
+  font-family: "Acumin Variable Concept";
   font-size: 8rem;
   margin-left: 1.5rem;
 }
@@ -598,6 +604,10 @@ header .nav__menu .btn a:hover {
 #introduce .step .step__container .step-card div {
   font-size: 1.4rem;
   margin-bottom: 5rem;
+}
+
+#introduce .step .step__container .step-card .card__text div {
+  letter-spacing: -0.3px;
 }
 
 #introduce .step .step__container .step-card img {
@@ -761,7 +771,7 @@ header .nav__menu .btn a:hover {
 }
 
 #plan h2 span {
-  font-family: Acumin Variable Concept;
+  font-family: "Acumin Variable Concept";
   font-size: 5rem;
   line-height: 0.8;
 }
@@ -820,7 +830,7 @@ header .nav__menu .btn a:hover {
 }
 
 #plan .plan__container .plan-card .plan-card__price span {
-  font-family: 小塚ゴシック Pr6N;
+  font-family: "小塚ゴシック Pr6N";
   font-size: 3rem;
 }
 
@@ -963,7 +973,7 @@ header .nav__menu .btn a:hover {
 #result .result__container .result__box .result__box__text span {
   color: cornflowerblue;
   font-size: 3rem;
-  font-family: A P-OTF 秀英にじみ角ゴ金StdN B;
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
 }
 
 #result .result__container .result__box .result__box__text .text__emphasis {

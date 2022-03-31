@@ -6,15 +6,8 @@
 }
 
 // 装飾線
-.line__decorated {
+.line__container {
   position: relative;
-  right: 10rem;
-  top: -10rem;
-  padding: 2rem 4rem;
-  width: 20rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-15deg);
-  color: #fff;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -23,7 +16,20 @@
     to(#68e0cf)
   );
   background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
-  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+
+  .line__decorated_1 .line__decorated_2 .line__decorated_3 .line__decorated_4 {
+    background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+    // color: #fff;
+    position: relative;
+
+    // position: relative;
+    right: 10%;
+    top: -10rem;
+    padding: 2rem 4rem;
+    width: 20rem;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+  }
 }
 // 3カラム
 .card {
