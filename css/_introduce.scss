@@ -47,7 +47,7 @@
       display: flex;
       .text-box {
         p {
-          font-size: 2rem;
+          font-size: 1.8rem;
           text-align: center;
           max-height: 12rem;
           padding: 2rem 1.5rem;
@@ -193,7 +193,8 @@
       margin-bottom: 1rem;
       span {
         font-size: 5rem;
-        font-weight: 500;
+        font-family: $font5;
+        font-weight: bold;
         color: $light-blue;
       }
     }

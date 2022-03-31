@@ -144,7 +144,27 @@ input, select {
   src: url("../fonts/AcuminVariableConcept.woff") format("woff");
 }
 
-/* 実際の使用例 */
+/*result*/
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Regular.woff") format("woff");
+}
+
 .line__container {
   position: relative;
   background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
@@ -296,7 +316,6 @@ html {
 }
 
 main {
-  font-family: "A P-OTF A1ゴシック Std";
   font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -459,7 +478,7 @@ header nav .nav__menu .btn a:hover {
 }
 
 #introduce #problem .column-box .text-box p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   max-height: 12rem;
   padding: 2rem 1.5rem;
@@ -626,7 +645,8 @@ header nav .nav__menu .btn a:hover {
 
 #introduce .step h2 span {
   font-size: 5rem;
-  font-weight: 500;
+  font-family: "result";
+  font-weight: bold;
   color: #479ef7;
 }
 
@@ -686,8 +706,8 @@ header nav .nav__menu .btn a:hover {
 
 #function {
   padding-top: 4rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cac4ff), to(#f9f0d2));
-  background-image: linear-gradient(to bottom, #cac4ff 0%, #f9f0d2 100%);
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#f9f0d2), color-stop(40%, #cac4ff), to(#66ceeda3));
+  background-image: linear-gradient(to left top, #f9f0d2 0%, #cac4ff 40%, #66ceeda3 100%);
 }
 
 #function .function__header {
@@ -724,12 +744,14 @@ header nav .nav__menu .btn a:hover {
   color: white;
   background-color: #479ef7;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.6rem;
   padding: 0.5rem;
+  line-height: 1.2;
 }
 
 #function .function__container .column__text {
   text-align: left;
+  margin: 3rem 0 0;
 }
 
 #function .function__container .column__text__blue {
@@ -737,6 +759,8 @@ header nav .nav__menu .btn a:hover {
   background-color: #dbf0fd;
   padding: 1rem 1rem;
   border-radius: 0.6em;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 #function .function__container .column__text__blue span {
@@ -750,8 +774,8 @@ header nav .nav__menu .btn a:hover {
 
 #function .function__container .box {
   background-color: #fff;
-  padding: 3rem;
-  margin: 1.5rem;
+  padding: 4rem 3.5rem 1.5rem;
+  margin: 2.5rem 3rem;
   border-radius: 0.6em;
 }
 
@@ -795,11 +819,6 @@ header nav .nav__menu .btn a:hover {
 #function .function__container .first-column .column__left,
 #function .function__container .first-column .column__right {
   width: 50%;
-}
-
-#function .function__container .first-column .column__left div,
-#function .function__container .first-column .column__right div {
-  margin: 3rem;
 }
 
 #function .function__container .first-column .column__left {
@@ -861,6 +880,8 @@ header nav .nav__menu .btn a:hover {
   background-color: #fff;
   border: 1px solid cornflowerblue;
   border-radius: 0.8em;
+  -webkit-box-shadow: 5px 5px 6px 1px #c5c5c5;
+          box-shadow: 5px 5px 6px 1px #c5c5c5;
 }
 
 #plan .plan__container .plan-card:nth-child(2) {
@@ -1035,7 +1056,7 @@ header nav .nav__menu .btn a:hover {
 }
 
 #result .result__container .result__box .result__box__text .box__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -1043,13 +1064,14 @@ header nav .nav__menu .btn a:hover {
 #result .result__container .result__box .result__box__text span {
   color: cornflowerblue;
   font-size: 3rem;
-  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  font-family: "result";
+  font-weight: 600;
 }
 
 #result .result__container .result__box .result__box__text .text__emphasis {
   display: inline;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fbfbea), color-stop(20%, transparent), color-stop(40%, #e1d4f0), to(#bce7f0));
-  background-image: linear-gradient(to right, #fbfbea 0%, transparent 20%, #e1d4f0 40%, #bce7f0 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9f0d2), color-stop(40%, #e6e5fb), to(#7ed7f1a3));
+  background-image: linear-gradient(to right, #f9f0d2 0%, #e6e5fb 40%, #7ed7f1a3 100%);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 60%;

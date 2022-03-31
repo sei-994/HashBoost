@@ -24,23 +24,25 @@
         }
 
         .box__title {
-          font-size: 2.5rem;
+          font-size: 3rem;
+          // margin-right: 1rem;
+
           font-weight: 400;
           margin-bottom: 1rem;
         }
         span {
           color: $section-title;
           font-size: 3rem;
-          font-family: $font4;
+          font-family: $font5;
+          font-weight: 600;
         }
         .text__emphasis {
           display: inline;
           background-image: linear-gradient(
             to right,
-            #fbfbea 0%,
-            transparent 20%,
-            #e1d4f0 40%,
-            #bce7f0 100%
+            #f9f0d2 0%,
+            #e6e5fb 40%,
+            #7ed7f1a3 100%
           );
           background-repeat: no-repeat;
           background-position: bottom;

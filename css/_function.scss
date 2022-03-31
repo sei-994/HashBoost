@@ -1,6 +1,11 @@
 #function {
   padding-top: 4rem;
-  background-image: linear-gradient(to bottom, #cac4ff 0%, #f9f0d2 100%);
+  background-image: linear-gradient(
+    to left top,
+    #f9f0d2 0%,
+    #cac4ff 40%,
+    #66ceeda3 100%
+  );
   //   width: 100%;
   .function__header {
     border-bottom: 6px solid;
@@ -25,17 +30,21 @@
       color: white;
       background-color: $light-blue;
       font-weight: 400;
-      font-size: 2rem;
+      font-size: 2.6rem;
       padding: 0.5rem;
+      line-height: 1.2;
     }
     .column__text {
       text-align: left;
+      margin: 3rem 0 0;
     }
     .column__text__blue {
       text-align: left;
       background-color: #dbf0fd;
       padding: 1rem 1rem;
       border-radius: 0.6em;
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
       span {
         border-bottom: 2px solid white;
         color: $light-blue;
@@ -47,8 +56,8 @@
     // 共通box
     .box {
       background-color: #fff;
-      padding: 3rem;
-      margin: 1.5rem;
+      padding: 4rem 3.5rem 1.5rem;
+      margin: 2.5rem 3rem;
       border-radius: 0.6em;
       img {
         width: 65%;
@@ -82,9 +91,6 @@
       .column__left,
       .column__right {
         width: 50%;
-        div {
-          margin: 3rem;
-        }
       }
 
       .column__left {

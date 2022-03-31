@@ -48,16 +48,23 @@
   src: url("../fonts/AcuminVariableConcept.woff") format("woff");
 }
 
-$font1: "A P-OTF A1ゴシック Std";
-$font2: "Acumin Variable Concept";
-$font3: "小塚ゴシック Pr6N";
-$font4: "A P-OTF 秀英にじみ角ゴ金StdN B";
-/* 実際の使用例 */
-//   @font-face {
-//       font-family: 'hannari';
-//       src: url('font/hannari.woff') format('woff');
-//     }
+/*result*/
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Light.woff") format("woff");
+}
 
-//     p{
-//         font-family: hannari;
-//       }
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "result";
+  src: url("../fonts/AP-OTF-A1GothicStdN-Regular.woff") format("woff");
+}
