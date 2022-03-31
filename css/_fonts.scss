@@ -1,0 +1,63 @@
+/* A P-OTF A1ゴシック Std*/
+// light
+@font-face {
+  font-family: "A P-OTF A1ゴシック Std";
+  src: url("../fonts/AP-OTF-A1GothicStd-Light.woff") format("woff");
+}
+
+// normal
+@font-face {
+  font-family: "A P-OTF A1ゴシック Std";
+  src: url("../fonts/AP-OTF-A1GothicStd-Regular.woff") format("woff");
+}
+
+// bold
+@font-face {
+  font-family: "A P-OTF A1ゴシック Std";
+  src: url("../fonts/AP-OTF-A1GothicStd-Bold.woff") format("woff");
+}
+
+// Medium
+@font-face {
+  font-family: "A P-OTF A1ゴシック Std";
+  src: url("../fonts/AP-OTF-A1GothicStd-Medium.woff") format("woff");
+}
+
+/*A P-OTF 秀英にじみ角ゴ金StdN B*/
+// light
+@font-face {
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  src: url("../fonts/A-OTF-ShueiGoKinStdN-B.woff") format("woff");
+}
+
+// normal
+@font-face {
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  src: url("../fonts/AP-OTF-ShueiGoKinStdN-L.woff") format("woff");
+}
+
+// bold
+@font-face {
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  src: url("../fonts/AP-OTF-ShueiGoKinStdN-M.woff") format("woff");
+}
+
+/*Acumin Variable Concept*/
+@font-face {
+  font-family: "Acumin Variable Concept";
+  src: url("../fonts/AcuminVariableConcept.woff") format("woff");
+}
+
+$font1: "A P-OTF A1ゴシック Std";
+$font2: "Acumin Variable Concept";
+$font3: "小塚ゴシック Pr6N";
+$font4: "A P-OTF 秀英にじみ角ゴ金StdN B";
+/* 実際の使用例 */
+//   @font-face {
+//       font-family: 'hannari';
+//       src: url('font/hannari.woff') format('woff');
+//     }
+
+//     p{
+//         font-family: hannari;
+//       }
