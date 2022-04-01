@@ -1258,9 +1258,9 @@ header nav .nav__menu .btn a:hover {
 
 #faq .qa-list dl:last-child {
   border-bottom: 1px solid;
-  -o-border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(#cb9bfe), to(#9cdefb));
-     border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+  -o-border-image: linear-gradient(to right, #f9f0d2 19%, #cac4ff 40%, #66ceeda3 100%);
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(19%, #f9f0d2), color-stop(40%, #cac4ff), to(#66ceeda3));
+     border-image: linear-gradient(to right, #f9f0d2 19%, #cac4ff 40%, #66ceeda3 100%);
   border-image-slice: 1;
 }
 

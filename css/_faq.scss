@@ -86,7 +86,12 @@
     cursor: pointer;
     &:last-child {
       border-bottom: 1px solid;
-      border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
+      border-image: linear-gradient(
+        to right,
+        #f9f0d2 19%,
+        #cac4ff 40%,
+        #66ceeda3 100%
+      );
       border-image-slice: 1;
     }
   }
