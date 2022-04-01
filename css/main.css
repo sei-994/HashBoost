@@ -902,11 +902,13 @@ header nav .nav__menu .btn a:hover {
   border-image-slice: 1;
   padding: 4px 4rem;
   border-radius: 0.3em;
+  font-weight: 600;
 }
 
 #plan .plan__container .plan-card .plan-card__title {
   margin-top: 1.5rem;
   font-size: 1.6rem;
+  font-weight: 600;
 }
 
 #plan .plan__container .plan-card .card__title__last {
@@ -915,7 +917,7 @@ header nav .nav__menu .btn a:hover {
 
 #plan .plan__container .plan-card .plan-card__price {
   font-size: 2rem;
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 2rem;
   line-height: 1;
   letter-spacing: 0.01em;
 }
@@ -923,6 +925,10 @@ header nav .nav__menu .btn a:hover {
 #plan .plan__container .plan-card .plan-card__price span {
   font-family: "小塚ゴシック Pr6N";
   font-size: 3rem;
+}
+
+#plan .plan__container .plan-card .third-price {
+  font-size: 2.3rem;
 }
 
 #plan .plan__container .plan-card .card__detail {
@@ -934,6 +940,7 @@ header nav .nav__menu .btn a:hover {
   font-size: 1.2rem;
   list-style: none;
   text-align: left;
+  padding: 0 2rem;
 }
 
 #plan .plan__container .plan-card .plan__btn {
@@ -943,13 +950,14 @@ header nav .nav__menu .btn a:hover {
 
 #plan .plan__container .plan-card .plan__btn a {
   display: block;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 4rem;
   height: 100%;
   text-decoration: none;
   background: #61b3f9;
   text-align: center;
   color: #ffffff;
-  font: size 1.4rem;
+  font-size: 1.8rem;
+  line-height: 1;
   border-radius: 0.4em;
 }
 
