@@ -71,13 +71,12 @@
   display: block;
   box-sizing: border-box;
   position: absolute;
-  width: 30px;
-  height: 2px;
+  width: 33px;
+  height: 3px;
   background: currentColor;
   transform: rotate(45deg);
-  border-radius: 5px;
   top: 8px;
-  left: 1px;
+  left: -7px;
 }
 .gg-close::after {
   transform: rotate(-45deg);
@@ -86,7 +85,7 @@
 .gg-shape-triangle {
   position: relative;
   transform: scale(var(--ggs, 1));
-  width: 22px;
+  width: 41px;
   height: 17px;
   border-left: 3px solid transparent;
   border-bottom: 3px solid;
@@ -100,14 +99,14 @@
 .gg-shape-triangle::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   border-left: 3px solid;
   border-top: 3px solid;
   border-bottom: 3px solid transparent;
   transform: rotate(45deg) skew(10deg, 10deg);
-  left: -2px;
-  bottom: -13px;
+  left: 0px;
+  bottom: -20px;
 }
 
 // 無料キャンペーンボタン

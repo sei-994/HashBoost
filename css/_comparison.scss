@@ -1,12 +1,25 @@
 #comparison {
+  h2 {
+    margin-bottom: 0;
+  }
   .comparison__container {
-    margin: 0 3%;
+    margin: 0 1%;
     table {
-      width: 76%;
+      width: 77%;
       border-collapse: collapse;
       line-height: 1.3;
     }
-
+    .first-row {
+      background-color: white;
+      td {
+        color: black;
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      .data {
+        background-color: #fff;
+      }
+    }
     // table tr *:nth-child(1) {
     //   background: #49c5f0;
     // }
@@ -32,8 +45,8 @@
       padding: 0 8rem;
       font-size: 2.2rem;
       color: #4d4d4d;
-      width: 22%;
-      font-weight: 500;
+      width: 23%;
+      font-weight: 600;
       padding-bottom: 2rem;
     }
     table td {
@@ -68,7 +81,7 @@
     i {
       margin: 0 auto;
       margin-top: 3rem;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.8em;
       display: block;
     }
   }
