@@ -11,19 +11,16 @@
     margin: 2rem auto;
   }
   .contact__btn a {
-    font-weight: 900;
+    font-family: $font3-b;
     display: block;
-    width: 100%;
-    height: 100%;
+
     text-decoration: none;
     background: #43ca32;
     text-align: center;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 1.6rem;
     font-weight: bold;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
   }
   .contact__btn a:hover {
     opacity: 0.7;

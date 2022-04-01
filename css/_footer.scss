@@ -1,5 +1,7 @@
 footer {
   background-image: linear-gradient(90deg, #d9bbfd, #4da1e7);
+  position: relative;
+  z-index: 10;
   ul {
     margin: auto;
     display: flex;

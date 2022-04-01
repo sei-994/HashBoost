@@ -7,96 +7,22 @@
 
 // 装飾線
 .line__container {
-  height: 1rem;
+  position: relative;
 
-  .line__decorated_1_left {
-    background-image: linear-gradient(to right, #cb92fa 40%, #68bde0 100%);
-    position: relative;
-    right: 10%;
-    top: -2rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 4rem;
-    width: 43rem;
+  img {
+    height: 8rem;
+    width: 53rem;
   }
-  .line__decorated_2_left {
-    background-image: linear-gradient(to right, #68bde0 0%, #81c6e4 100%);
-    position: relative;
-    right: -26.5%;
-    top: -8rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 0rem;
-    width: 1.3rem;
+  .decoration__left {
+    margin-top: 8rem;
   }
-  .line__decorated_3_left {
-    background-image: linear-gradient(to right, #81c6e4 0%, #aeedfd 100%);
-    position: relative;
-    right: -27.8%;
-    top: -14rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 0rem;
-    width: 1rem;
-  }
-  .line__decorated_4_left {
-    background-image: linear-gradient(
-      to right,
-      #9dd9f3 0%,
-      rgb(208, 238, 251) 100%
-    );
-    position: relative;
-    right: -28.8%;
-    top: -20rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 0rem;
-    width: 8px;
-  }
+  .decoration__right {
+    height: 8rem;
+    width: 53rem;
+    position: absolute;
 
-  .line__decorated_1_right {
-    background-image: linear-gradient(to left, #cb92fa 40%, #68bde0 100%);
-    position: relative;
-    left: 73%;
-    top: -18rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 4rem;
-    width: 43rem;
-  }
-  .line__decorated_2_right {
-    background-image: linear-gradient(to left, #68bde0 0%, #81c6e4 100%);
-    position: relative;
-    left: 71.6%;
-    top: -24rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 0rem;
-    width: 1.3rem;
-  }
-  .line__decorated_3_right {
-    background-image: linear-gradient(to left, #81c6e4 0%, #aeedfd 100%);
-    position: relative;
-    left: 70.4%;
-    top: -30rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 0rem;
-    width: 1rem;
-  }
-  .line__decorated_4_right {
-    background-image: linear-gradient(
-      to left,
-      #9dd9f3 0%,
-      rgb(208, 238, 251) 100%
-    );
-    position: relative;
-    left: 69.4%;
-    top: -36rem;
-    -webkit-transform: skew(-15deg);
-    transform: skew(-45deg);
-    padding: 3rem 0rem;
-    width: 8px;
+    right: 0;
+    top: -15rem;
   }
 }
 // 3カラム
@@ -202,4 +128,44 @@
 }
 .campaign-btn a:hover {
   opacity: 0.7;
+}
+
+.circle {
+  position: relative;
+  z-index: 0;
+}
+.circle1 {
+  img {
+    position: absolute;
+
+    left: -6%;
+    width: 24%;
+    top: 33rem;
+  }
+}
+.circle2 {
+  img {
+    position: absolute;
+    width: 50%;
+    top: -15rem;
+    right: 0;
+  }
+}
+.circle3 {
+  img {
+    position: absolute;
+
+    left: -6%;
+    width: 21%;
+    top: 13rem;
+  }
+}
+.circle4 {
+  img {
+    position: absolute;
+    width: 15%;
+    top: -15rem;
+    right: 0;
+  }
+  // top: 0;
 }

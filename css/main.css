@@ -165,104 +165,30 @@ input, select {
   src: url("../fonts/AP-OTF-A1GothicStdN-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "小塚ゴシック";
+  src: url("../fonts/KozGoPr6N-Bold.woff") format("woff");
+}
+
 .line__container {
-  height: 1rem;
+  position: relative;
 }
 
-.line__container .line__decorated_1_left {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #cb92fa), to(#68bde0));
-  background-image: linear-gradient(to right, #cb92fa 40%, #68bde0 100%);
-  position: relative;
-  right: 10%;
-  top: -2rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 4rem;
-  width: 43rem;
+.line__container img {
+  height: 8rem;
+  width: 53rem;
 }
 
-.line__container .line__decorated_2_left {
-  background-image: -webkit-gradient(linear, left top, right top, from(#68bde0), to(#81c6e4));
-  background-image: linear-gradient(to right, #68bde0 0%, #81c6e4 100%);
-  position: relative;
-  right: -26.5%;
-  top: -8rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 0rem;
-  width: 1.3rem;
+.line__container .decoration__left {
+  margin-top: 8rem;
 }
 
-.line__container .line__decorated_3_left {
-  background-image: -webkit-gradient(linear, left top, right top, from(#81c6e4), to(#aeedfd));
-  background-image: linear-gradient(to right, #81c6e4 0%, #aeedfd 100%);
-  position: relative;
-  right: -27.8%;
-  top: -14rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 0rem;
-  width: 1rem;
-}
-
-.line__container .line__decorated_4_left {
-  background-image: -webkit-gradient(linear, left top, right top, from(#9dd9f3), to(#d0eefb));
-  background-image: linear-gradient(to right, #9dd9f3 0%, #d0eefb 100%);
-  position: relative;
-  right: -28.8%;
-  top: -20rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 0rem;
-  width: 8px;
-}
-
-.line__container .line__decorated_1_right {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #cb92fa), to(#68bde0));
-  background-image: linear-gradient(to left, #cb92fa 40%, #68bde0 100%);
-  position: relative;
-  left: 73%;
-  top: -18rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 4rem;
-  width: 43rem;
-}
-
-.line__container .line__decorated_2_right {
-  background-image: -webkit-gradient(linear, right top, left top, from(#68bde0), to(#81c6e4));
-  background-image: linear-gradient(to left, #68bde0 0%, #81c6e4 100%);
-  position: relative;
-  left: 71.6%;
-  top: -24rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 0rem;
-  width: 1.3rem;
-}
-
-.line__container .line__decorated_3_right {
-  background-image: -webkit-gradient(linear, right top, left top, from(#81c6e4), to(#aeedfd));
-  background-image: linear-gradient(to left, #81c6e4 0%, #aeedfd 100%);
-  position: relative;
-  left: 70.4%;
-  top: -30rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 0rem;
-  width: 1rem;
-}
-
-.line__container .line__decorated_4_right {
-  background-image: -webkit-gradient(linear, right top, left top, from(#9dd9f3), to(#d0eefb));
-  background-image: linear-gradient(to left, #9dd9f3 0%, #d0eefb 100%);
-  position: relative;
-  left: 69.4%;
-  top: -36rem;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-45deg);
-  padding: 3rem 0rem;
-  width: 8px;
+.line__container .decoration__right {
+  height: 8rem;
+  width: 53rem;
+  position: absolute;
+  right: 0;
+  top: -15rem;
 }
 
 .card {
@@ -398,6 +324,39 @@ input, select {
   opacity: 0.7;
 }
 
+.circle {
+  position: relative;
+  z-index: 0;
+}
+
+.circle1 img {
+  position: absolute;
+  left: -6%;
+  width: 24%;
+  top: 33rem;
+}
+
+.circle2 img {
+  position: absolute;
+  width: 50%;
+  top: -15rem;
+  right: 0;
+}
+
+.circle3 img {
+  position: absolute;
+  left: -6%;
+  width: 21%;
+  top: 13rem;
+}
+
+.circle4 img {
+  position: absolute;
+  width: 15%;
+  top: -15rem;
+  right: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -406,6 +365,7 @@ main {
   font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
+  position: relative;
 }
 
 h2 {
@@ -443,6 +403,7 @@ section {
 }
 
 header {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,6 +411,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.4rem;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
 }
 
 header img {
@@ -505,6 +469,12 @@ header nav .nav__menu .btn a:hover {
   opacity: 0.7;
 }
 
+#introduce {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
 #introduce .mainvisual {
   background-image: url(../images/mainvisual.jpg);
   background-size: cover;
@@ -544,6 +514,7 @@ header nav .nav__menu .btn a:hover {
 #introduce .intro__outer .intro__box__right {
   height: 70rem;
   max-width: 33rem;
+  z-index: 10;
 }
 
 #introduce .intro__outer .intro__box__right img {
@@ -1151,6 +1122,11 @@ header nav .nav__menu .btn a:hover {
   display: block;
 }
 
+#result {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 #result .result__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1241,6 +1217,7 @@ header nav .nav__menu .btn a:hover {
   font-size: 1.4rem;
   padding-top: 5rem;
   background-color: #dff2ff;
+  position: relative;
   /* 二本の横棒を作成する */
   /* 2本の横棒のうち一本は縦棒にする */
   /*
@@ -1471,19 +1448,15 @@ header nav .nav__menu .btn a:hover {
 }
 
 #contact .contact__btn a {
-  font-weight: 900;
+  font-family: "小塚ゴシック";
   display: block;
-  width: 100%;
-  height: 100%;
   text-decoration: none;
   background: #43ca32;
   text-align: center;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1.6rem;
   font-weight: bold;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
 }
 
 #contact .contact__btn a:hover {
@@ -1493,6 +1466,8 @@ header nav .nav__menu .btn a:hover {
 footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#d9bbfd), to(#4da1e7));
   background-image: linear-gradient(90deg, #d9bbfd, #4da1e7);
+  position: relative;
+  z-index: 10;
 }
 
 footer ul {
