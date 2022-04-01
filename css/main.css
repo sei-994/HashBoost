@@ -166,20 +166,103 @@ input, select {
 }
 
 .line__container {
-  position: relative;
-  background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+  height: 1rem;
 }
 
-.line__container .line__decorated_1 .line__decorated_2 .line__decorated_3 .line__decorated_4 {
-  background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
-  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+.line__container .line__decorated_1_left {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #cb92fa), to(#68bde0));
+  background-image: linear-gradient(to right, #cb92fa 40%, #68bde0 100%);
   position: relative;
   right: 10%;
-  top: -10rem;
-  padding: 2rem 4rem;
-  width: 20rem;
+  top: -2rem;
   -webkit-transform: skew(-15deg);
-  transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 4rem;
+  width: 43rem;
+}
+
+.line__container .line__decorated_2_left {
+  background-image: -webkit-gradient(linear, left top, right top, from(#68bde0), to(#81c6e4));
+  background-image: linear-gradient(to right, #68bde0 0%, #81c6e4 100%);
+  position: relative;
+  right: -26.5%;
+  top: -8rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 0rem;
+  width: 1.3rem;
+}
+
+.line__container .line__decorated_3_left {
+  background-image: -webkit-gradient(linear, left top, right top, from(#81c6e4), to(#aeedfd));
+  background-image: linear-gradient(to right, #81c6e4 0%, #aeedfd 100%);
+  position: relative;
+  right: -27.8%;
+  top: -14rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 0rem;
+  width: 1rem;
+}
+
+.line__container .line__decorated_4_left {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9dd9f3), to(#d0eefb));
+  background-image: linear-gradient(to right, #9dd9f3 0%, #d0eefb 100%);
+  position: relative;
+  right: -28.8%;
+  top: -20rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 0rem;
+  width: 8px;
+}
+
+.line__container .line__decorated_1_right {
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #cb92fa), to(#68bde0));
+  background-image: linear-gradient(to left, #cb92fa 40%, #68bde0 100%);
+  position: relative;
+  left: 73%;
+  top: -18rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 4rem;
+  width: 43rem;
+}
+
+.line__container .line__decorated_2_right {
+  background-image: -webkit-gradient(linear, right top, left top, from(#68bde0), to(#81c6e4));
+  background-image: linear-gradient(to left, #68bde0 0%, #81c6e4 100%);
+  position: relative;
+  left: 71.6%;
+  top: -24rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 0rem;
+  width: 1.3rem;
+}
+
+.line__container .line__decorated_3_right {
+  background-image: -webkit-gradient(linear, right top, left top, from(#81c6e4), to(#aeedfd));
+  background-image: linear-gradient(to left, #81c6e4 0%, #aeedfd 100%);
+  position: relative;
+  left: 70.4%;
+  top: -30rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 0rem;
+  width: 1rem;
+}
+
+.line__container .line__decorated_4_right {
+  background-image: -webkit-gradient(linear, right top, left top, from(#9dd9f3), to(#d0eefb));
+  background-image: linear-gradient(to left, #9dd9f3 0%, #d0eefb 100%);
+  position: relative;
+  left: 69.4%;
+  top: -36rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-45deg);
+  padding: 3rem 0rem;
+  width: 8px;
 }
 
 .card {
@@ -288,9 +371,13 @@ input, select {
 
 .campaign-btn {
   margin: 7rem auto;
-  width: 70rem;
+  width: 65rem;
   height: 9rem;
   line-height: 9rem;
+}
+
+.campaign-btn:last-child {
+  margin-bottom: 15rem;
 }
 
 .campaign-btn a {
@@ -302,7 +389,7 @@ input, select {
   background: #479ef7;
   text-align: center;
   color: #ffffff;
-  font-size: 3.2rem;
+  font-size: 3rem;
   letter-spacing: 0.1em;
   border-radius: 2em;
 }
