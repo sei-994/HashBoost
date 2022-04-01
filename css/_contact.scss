@@ -1,6 +1,9 @@
 #contact {
   // LINE btn
-  font-size: 1.5rem;
+  p {
+    font-family: $font1-r;
+  }
+  font-size: 2rem;
   .contact__btn {
     width: 260px;
     height: 50px;
@@ -8,6 +11,7 @@
     margin: 2rem auto;
   }
   .contact__btn a {
+    font-weight: 900;
     display: block;
     width: 100%;
     height: 100%;

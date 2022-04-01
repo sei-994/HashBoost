@@ -12,6 +12,7 @@ h2 {
   font-weight: 400;
   display: inline-block;
   margin-bottom: 5rem;
+  font-family: $font1-r;
   @include heading-border;
   span {
     color: $section-title;

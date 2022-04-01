@@ -4,10 +4,12 @@
   }
   .comparison__container {
     margin: 0 1%;
+
     table {
       width: 77%;
       border-collapse: collapse;
       line-height: 1.3;
+      font-family: $font1-r;
     }
     .first-row {
       background-color: white;
@@ -61,7 +63,7 @@
 
       background: linear-gradient(
         to bottom,
-        #00d6ff63 0%,
+        #11f3ffa1 0%,
         #7cb2feb3 50%,
         #cb9bfe5e 100%
       );

@@ -44,6 +44,7 @@
       margin: 0;
     }
     .column-box {
+      font-family: $font1-r;
       display: flex;
       .text-box {
         p {
@@ -90,6 +91,7 @@
     line-height: 2;
     letter-spacing: -1px;
     .solution__heading__logo {
+      font-family: $font1-r;
       position: relative;
       margin: 0 auto;
       display: flex;
@@ -111,6 +113,7 @@
     }
 
     .solution__text {
+      font-family: $font1-r;
       font-size: 1.8rem;
       margin-top: 9rem;
       p {
@@ -138,6 +141,7 @@
         font-size: 1.4rem;
         padding: 1rem;
         line-height: 1.8;
+        font-family: $font1-r;
 
         // 円　枠色
         background: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
@@ -215,20 +219,27 @@
           border: none;
         }
         p {
-          line-height: 1.2d;
-          font-size: 4rem;
-
-          background: -webkit-linear-gradient(
-            0deg,
-            #cb9bfe 0%,
-            #9cdefb
-          ); //背景色にグラデーションを指定
+          background: -webkit-linear-gradient(6deg, #cb9bfe 60%, #9cdefb 77%);
           -webkit-background-clip: text; //テキストでくり抜く
           -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
+
           span {
             font-family: $font2;
             font-size: 8rem;
-            margin-left: 1.5rem;
+            &:first-child {
+              font-family: $font1-r;
+              margin-right: 1.8rem;
+
+              line-height: 1.2;
+              font-size: 3rem;
+              background: -webkit-linear-gradient(
+                6deg,
+                #cb9bfe 0%,
+                #9cdefb 77%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
           }
         }
         div {
@@ -238,6 +249,7 @@
         .card__text {
           div {
             letter-spacing: -0.3px;
+            font-family: $font1-r;
           }
         }
         img {

@@ -2,7 +2,7 @@
   background-color: rgba(255, 255, 255, 0.671);
   h2 {
     span {
-      font-family: $font2;
+      font-family: $font3;
       font-size: 5rem;
       line-height: 0.8;
     }
@@ -55,7 +55,7 @@
         line-height: 1;
         letter-spacing: 0.01em;
         span {
-          font-family: $font3;
+          font-family: $font4;
           font-size: 3rem;
         }
       }
@@ -66,6 +66,7 @@
         height: 20rem;
         ul {
           height: 15rem;
+          font-family: $font1-r;
           font-size: 1.2rem;
           list-style: none;
           text-align: left;

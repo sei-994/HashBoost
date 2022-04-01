@@ -3,6 +3,7 @@
     flex-direction: column;
     // common box
     .result__box {
+      font-family: $font1;
       display: flex;
       justify-content: center;
       border: 3px solid $section-title;
@@ -18,6 +19,7 @@
         font-size: 2rem;
         text-align: left;
         line-height: 1.4;
+        font-family: $font1-r;
 
         &:nth-child(2) {
           background-image: url(../images/result/result1.png);
@@ -25,9 +27,7 @@
 
         .box__title {
           font-size: 3rem;
-          // margin-right: 1rem;
-
-          font-weight: 400;
+          font-weight: 100;
           margin-bottom: 1rem;
         }
         span {

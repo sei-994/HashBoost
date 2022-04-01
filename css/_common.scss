@@ -117,6 +117,7 @@
   line-height: 9rem;
 }
 .campaign-btn a {
+  font-family: $font1-l;
   display: block;
   width: 100%;
   height: 100%;
@@ -125,7 +126,7 @@
   text-align: center;
   color: #ffffff;
   font-size: 3.2rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   border-radius: 2em;
 }
 .campaign-btn a:hover {
