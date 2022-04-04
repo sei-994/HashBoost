@@ -7,21 +7,35 @@
     background-size: cover;
   }
   .intro__outer {
-    display: flex;
-    margin: 0 8%;
-    justify-content: space-around;
-    padding-top: 5rem;
-    font-size: 5rem;
-    font-family: $font1;
+    font-size: 2.5rem;
+
+    @include sm {
+      font-size: 5rem;
+      display: flex;
+      margin: 0 8%;
+      justify-content: space-around;
+      padding-top: 5rem;
+      font-family: $font1;
+    }
     .intro__box__left {
+      margin-left: 8%;
+      margin-right: 16%;
+      @include sm {
+        margin-left: 0;
+      }
       p {
-        font-size: 2.5rem;
+        font-size: 2rem;
         display: inline-block;
         border-bottom: 2px solid black;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+        @include sm {
+          margin-bottom: 3rem;
+          font-size: 2.5rem;
+        }
       }
       .text__blue {
         color: $light-blue;
+        font-size: 2.5rem;
       }
       div {
         line-height: 100px;
@@ -32,8 +46,14 @@
       }
     }
     .intro__box__right {
-      height: 70rem;
-      max-width: 33rem;
+      margin-left: 49%;
+      max-width: 17rem;
+      height: 45rem;
+      @include sm {
+        margin-left: 0;
+        height: 70rem;
+        max-width: 33rem;
+      }
       z-index: 10;
       img {
         width: 100%;
@@ -43,50 +63,131 @@
   }
   #problem {
     font-size: 4rem;
-    margin-top: 12rem;
+    @include sm {
+      margin-top: 12rem;
+    }
     .problem__container {
-      margin: 0;
+      @include sm {
+        margin: 0;
+      }
     }
     .column-box {
+      position: relative;
+      // background-image: url(../images/sp/problem/problem.png);
+      // background-size: auto 75%;
+      // background-repeat: no-repeat;
+      // background-position: center;
       font-family: $font1-r;
-      display: flex;
+      margin-bottom: 5rem;
+      @include sm {
+        display: flex;
+        background-image: none;
+        margin-bottom: 0;
+      }
       .text-box {
         p {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           text-align: center;
           max-height: 12rem;
-          padding: 2rem 1.5rem;
+          padding: 1rem 1.5rem;
           margin-bottom: 12rem;
           font-weight: 500;
           border-style: Solid;
           border-color: $light-blue;
-          border-width: 3px;
-          border-radius: 23px;
+          border-width: 2px;
+          border-radius: 1.2em;
+          @include sm {
+            border-radius: 23px;
+            padding: 2rem 1.5rem;
+            border-width: 3px;
+
+            font-size: 1.8rem;
+          }
         }
       }
       .box__left {
+        margin-right: 20%;
         min-width: 38rem;
+        position: relative;
+        @include sm {
+          margin-right: 0;
+        }
         p {
+          position: absolute;
+          @include sm {
+            position: relative;
+          }
+
           &:first-child {
-            padding: 2.5rem 1.5rem;
+            padding: 1.8rem 1.5rem;
+            top: 0%;
+            @include sm {
+              padding: 2.5rem 1.5rem;
+            }
+          }
+          &:nth-child(2) {
+            top: 8rem;
+            right: 8%;
+            @include sm {
+              top: 0;
+              right: 0;
+            }
+          }
+          &:last-child {
+            top: 18rem;
+            @include sm {
+              top: 0;
+            }
           }
         }
       }
     }
     .box__middle {
-      height: 44rem;
-      width: 24rem;
-      margin: auto 2%;
+      background-color: transparent;
+      @include sm {
+        display: block;
+        height: 44rem;
+        width: 24rem;
+        margin: auto 2%;
+      }
       img {
-        width: 100%;
+        width: 52%;
+        @include sm {
+          width: 100%;
+        }
         height: 100%;
       }
     }
     .box__right {
-      min-width: 48rem;
+      @include sm {
+        top: 0;
+        min-width: 48rem;
+        right: 0;
+      }
       p {
+        position: absolute;
+
+        margin-bottom: 3rem !important;
+        @include sm {
+          position: relative;
+          top: 0;
+          margin-bottom: 12rem !important;
+        }
+        &:first-child {
+          top: 28rem;
+          right: -5%;
+          @include sm {
+            top: 0;
+          }
+        }
         &:last-child {
-          padding: 2.5rem 1.5rem;
+          top: 36rem;
+          left: 0%;
+          padding: 2rem 3rem;
+          @include sm {
+            top: 0;
+            padding: 2.5rem 1.5rem;
+          }
         }
       }
     }
@@ -101,27 +202,49 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      width: 50rem;
+      @include sm {
+        width: 50rem;
+      }
       img {
         top: -20%;
-        left: 29%;
+        left: 23%;
         position: absolute;
         width: 26rem;
+        @include sm {
+          left: 29%;
+        }
       }
       div {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         border: none;
         margin-bottom: 0;
-        margin-right: 11rem;
+        margin-right: 25%;
+
+        @include sm {
+          margin-right: 11rem;
+          font-size: 2.5rem;
+        }
       }
     }
 
     .solution__text {
       font-family: $font1-r;
-      font-size: 1.8rem;
       margin-top: 9rem;
+      font-size: 1.5rem;
+      .solution__text__sp-br {
+        @include sm {
+          display: none;
+        }
+      }
+      @include sm {
+        font-size: 1.8rem;
+      }
       p {
         &:last-child {
+          line-height: 1.3;
+          @include sm {
+            line-height: 1.5;
+          }
           font-size: 2.5rem;
           display: inline;
           background: linear-gradient(transparent 60%, rgb(137, 212, 250) 60%);
@@ -135,18 +258,23 @@
     .card__container {
       margin: 3rem auto 0;
       display: block;
-      display: -webkit-box;
+      @include sm {
+        display: -webkit-box;
+      }
       .solve-card {
         display: block;
-        margin: 1%;
-        width: 37rem;
-        height: 37rem;
+        margin: 7%;
+        margin-bottom: 8%;
         border-radius: 50%;
         font-size: 1.4rem;
         padding: 1rem;
         line-height: 1.8;
         font-family: $font1-r;
-
+        @include sm {
+          margin: 1%;
+          width: 37rem;
+          height: 37rem;
+        }
         // 円　枠色
         background: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
         position: relative;
@@ -158,12 +286,16 @@
           z-index: -1;
           box-sizing: border-box;
           border-radius: 50%;
-          padding: 4px;
+          padding: 3px;
+
           width: 100%;
           height: 100%;
           background: #fff;
           background-clip: content-box;
           content: "";
+          @include sm {
+            padding: 4px;
+          }
         }
 
         .card__title {
@@ -207,19 +339,27 @@
       }
     }
     .step__container {
-      margin-top: 5rem;
+      margin-top: 2rem;
 
+      @include sm {
+        margin-top: 5rem;
+      }
       .step-card {
-        border-right: 2px solid;
-        border-image: linear-gradient(to bottom, #9cdefb 0%, #ecdaff 100%);
-        border-image-slice: 1;
         max-width: 24%;
-        padding: 3rem;
         padding-bottom: 0;
         display: inline-block;
         min-width: 25rem;
-        height: 48rem;
+        margin-bottom: 1rem;
+        @include sm {
+          margin-bottom: 0;
+          height: 48rem;
+          padding: 3rem;
+          border-right: 2px solid;
+          border-image: linear-gradient(to bottom, #9cdefb 0%, #ecdaff 100%);
+          border-image-slice: 1;
+        }
         &:last-child {
+          margin-bottom: 0;
           border: none;
         }
         p {
@@ -260,8 +400,11 @@
           max-width: 90%;
           max-height: 58%;
         }
-        .step__img {
-          min-height: 55%;
+        .step__img3 {
+          max-width: 46%;
+          @include sm {
+            max-width: 90%;
+          }
         }
       }
     }

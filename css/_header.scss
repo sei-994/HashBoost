@@ -7,46 +7,135 @@ header {
   z-index: 10;
   background-color: #fff;
   img {
-    margin-left: 25%;
-    width: 22rem;
-    height: 9rem;
+    width: 50%;
+    @include sm {
+      margin-left: 25%;
+      width: 22rem;
+      height: 9.5rem;
+    }
   }
-  nav {
-    margin-right: 3%;
-    .nav__menu {
-      display: flex;
-      li {
-        margin: 4.5rem 2rem;
-        margin-bottom: 0;
-        font-family: $font1-r;
-        font-weight: 400;
-        white-space: nowrap;
-        letter-spacing: -0.1px;
-        &:last-child {
-          margin-right: 3%;
+  .pc {
+    display: none;
+    @include sm {
+      display: block;
+      margin-right: 3%;
+      .nav__menu {
+        display: flex;
+        li {
+          margin: 4.5rem 2rem;
+          margin-bottom: 0;
+          font-family: $font1-r;
+          font-weight: 400;
+          white-space: nowrap;
+          letter-spacing: -0.1px;
+          &:last-child {
+            margin-right: 3%;
+          }
+          a {
+            color: black;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+        // button
+        .btn {
+          width: 25.5rem;
+          height: 5rem;
+          line-height: 5rem;
+          margin-top: 3rem;
+          font-size: 1.5rem;
+        }
+        .btn a {
+          font-family: $font1-l;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          font-weight: 400;
+          background: #0099ff;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 5em;
+        }
+        .btn a:hover {
+          opacity: 0.7;
         }
       }
-      // button
-      .btn {
-        width: 25.5rem;
-        height: 5rem;
-        line-height: 5rem;
-        margin-top: 3rem;
-        font-size: 1.5rem;
+    }
+  }
+
+  #hamburger {
+    @include sm {
+      display: none;
+    }
+    span {
+      padding-left: 1.25vw;
+      right: 1.3rem;
+      position: absolute; /*親要素である#hamburgerを基準に位置を指定*/
+      width: 30px;
+      height: 1px; /*横線の高さが4px*/
+      background-color: rgb(0, 0, 0); /*横線を白色*/
+      transition: ease 0.65s; /*変化の時間（easeは初期値）*/
+      @include xxs {
+        width: 40px; /*横線の幅が30px*/
+        right: 2.5rem;
       }
-      .btn a {
-        font-family: $font1-l;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        font-weight: 400;
-        background: #0099ff;
-        text-align: center;
-        color: #ffffff;
-        border-radius: 5em;
+      &:nth-of-type(1) {
+        top: 29px;
       }
-      .btn a:hover {
-        opacity: 0.7;
+      &:nth-of-type(2) {
+        top: 36px;
+      }
+      &:nth-of-type(3) {
+        top: 43px;
+      }
+    }
+  }
+  // ハンバーガークリック後
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg); /*反時計回りに45度回転*/
+    top: 41px;
+  }
+
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3) {
+    transform: rotate(-45deg); /*時計回りに45度回転*/
+    top: 41px;
+  }
+  // スマホメニュー
+  .sm {
+    font-size: 1.4rem;
+    color: white;
+    top: 8.2rem; /*headerの余白分*/
+    left: 0px; /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
+    position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
+    z-index: 10;
+    width: 100%;
+    display: none;
+    text-align: right; /*メニューリストの文字を中央寄せ*/
+    background-color: black; /*透明の背景*/
+    opacity: 0.8;
+    @include sm {
+      display: none;
+    }
+    li {
+      margin: 4.5rem 2rem;
+      margin-bottom: 0;
+      font-family: $font1-r;
+      font-weight: 400;
+      white-space: nowrap;
+      letter-spacing: -0.1px;
+      &:last-child {
+        margin-right: 3%;
+      }
+      a {
+        color: black;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }

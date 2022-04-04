@@ -16,7 +16,6 @@ $font3-b: "小塚ゴシック";
 $xxs: 360px;
 $xs: 400px;
 $sm: 768px;
-$md: 960px;
 $lg: 1233px;
 
 @mixin xxs {
@@ -34,11 +33,11 @@ $lg: 1233px;
     @content;
   }
 }
-@mixin md {
-  @media (min-width: ($md)) {
-    @content;
-  }
-}
+// @mixin md {
+//   @media (min-width: ($md)) {
+//     @content;
+//   }
+// }
 @mixin lg {
   @media (min-width: ($lg)) {
     @content;

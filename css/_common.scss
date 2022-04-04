@@ -27,16 +27,22 @@
 }
 // 3カラム
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 // 3カラムbox
 .section__container {
-  margin: 0 12%;
-  display: flex;
-  justify-content: center;
+  margin: 0 6%;
+
+  @include sm {
+    margin: 0 12%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .gg-shape-circle {
@@ -105,10 +111,18 @@
 
 // 無料キャンペーンボタン
 .campaign-btn {
-  margin: 7rem auto;
-  width: 65rem;
-  height: 9rem;
-  line-height: 9rem;
+  margin: 0 2%;
+  height: 7rem;
+  line-height: 7rem;
+  @include sm {
+    margin: 7rem 2%;
+
+    margin: 7rem auto;
+    line-height: 9rem;
+
+    width: 65rem;
+    height: 9rem;
+  }
   &:last-child {
     margin-bottom: 15rem;
   }
@@ -122,9 +136,13 @@
   background: $light-blue;
   text-align: center;
   color: #ffffff;
-  font-size: 3rem;
   letter-spacing: 0.1em;
   border-radius: 2em;
+  font-size: 2rem;
+
+  @include sm {
+    font-size: 3rem;
+  }
 }
 .campaign-btn a:hover {
   opacity: 0.7;
@@ -137,17 +155,25 @@
 .circle1 {
   img {
     position: absolute;
-
-    left: -6%;
-    width: 24%;
-    top: 33rem;
+    left: 0;
+    width: 28%;
+    top: 36rem;
+    @include sm {
+      left: -6%;
+      width: 24%;
+      top: 33rem;
+    }
   }
 }
 .circle2 {
   img {
+    top: 0;
+    width: 80%;
+    @include sm {
+      width: 50%;
+      top: -15rem;
+    }
     position: absolute;
-    width: 50%;
-    top: -15rem;
     right: 0;
   }
 }
