@@ -1,3 +1,18 @@
+// get Element
+const hamburger = document.getElementById("hamburger");
+const hamburgerBorder = document.querySelector(".header_box_right");
+// const hamburgerBorderText = document.querySelector(".header_box_right_text");
+const sm = document.querySelector(".sm");
+const Introduce = document.getElementById("Introduce");
+const Function = document.getElementById("Function");
+const Plan = document.getElementById("Plan");
+const Result = document.getElementById("Result");
+const IntroduceContent = document.getElementById("Problem");
+const FunctionContent = document.getElementById("function");
+const PlanContent = document.getElementById("plan");
+const ResultContent = document.getElementById("result");
+
+// ハンバーガーメニュー
 $(".qa-list dd").hide();
 $(".qa-list dl").on("click", function (e) {
   $("dd", this).slideToggle("fast");
@@ -8,18 +23,6 @@ $(".qa-list dl").on("click", function (e) {
   }
   $("dl").toggleClass("active");
 });
-
-// // hamburger menu animation
-const hamburger = document.getElementById("hamburger");
-const hamburgerBorder = document.querySelector(".header_box_right");
-// const hamburgerBorderText = document.querySelector(".header_box_right_text");
-const sm = document.querySelector(".sm");
-// const MessageNav = document.getElementById("message-nav");
-// const MoviesNav = document.getElementById("movies-nav");
-// const NewsNav = document.getElementById("news-nav");
-// const HistoryNav = document.getElementById("history-nav");
-// const FaqNav = document.getElementById("faq-nav");
-// const ContactNav = document.getElementById("contact-nav");
 
 // slideUp
 const slideUp = (el, duration = 700) => {
@@ -128,3 +131,37 @@ hamburger.onclick = function () {
 // ContactNav.onclick = function () {
 //   check_renda();
 // };
+
+//navigatino auto scroll
+Introduce.onclick = function () {
+  const IntroduceContentPosition =
+    window.pageYOffset + IntroduceContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: IntroduceContentPosition,
+    behavior: "smooth",
+  });
+};
+Function.onclick = function () {
+  const FunctionContentPosition =
+    window.pageYOffset + FunctionContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: FunctionContentPosition,
+    behavior: "smooth",
+  });
+};
+Plan.onclick = function () {
+  const PlanContentPosition =
+    window.pageYOffset + PlanContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: PlanContentPosition,
+    behavior: "smooth",
+  });
+};
+Result.onclick = function () {
+  const ResultontentPosition =
+    window.pageYOffset + ResultContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: ResultontentPosition,
+    behavior: "smooth",
+  });
+};

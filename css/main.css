@@ -500,10 +500,34 @@ header .pc {
     margin-right: 3%;
   }
   header .pc .nav__menu li a {
+    position: relative;
     color: black;
   }
-  header .pc .nav__menu li a:hover {
+  header .pc .nav__menu li .a__border::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 5px solid;
+    -o-border-image: linear-gradient(to right, #cb9bfe 10%, #04a3ff 80%, #003cffbb 100%);
+       border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #cb9bfe), color-stop(80%, #04a3ff), to(#003cffbb));
+       border-image: linear-gradient(to right, #cb9bfe 10%, #04a3ff 80%, #003cffbb 100%);
+    border-image-slice: 1;
+    position: absolute;
+    bottom: -50%;
+    left: 0%;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .pc .nav__menu li .a__border:hover {
+    cursor: pointer;
     opacity: 0.7;
+  }
+  header .pc .nav__menu li .a__border:hover::after {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   header .pc .nav__menu .btn {
     width: 25.5rem;
