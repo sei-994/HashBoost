@@ -134,6 +134,24 @@ hamburger.onclick = function () {
 
 //navigatino auto scroll
 Introduce.onclick = function () {
+  if (!Introduce.classList.contains("active")) {
+    // 押したやつ
+    Introduce.classList.add("active");
+    Introduce.classList.remove("a__border");
+    // その他
+    if (Function.classList.contains("active")) {
+      Function.classList.remove("active");
+      Introduce.classList.add("a__border");
+    }
+    if (Plan.classList.contains("active")) {
+      Plan.classList.remove("active");
+      Introduce.classList.add("a__border");
+    }
+    if (Result.classList.contains("active")) {
+      Result.classList.remove("active");
+      Introduce.classList.add("a__border");
+    }
+  }
   const IntroduceContentPosition =
     window.pageYOffset + IntroduceContent.getBoundingClientRect().top;
   window.scrollTo({
@@ -142,6 +160,24 @@ Introduce.onclick = function () {
   });
 };
 Function.onclick = function () {
+  if (!Function.classList.contains("active")) {
+    // 押したやつ
+    Function.classList.add("active");
+    Function.classList.remove("a__border");
+    // その他
+    if (Introduce.classList.contains("active")) {
+      Introduce.classList.remove("active");
+      Introduce.classList.add("a__border");
+    }
+    if (Plan.classList.contains("active")) {
+      Plan.classList.remove("active");
+      Plan.classList.add("a__border");
+    }
+    if (Result.classList.contains("active")) {
+      Result.classList.remove("active");
+      Result.classList.add("a__border");
+    }
+  }
   const FunctionContentPosition =
     window.pageYOffset + FunctionContent.getBoundingClientRect().top;
   window.scrollTo({
@@ -149,7 +185,26 @@ Function.onclick = function () {
     behavior: "smooth",
   });
 };
+
 Plan.onclick = function () {
+  if (!Plan.classList.contains("active")) {
+    // 押したやつ
+    Plan.classList.add("active");
+    Plan.classList.remove("a__border");
+    // その他
+    if (Function.classList.contains("active")) {
+      Function.classList.remove("active");
+      Function.classList.add("a__border");
+    }
+    if (Introduce.classList.contains("active")) {
+      Introduce.classList.remove("active");
+      Introduce.classList.add("a__border");
+    }
+    if (Result.classList.contains("active")) {
+      Result.classList.remove("active");
+      Result.classList.add("a__border");
+    }
+  }
   const PlanContentPosition =
     window.pageYOffset + PlanContent.getBoundingClientRect().top;
   window.scrollTo({
@@ -158,6 +213,24 @@ Plan.onclick = function () {
   });
 };
 Result.onclick = function () {
+  if (!Result.classList.contains("active")) {
+    // 押したやつ
+    Result.classList.add("active");
+    Result.classList.remove("a__border");
+    // その他
+    if (Function.classList.contains("active")) {
+      Function.classList.remove("active");
+      Function.classList.add("a__border");
+    }
+    if (Plan.classList.contains("active")) {
+      Plan.classList.remove("active");
+      Plan.classList.add("a__border");
+    }
+    if (Introduce.classList.contains("active")) {
+      Introduce.classList.remove("active");
+      Introduce.classList.add("a__border");
+    }
+  }
   const ResultontentPosition =
     window.pageYOffset + ResultContent.getBoundingClientRect().top;
   window.scrollTo({

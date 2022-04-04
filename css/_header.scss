@@ -34,6 +34,10 @@ header {
           a {
             position: relative;
             color: black;
+            &:hover {
+              cursor: pointer;
+              opacity: 0.7;
+            }
           }
           .a__border {
             &::after {
@@ -56,8 +60,6 @@ header {
               transition: 0.3s;
             }
             &:hover {
-              cursor: pointer;
-              opacity: 0.7;
               &::after {
                 transform: scale(1, 1);
               }
@@ -89,7 +91,27 @@ header {
       }
     }
   }
-
+  .active {
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      border-bottom: 5px solid;
+      border-image: linear-gradient(
+        to right,
+        #cb9bfe 10%,
+        #04a3ff 80%,
+        #003cffbb 100%
+      );
+      border-image-slice: 1;
+      position: absolute;
+      bottom: -50%;
+      left: 0%;
+      transform: scale(1, 1);
+      transition: 0.3s;
+    }
+  }
   #hamburger {
     @include sm {
       display: none;
