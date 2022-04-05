@@ -6,20 +6,27 @@
     margin: 0 1%;
 
     table {
+      overflow: scroll;
       width: 77%;
       border-collapse: collapse;
       line-height: 1.3;
       font-family: $font1-r;
+      font-size: 1vw;
+      white-space: nowrap;
     }
     .first-row {
       background-color: white;
       td {
         color: black;
-        font-size: 2rem;
         padding: 1rem;
+        font-size: 2rem;
       }
       .data {
         background-color: #fff;
+        img {
+          position: relative;
+          top: 1.8rem;
+        }
       }
     }
     // table tr *:nth-child(1) {
@@ -30,10 +37,11 @@
       // background: #57b3e8;
     }
 
-    //
-
+    // 4カラム目
     table tr *:nth-child(4) {
-      background: #61b3f9;
+      background: $light-blue2;
+
+      font-size: 1.2vw;
     }
 
     table th,
@@ -41,26 +49,25 @@
       color: white;
       border: solid 1px white;
       text-align: center;
-      padding: 0 1rem;
     }
     table th {
       padding: 0 8rem;
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       color: #4d4d4d;
       width: 23%;
       font-weight: 600;
       padding-bottom: 2rem;
+      span {
+        position: relative;
+        bottom: 1.5rem;
+      }
     }
     table td {
       width: 19%;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
     // グラデーション
     table {
-      //     ０％　＃cb9bfe
-      // 50％   #7CB2FE
-      // 100％　＃00d6ff
-
       background: linear-gradient(
         to bottom,
         #11f3ffa1 0%,
@@ -82,7 +89,7 @@
 
     i {
       margin: 0 auto;
-      margin-top: 3rem;
+      margin-top: 2rem;
       margin-bottom: 0.8em;
       display: block;
     }

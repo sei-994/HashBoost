@@ -10,6 +10,7 @@ footer {
     height: 11rem;
 
     li {
+      font-family: $font1-l;
       margin-right: 3rem;
       &::after {
         content: "|";

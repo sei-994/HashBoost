@@ -113,12 +113,12 @@ input, select {
 }
 
 @font-face {
-  font-family: "A P-OTF A1ゴシック Std";
+  font-family: "A P-OTF A1ゴシック Std bold";
   src: url("../fonts/AP-OTF-A1GothicStd-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "A P-OTF A1ゴシック Std";
+  font-family: "A P-OTF A1ゴシック Std medium";
   src: url("../fonts/AP-OTF-A1GothicStd-Medium.woff") format("woff");
 }
 
@@ -129,12 +129,12 @@ input, select {
 }
 
 @font-face {
-  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN normal";
   src: url("../fonts/AP-OTF-ShueiGoKinStd-L.woff") format("woff");
 }
 
 @font-face {
-  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN medium";
   src: url("../fonts/AP-OTF-ShueiGoKinStd-M.woff") format("woff");
 }
 
@@ -168,6 +168,11 @@ input, select {
 @font-face {
   font-family: "小塚ゴシック";
   src: url("../fonts/KozGoPr6N-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "小塚ゴシック Regular";
+  src: url("../fonts/KozGoPr6N-Regular.woff") format("woff");
 }
 
 .line__container {
@@ -231,8 +236,8 @@ input, select {
   display: block;
   -webkit-transform: scale(var(--ggs, 1));
           transform: scale(var(--ggs, 1));
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border: 3px solid;
   border-radius: 100px;
 }
@@ -245,7 +250,7 @@ input, select {
   -webkit-transform: scale(var(--ggs, 1));
           transform: scale(var(--ggs, 1));
   width: 3rem;
-  height: 3rem;
+  height: 4rem;
   border: 4px solid transparent;
   border-radius: 40px;
 }
@@ -277,6 +282,7 @@ input, select {
           transform: scale(var(--ggs, 1));
   width: 41px;
   height: 17px;
+  bottom: 1rem;
   border-left: 3px solid transparent;
   border-bottom: 3px solid;
 }
@@ -361,9 +367,9 @@ input, select {
 
 @media (min-width: 768px) {
   .circle1 img {
-    left: -6%;
-    width: 24%;
-    top: 33rem;
+    left: -9%;
+    width: 20%;
+    top: 40rem;
   }
 }
 
@@ -428,7 +434,7 @@ h2 {
 }
 
 h2 span {
-  color: cornflowerblue;
+  color: #479ef7;
   font-weight: bold;
   font-size: 3.5rem;
 }
@@ -679,12 +685,15 @@ header .sm li a:hover {
 #introduce {
   padding-left: 0;
   padding-right: 0;
+  padding-top: 0;
+  margin-top: 0;
   overflow: hidden;
 }
 
 #introduce .mainvisual {
   background-image: url(../images/mainvisual.jpg);
   background-size: cover;
+  background-position: 80% 50%;
 }
 
 #introduce .intro__outer {
@@ -701,11 +710,12 @@ header .sm li a:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding-top: 5rem;
-    font-family: "A P-OTF A1ゴシック Std";
+    font-family: "A P-OTF A1ゴシック Std bold";
   }
 }
 
 #introduce .intro__outer .intro__box__left {
+  padding-top: 7rem;
   margin-left: 8%;
   margin-right: 16%;
 }
@@ -759,34 +769,57 @@ header .sm li a:hover {
 }
 
 #introduce .intro__outer .intro__box__right img {
+  padding-top: 7rem;
   width: 100%;
   height: 78%;
 }
 
-#introduce #problem {
+#introduce .intro__outer .arrow-box {
+  position: absolute;
+  left: 50%;
+  top: 74rem;
+  color: #61b3f9;
+  font-size: 2.5rem;
+  font-family: "小塚ゴシック Regular";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#introduce .intro__outer .arrow-box::after {
+  content: "";
+  width: 16rem;
+  height: 1.5px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.9rem;
+  background-color: #61b3f9;
+}
+
+#introduce #Problem {
   font-size: 4rem;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem {
-    margin-top: 12rem;
+  #introduce #Problem {
+    margin-top: 8rem;
   }
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .problem__container {
+  #introduce #Problem .problem__container {
     margin: 0;
   }
 }
 
-#introduce #problem .column-box {
+#introduce #Problem .column-box {
   position: relative;
   font-family: "A P-OTF A1ゴシック Std regular";
   margin-bottom: 5rem;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box {
+  #introduce #Problem .column-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -795,7 +828,7 @@ header .sm li a:hover {
   }
 }
 
-#introduce #problem .column-box .text-box p {
+#introduce #Problem .column-box .text-box p {
   font-size: 1.4rem;
   text-align: center;
   max-height: 12rem;
@@ -809,7 +842,7 @@ header .sm li a:hover {
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box .text-box p {
+  #introduce #Problem .column-box .text-box p {
     border-radius: 23px;
     padding: 2rem 1.5rem;
     border-width: 3px;
@@ -817,67 +850,70 @@ header .sm li a:hover {
   }
 }
 
-#introduce #problem .column-box .box__left {
+#introduce #Problem .column-box .box__left {
   margin-right: 20%;
   min-width: 38rem;
   position: relative;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box .box__left {
+  #introduce #Problem .column-box .box__left {
     margin-right: 0;
   }
 }
 
-#introduce #problem .column-box .box__left p {
+#introduce #Problem .column-box .box__left p {
   position: absolute;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box .box__left p {
+  #introduce #Problem .column-box .box__left p {
     position: relative;
   }
 }
 
-#introduce #problem .column-box .box__left p:first-child {
+#introduce #Problem .column-box .box__left p:first-child {
   padding: 1.8rem 1.5rem;
   top: 0%;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box .box__left p:first-child {
-    padding: 2.5rem 1.5rem;
+  #introduce #Problem .column-box .box__left p:first-child {
+    padding: 2.8rem 1.5rem;
   }
 }
 
-#introduce #problem .column-box .box__left p:nth-child(2) {
+#introduce #Problem .column-box .box__left p:nth-child(2) {
   top: 8rem;
   right: 8%;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box .box__left p:nth-child(2) {
+  #introduce #Problem .column-box .box__left p:nth-child(2) {
     top: 0;
-    right: 0;
+    left: 4%;
+    padding: 1.8rem 1.5rem;
+    margin-bottom: 6rem;
   }
 }
 
-#introduce #problem .column-box .box__left p:last-child {
+#introduce #Problem .column-box .box__left p:last-child {
   top: 18rem;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .column-box .box__left p:last-child {
+  #introduce #Problem .column-box .box__left p:last-child {
     top: 0;
+    left: 7%;
   }
 }
 
-#introduce #problem .box__middle {
+#introduce #Problem .box__middle {
   background-color: transparent;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .box__middle {
+  #introduce #Problem .box__middle {
     display: block;
     height: 44rem;
     width: 24rem;
@@ -885,58 +921,60 @@ header .sm li a:hover {
   }
 }
 
-#introduce #problem .box__middle img {
+#introduce #Problem .box__middle img {
   width: 52%;
   height: 100%;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .box__middle img {
+  #introduce #Problem .box__middle img {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .box__right {
+  #introduce #Problem .box__right {
     top: 0;
     min-width: 48rem;
     right: 0;
   }
 }
 
-#introduce #problem .box__right p {
+#introduce #Problem .box__right p {
   position: absolute;
   margin-bottom: 3rem !important;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .box__right p {
+  #introduce #Problem .box__right p {
     position: relative;
     top: 0;
     margin-bottom: 12rem !important;
   }
 }
 
-#introduce #problem .box__right p:first-child {
+#introduce #Problem .box__right p:first-child {
   top: 28rem;
   right: -5%;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .box__right p:first-child {
-    top: 0;
+  #introduce #Problem .box__right p:first-child {
+    top: 5%;
+    left: -3%;
   }
 }
 
-#introduce #problem .box__right p:last-child {
+#introduce #Problem .box__right p:last-child {
   top: 36rem;
   left: 0%;
   padding: 2rem 3rem;
 }
 
 @media (min-width: 768px) {
-  #introduce #problem .box__right p:last-child {
+  #introduce #Problem .box__right p:last-child {
     top: 0;
+    left: 3%;
     padding: 2.5rem 1.5rem;
   }
 }
@@ -1121,19 +1159,19 @@ header .sm li a:hover {
 }
 
 #introduce .step h2 {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 #introduce .step h2 span {
-  font-size: 5rem;
-  font-family: "result";
+  font-size: 5.3rem;
+  font-family: "小塚ゴシック";
   font-weight: bold;
   color: #479ef7;
 }
 
 #introduce .step .step__container {
   margin-top: 2rem;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -1142,24 +1180,59 @@ header .sm li a:hover {
   }
 }
 
+#introduce .step .step__container .border {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #introduce .step .step__container .border::after {
+    position: absolute;
+    content: "";
+    border-right: 2px solid;
+    -o-border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
+       border-image: -webkit-gradient(linear, left top, left bottom, from(#ecdaff), to(#ecdaff));
+       border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
+    border-image-slice: 1;
+    left: 0;
+    top: 4rem;
+    width: 1rem;
+    height: 53rem;
+  }
+}
+
+#introduce .step .step__container .border2 {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #introduce .step .step__container .border2::after {
+    position: absolute;
+    content: "";
+    border-right: 2px solid;
+    -o-border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
+       border-image: -webkit-gradient(linear, left top, left bottom, from(#ecdaff), to(#ecdaff));
+       border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
+    border-image-slice: 1;
+    left: 41rem;
+    top: 4rem;
+    width: 1rem;
+    height: 53rem;
+  }
+}
+
 #introduce .step .step__container .step-card {
   max-width: 24%;
   padding-bottom: 0;
   display: inline-block;
-  min-width: 25rem;
+  min-width: 43rem;
   margin-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
   #introduce .step .step__container .step-card {
     margin-bottom: 0;
     height: 48rem;
-    padding: 3rem;
-    border-right: 2px solid;
-    -o-border-image: linear-gradient(to bottom, #9cdefb 0%, #ecdaff 100%);
-       border-image: -webkit-gradient(linear, left top, left bottom, from(#9cdefb), to(#ecdaff));
-       border-image: linear-gradient(to bottom, #9cdefb 0%, #ecdaff 100%);
-    border-image-slice: 1;
   }
 }
 
@@ -1176,7 +1249,7 @@ header .sm li a:hover {
 
 #introduce .step .step__container .step-card p span {
   font-family: "Acumin Variable Concept";
-  font-size: 8rem;
+  font-size: 8.2rem;
 }
 
 #introduce .step .step__container .step-card p span:first-child {
@@ -1190,7 +1263,7 @@ header .sm li a:hover {
 }
 
 #introduce .step .step__container .step-card div {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 5rem;
 }
 
@@ -1215,12 +1288,15 @@ header .sm li a:hover {
 }
 
 #function {
-  padding-top: 4rem;
+  padding-top: 12rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#f9f0d2), color-stop(40%, #cac4ff), to(#66ceeda3));
   background-image: linear-gradient(to left top, #f9f0d2 0%, #cac4ff 40%, #66ceeda3 100%);
 }
 
 #function .function__header {
+  margin-bottom: 4rem;
   border-bottom: 6px solid;
   -o-border-image: linear-gradient(to right, #f9f0d2 0%, #cac4ff 100);
      border-image: -webkit-gradient(linear, left top, right top, from(#f9f0d2), color-stop(100, #cac4ff));
@@ -1236,6 +1312,18 @@ header .sm li a:hover {
 #function .function__header h2 {
   border: none;
   margin: 0;
+  position: relative;
+  margin-left: 19rem;
+}
+
+#function .function__header h2::before {
+  content: url(../images/header_logo.png);
+  display: inline-block;
+  position: absolute;
+  top: -24rem;
+  left: -64rem;
+  -webkit-transform: scale(0.2, 0.2);
+          transform: scale(0.2, 0.2);
 }
 
 #function .function__container {
@@ -1262,7 +1350,7 @@ header .sm li a:hover {
 
 #function .function__container .column__text {
   text-align: left;
-  margin: 3rem 0 0;
+  margin: 2.5rem 0 0;
 }
 
 #function .function__container .column__text__blue {
@@ -1286,7 +1374,7 @@ header .sm li a:hover {
 #function .function__container .box {
   background-color: #fff;
   padding: 4rem 3.5rem 1.5rem;
-  margin: 2.5rem 3rem;
+  margin: 2.5rem 0;
   border-radius: 0.6em;
 }
 
@@ -1296,64 +1384,102 @@ header .sm li a:hover {
 
 #function .function__container .box .img2 {
   width: 35%;
+  padding-top: 3rem;
 }
 
 #function .function__container .box .img3 {
   width: 25%;
+  padding-top: 3rem;
 }
 
 #function .function__container .box .img4 {
-  width: 70%;
+  width: 76%;
+  padding-top: 2rem;
 }
 
 #function .function__container .box .img5 {
-  width: 12%;
+  width: 15%;
   position: absolute;
-  top: 44%;
+  top: 46%;
   right: 6%;
 }
 
 #function .function__container .box .img7 {
-  width: 25%;
+  width: 28%;
+  padding-top: 3rem;
 }
 
 #function .function__container .box .img8 {
-  width: 25%;
+  width: 35%;
 }
 
 #function .function__container .first-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 122rem;
 }
 
 #function .function__container .first-column .column__left,
 #function .function__container .first-column .column__right {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 #function .function__container .first-column .column__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+#function .function__container .first-column .column__left .first-box {
+  margin-top: 0;
+}
+
+#function .function__container .first-column .column__left .second-box {
+  height: 32%;
+}
+
+#function .function__container .first-column .column__right {
+  margin-left: 2rem;
+}
+
+#function .function__container .first-column .column__right .first-box {
+  margin-top: 0;
+}
+
 #function .function__container .second-column {
   position: relative;
 }
 
-#function .function__container .second-column div {
-  margin: 3rem;
+#function .function__container .second-column .first-box {
+  margin: 0;
+  margin-bottom: 2.5rem;
 }
 
 #function .function__container .third-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 91rem;
+}
+
+#function .function__container .third-column .first-box {
+  margin-top: 0;
 }
 
 #function .function__container .third-column .column__left,
@@ -1361,35 +1487,52 @@ header .sm li a:hover {
   width: 50%;
 }
 
-#function .function__container .third-column .column__left div,
-#function .function__container .third-column .column__right div {
-  margin: 2rem;
+#function .function__container .third-column .column__left {
+  margin-right: 2rem;
+}
+
+#function .function__container .third-column .column__left .second-box {
+  height: 40.8%;
+}
+
+#function .function__container .third-column .column__right {
+  margin-left: 2rem;
+}
+
+.campaign-btn {
+  margin: 2rem auto;
 }
 
 #plan {
-  background-color: rgba(255, 255, 255, 0.671);
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+  margin-top: 0;
+  background-color: #e6e6e6;
 }
 
 #plan h2 span {
   font-family: "小塚ゴシック Pr6N";
   font-size: 5rem;
   line-height: 0.8;
+  color: #479ef7;
 }
 
 #plan .plan__container {
-  margin-top: 5rem;
+  margin: 0 9.5%;
+  margin-top: 3rem;
 }
 
 #plan .plan__container .plan-card {
-  color: cornflowerblue;
+  color: #479ef7;
   height: 37rem;
   font-size: 1.4rem;
-  padding: 1.4rem 1rem;
+  font-family: "A P-OTF A1ゴシック Std regular";
+  padding: 1.4rem 1rem 3.4rem;
   padding-top: 2rem;
-  margin: auto;
+  margin: 0 3%;
   min-width: 24%;
   background-color: #fff;
-  border: 1px solid cornflowerblue;
+  border: 1px solid #479ef7;
   border-radius: 0.8em;
   -webkit-box-shadow: 5px 5px 6px 1px #c5c5c5;
           box-shadow: 5px 5px 6px 1px #c5c5c5;
@@ -1397,12 +1540,16 @@ header .sm li a:hover {
 
 #plan .plan__container .plan-card:nth-child(2) {
   color: white;
-  background-color: cornflowerblue;
+  background-color: #479ef7;
 }
 
 #plan .plan__container .plan-card:nth-child(2) p {
-  color: cornflowerblue;
+  color: #479ef7;
   background-color: #fff;
+}
+
+#plan .plan__container .plan-card:last-child {
+  padding: 1.4rem 0.6rem 3.4rem;
 }
 
 #plan .plan__container .plan-card p {
@@ -1411,15 +1558,14 @@ header .sm li a:hover {
      border-image: -webkit-gradient(linear, left top, right top, from(#cb9bfe), to(#9cdefb));
      border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
   border-image-slice: 1;
-  padding: 4px 4rem;
+  padding: 4px 6.2rem;
   border-radius: 0.3em;
-  font-weight: 600;
+  font-family: "A P-OTF A1ゴシック Std medium";
 }
 
 #plan .plan__container .plan-card .plan-card__title {
   margin-top: 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 #plan .plan__container .plan-card .card__title__last {
@@ -1434,12 +1580,12 @@ header .sm li a:hover {
 }
 
 #plan .plan__container .plan-card .plan-card__price span {
-  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
-  font-size: 3rem;
+  font-family: "小塚ゴシック Regular";
+  font-size: 4rem;
 }
 
 #plan .plan__container .plan-card .third-price {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 #plan .plan__container .plan-card .card__detail {
@@ -1457,7 +1603,7 @@ header .sm li a:hover {
 
 #plan .plan__container .plan-card .plan__btn {
   height: 20px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.2rem;
 }
 
 #plan .plan__container .plan-card .plan__btn a {
@@ -1469,8 +1615,9 @@ header .sm li a:hover {
   text-align: center;
   color: #ffffff;
   font-size: 1.8rem;
-  line-height: 1;
+  line-height: 1.2;
   border-radius: 0.4em;
+  font-family: "A P-OTF A1ゴシック Std medium";
 }
 
 #plan .plan__container .plan-card .middle-btn a {
@@ -1491,10 +1638,13 @@ header .sm li a:hover {
 }
 
 #comparison .comparison__container table {
+  overflow: scroll;
   width: 77%;
   border-collapse: collapse;
   line-height: 1.3;
   font-family: "A P-OTF A1ゴシック Std regular";
+  font-size: 1vw;
+  white-space: nowrap;
 }
 
 #comparison .comparison__container .first-row {
@@ -1503,16 +1653,22 @@ header .sm li a:hover {
 
 #comparison .comparison__container .first-row td {
   color: black;
-  font-size: 2rem;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 #comparison .comparison__container .first-row .data {
   background-color: #fff;
 }
 
+#comparison .comparison__container .first-row .data img {
+  position: relative;
+  top: 1.8rem;
+}
+
 #comparison .comparison__container table tr *:nth-child(4) {
   background: #61b3f9;
+  font-size: 1.2vw;
 }
 
 #comparison .comparison__container table th,
@@ -1520,21 +1676,25 @@ header .sm li a:hover {
   color: white;
   border: solid 1px white;
   text-align: center;
-  padding: 0 1rem;
 }
 
 #comparison .comparison__container table th {
   padding: 0 8rem;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   color: #4d4d4d;
   width: 23%;
   font-weight: 600;
   padding-bottom: 2rem;
 }
 
+#comparison .comparison__container table th span {
+  position: relative;
+  bottom: 1.5rem;
+}
+
 #comparison .comparison__container table td {
   width: 19%;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 #comparison .comparison__container table {
@@ -1555,7 +1715,7 @@ header .sm li a:hover {
 
 #comparison .comparison__container i {
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 0.8em;
   display: block;
 }
@@ -1570,17 +1730,18 @@ header .sm li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 8%;
 }
 
 #result .result__container .result__box {
-  font-family: "A P-OTF A1ゴシック Std";
+  font-family: "A P-OTF A1ゴシック Std bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid cornflowerblue;
+  border: 3px solid #479ef7;
   border-radius: 2em;
 }
 
@@ -1591,10 +1752,11 @@ header .sm li a:hover {
   background-position-x: 40%;
   margin: 3rem 3rem;
   padding: 5% 0;
-  font-size: 2rem;
+  font-size: 1.5vw;
   text-align: left;
   line-height: 1.4;
   font-family: "A P-OTF A1ゴシック Std regular";
+  white-space: nowrap;
 }
 
 #result .result__container .result__box .result__box__text:nth-child(2) {
@@ -1602,16 +1764,15 @@ header .sm li a:hover {
 }
 
 #result .result__container .result__box .result__box__text .box__title {
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 100;
   margin-bottom: 1rem;
 }
 
 #result .result__container .result__box .result__box__text span {
-  color: cornflowerblue;
-  font-size: 3rem;
-  font-family: "result";
-  font-weight: 600;
+  color: #479ef7;
+  font-size: 2vw;
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
 }
 
 #result .result__container .result__box .result__box__text .text__emphasis {
@@ -1625,7 +1786,7 @@ header .sm li a:hover {
 }
 
 #result .result__container .result__box .result__box__text .text__emphasis span {
-  font-size: 4rem;
+  font-size: 3vw;
 }
 
 #result .result__container img {
@@ -1642,6 +1803,10 @@ header .sm li a:hover {
   border: 1px black;
 }
 
+#result .result__container .restaurant__box {
+  margin-bottom: 6rem;
+}
+
 #result .result__container .restaurant__box p:nth-child(3) {
   border-bottom: 6px solid;
   border: 1px black;
@@ -1654,7 +1819,8 @@ header .sm li a:hover {
 #faq {
   font-size: 1.4rem;
   padding-top: 5rem;
-  background-color: #dff2ff;
+  background: -webkit-gradient(linear, left top, right top, from(#f8e6f2), to(#deeefd));
+  background: linear-gradient(to right, #f8e6f2 0%, #deeefd 100%);
   position: relative;
   /* 二本の横棒を作成する */
   /* 2本の横棒のうち一本は縦棒にする */
@@ -1695,14 +1861,14 @@ header .sm li a:hover {
 }
 
 #faq .faq__container .faq__box .box__icon {
-  font-family: "A P-OTF A1ゴシック Std regular";
-  width: 5.5rem;
-  height: 5.5rem;
+  font-family: "A P-OTF A1ゴシック Std medium";
+  width: 6rem;
+  height: 6rem;
   text-align: center;
   font-size: 2.5rem;
-  line-height: 2.1;
+  line-height: 2.3;
   background-color: #ffffff;
-  border: cornflowerblue solid 1px;
+  border: #61b3f9 solid 1px;
   border-radius: 50%;
   display: inline-block;
   font-weight: 500;
@@ -1710,8 +1876,11 @@ header .sm li a:hover {
 }
 
 #faq .faq__container .faq__box .cover {
+  position: relative;
+  left: 1px;
+  top: 1px;
   color: #acb6e5;
-  background: -webkit-linear-gradient(0deg, #b89dff, #43bcff);
+  background: -webkit-linear-gradient(79deg, #cbcbff, #bbe7ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1766,6 +1935,36 @@ header .sm li a:hover {
   border-image-slice: 1;
 }
 
+#faq .qa-list dl::before {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: auto;
+  content: "";
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  border-right: 2px solid #479ef7;
+}
+
+#faq .qa-list .open::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 23%;
+}
+
+#faq .qa-list .open::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 23%;
+}
+
 #faq .qa-list dl::before,
 #faq .qa-list dl::after {
   content: "";
@@ -1773,7 +1972,7 @@ header .sm li a:hover {
   width: 3rem;
   height: 1px;
   border-radius: 5px;
-  background: cornflowerblue;
+  background: #61b3f9;
   position: absolute;
   right: 2%;
   top: 50%;
@@ -1782,7 +1981,7 @@ header .sm li a:hover {
 }
 
 #faq .qa-list dl::after {
-  background: cornflowerblue;
+  background: #479ef7;
   /* 横棒を縦にするために90℃回転させる */
   -webkit-transform: translateY(-50%) rotate(90deg);
           transform: translateY(-50%) rotate(90deg);
@@ -1798,6 +1997,7 @@ header .sm li a:hover {
   transition: 0.5s;
 }
 
+#faq .active::before,
 #faq .active::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1923,6 +2123,7 @@ footer ul {
 }
 
 footer ul li {
+  font-family: "A P-OTF A1ゴシック Std light";
   margin-right: 3rem;
 }
 

@@ -13,15 +13,55 @@ const PlanContent = document.getElementById("plan");
 const ResultContent = document.getElementById("result");
 
 // ハンバーガーメニュー
-$(".qa-list dd").hide();
-$(".qa-list dl").on("click", function (e) {
+$(".dd1").hide();
+$(".dl1").on("click", function (e) {
   $("dd", this).slideToggle("fast");
   if ($(this).hasClass("open")) {
     $(this).removeClass("open");
   } else {
     $(this).addClass("open");
   }
-  $("dl").toggleClass("active");
+  $("dl1").toggleClass("active");
+});
+$(".dd2").hide();
+$(".dl2").on("click", function (e) {
+  $("dd", this).slideToggle("fast");
+  if ($(this).hasClass("open")) {
+    $(this).removeClass("open");
+  } else {
+    $(this).addClass("open");
+  }
+  $("dl2").toggleClass("active");
+});
+$(".dd3").hide();
+$(".dl3").on("click", function (e) {
+  $("dd", this).slideToggle("fast");
+  if ($(this).hasClass("open")) {
+    $(this).removeClass("open");
+  } else {
+    $(this).addClass("open");
+  }
+  $("dl3").toggleClass("active");
+});
+$(".dd4").hide();
+$(".dl4").on("click", function (e) {
+  $("dd", this).slideToggle("fast");
+  if ($(this).hasClass("open")) {
+    $(this).removeClass("open");
+  } else {
+    $(this).addClass("open");
+  }
+  $("dl4").toggleClass("active");
+});
+$(".dd5").hide();
+$(".dl5").on("click", function (e) {
+  $("dd", this).slideToggle("fast");
+  if ($(this).hasClass("open")) {
+    $(this).removeClass("open");
+  } else {
+    $(this).addClass("open");
+  }
+  $("dl5").toggleClass("active");
 });
 
 // slideUp

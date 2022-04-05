@@ -13,18 +13,18 @@
 
 // bold
 @font-face {
-  font-family: "A P-OTF A1ゴシック Std";
+  font-family: "A P-OTF A1ゴシック Std bold";
   src: url("../fonts/AP-OTF-A1GothicStd-Bold.woff") format("woff");
 }
 
 // Medium
 @font-face {
-  font-family: "A P-OTF A1ゴシック Std";
+  font-family: "A P-OTF A1ゴシック Std medium";
   src: url("../fonts/AP-OTF-A1GothicStd-Medium.woff") format("woff");
 }
 
 /*A P-OTF 秀英にじみ角ゴ金StdN B*/
-// light
+// bold
 @font-face {
   font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
   src: url("../fonts/A-OTF-ShueiGoKinStd-B.woff") format("woff");
@@ -32,13 +32,13 @@
 
 // normal
 @font-face {
-  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN normal";
   src: url("../fonts/AP-OTF-ShueiGoKinStd-L.woff") format("woff");
 }
 
 // bold
 @font-face {
-  font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
+  font-family: "A P-OTF 秀英にじみ角ゴ金StdN medium";
   src: url("../fonts/AP-OTF-ShueiGoKinStd-M.woff") format("woff");
 }
 
@@ -73,4 +73,9 @@
 @font-face {
   font-family: "小塚ゴシック";
   src: url("../fonts/KozGoPr6N-Bold.woff") format("woff");
+}
+// "小塚ゴシック Pr6N";
+@font-face {
+  font-family: "小塚ゴシック Regular";
+  src: url("../fonts/KozGoPr6N-Regular.woff") format("woff");
 }

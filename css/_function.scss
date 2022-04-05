@@ -1,5 +1,7 @@
 #function {
-  padding-top: 4rem;
+  padding-top: 12rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
   background-image: linear-gradient(
     to left top,
     #f9f0d2 0%,
@@ -8,6 +10,7 @@
   );
   //   width: 100%;
   .function__header {
+    margin-bottom: 4rem;
     border-bottom: 6px solid;
     border-image: linear-gradient(to right, #f9f0d2 0%, #cac4ff 100);
     border-image-slice: 1;
@@ -19,6 +22,16 @@
     h2 {
       border: none;
       margin: 0;
+      position: relative;
+      margin-left: 19rem;
+      &::before {
+        content: url(../images/header_logo.png);
+        display: inline-block;
+        position: absolute;
+        top: -24rem;
+        left: -64rem;
+        transform: scale(0.2, 0.2);
+      }
     }
   }
   .function__container {
@@ -37,7 +50,7 @@
     }
     .column__text {
       text-align: left;
-      margin: 3rem 0 0;
+      margin: 2.5rem 0 0;
     }
     .column__text__blue {
       text-align: left;
@@ -58,64 +71,99 @@
     .box {
       background-color: #fff;
       padding: 4rem 3.5rem 1.5rem;
-      margin: 2.5rem 3rem;
+      margin: 2.5rem 0;
       border-radius: 0.6em;
+
       img {
         width: 65%;
       }
 
       .img2 {
         width: 35%;
+        padding-top: 3rem;
       }
       .img3 {
         width: 25%;
+        padding-top: 3rem;
       }
       .img4 {
-        width: 70%;
+        width: 76%;
+        padding-top: 2rem;
       }
       .img5 {
-        width: 12%;
+        width: 15%;
         position: absolute;
-        top: 44%;
+        top: 46%;
         right: 6%;
       }
       .img7 {
-        width: 25%;
+        width: 28%;
+        padding-top: 3rem;
       }
       .img8 {
-        width: 25%;
+        width: 35%;
       }
     }
     .first-column {
       display: flex;
-
+      justify-content: space-between;
+      height: 122rem;
       .column__left,
       .column__right {
-        width: 50%;
+        flex-basis: 50%;
+        flex: 1;
+        align-items: stretch;
       }
 
       .column__left {
         display: flex;
+        margin-right: 2rem;
         flex-direction: column;
+
+        .first-box {
+          margin-top: 0;
+        }
+        .second-box {
+          height: 32%;
+        }
       }
       .column__right {
+        margin-left: 2rem;
+        .first-box {
+          margin-top: 0;
+        }
       }
     }
     .second-column {
       position: relative;
-      div {
-        margin: 3rem;
+      .first-box {
+        margin: 0;
+        margin-bottom: 2.5rem;
       }
     }
     .third-column {
       display: flex;
+      height: 91rem;
+      .first-box {
+        margin-top: 0;
+      }
       .column__left,
       .column__right {
         width: 50%;
-        div {
-          margin: 2rem;
+      }
+      .column__left {
+        margin-right: 2rem;
+        .second-box {
+          height: 40.8%;
         }
+      }
+      .column__right {
+        margin-left: 2rem;
       }
     }
   }
+}
+
+.campaign-btn {
+  margin: 2rem auto;
 }

@@ -50,8 +50,8 @@
   position: relative;
   display: block;
   transform: scale(var(--ggs, 1));
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border: 3px solid;
   border-radius: 100px;
 }
@@ -61,7 +61,7 @@
   display: block;
   transform: scale(var(--ggs, 1));
   width: 3rem;
-  height: 3rem;
+  height: 4rem;
   border: 4px solid transparent;
   border-radius: 40px;
 }
@@ -87,6 +87,7 @@
   transform: scale(var(--ggs, 1));
   width: 41px;
   height: 17px;
+  bottom: 1rem;
   border-left: 3px solid transparent;
   border-bottom: 3px solid;
 }
@@ -159,9 +160,12 @@
     width: 28%;
     top: 36rem;
     @include sm {
-      left: -6%;
-      width: 24%;
-      top: 33rem;
+      // left: -6%;
+      // width: 24%;
+      // top: 33rem;
+      left: -9%;
+      width: 20%;
+      top: 40rem;
     }
   }
 }

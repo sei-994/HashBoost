@@ -1,10 +1,13 @@
 #introduce {
   padding-left: 0;
   padding-right: 0;
+  padding-top: 0;
+  margin-top: 0;
   overflow: hidden;
   .mainvisual {
     background-image: url(../images/mainvisual.jpg);
     background-size: cover;
+    background-position: 80% 50%;
   }
   .intro__outer {
     font-size: 2.5rem;
@@ -18,6 +21,7 @@
       font-family: $font1;
     }
     .intro__box__left {
+      padding-top: 7rem;
       margin-left: 8%;
       margin-right: 16%;
       @include sm {
@@ -49,22 +53,42 @@
       margin-left: 49%;
       max-width: 17rem;
       height: 45rem;
+      z-index: 10;
       @include sm {
         margin-left: 0;
         height: 70rem;
         max-width: 33rem;
       }
-      z-index: 10;
       img {
+        padding-top: 7rem;
         width: 100%;
         height: 78%;
       }
     }
+    .arrow-box {
+      position: absolute;
+      left: 50%;
+      top: 74rem;
+      color: $light-blue2;
+      font-size: 2.5rem;
+      font-family: $font3-r;
+      transform: rotate(90deg);
+      &::after {
+        content: "";
+        width: 16rem;
+        height: 1.5px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -1.9rem;
+        background-color: $light-blue2;
+      }
+    }
   }
-  #problem {
+  #Problem {
     font-size: 4rem;
     @include sm {
-      margin-top: 12rem;
+      margin-top: 8rem;
     }
     .problem__container {
       @include sm {
@@ -73,10 +97,7 @@
     }
     .column-box {
       position: relative;
-      // background-image: url(../images/sp/problem/problem.png);
-      // background-size: auto 75%;
-      // background-repeat: no-repeat;
-      // background-position: center;
+
       font-family: $font1-r;
       margin-bottom: 5rem;
       @include sm {
@@ -122,7 +143,7 @@
             padding: 1.8rem 1.5rem;
             top: 0%;
             @include sm {
-              padding: 2.5rem 1.5rem;
+              padding: 2.8rem 1.5rem;
             }
           }
           &:nth-child(2) {
@@ -130,13 +151,16 @@
             right: 8%;
             @include sm {
               top: 0;
-              right: 0;
+              left: 4%;
+              padding: 1.8rem 1.5rem;
+              margin-bottom: 6rem;
             }
           }
           &:last-child {
             top: 18rem;
             @include sm {
               top: 0;
+              left: 7%;
             }
           }
         }
@@ -177,7 +201,8 @@
           top: 28rem;
           right: -5%;
           @include sm {
-            top: 0;
+            top: 5%;
+            left: -3%;
           }
         }
         &:last-child {
@@ -186,6 +211,7 @@
           padding: 2rem 3rem;
           @include sm {
             top: 0;
+            left: 3%;
             padding: 2.5rem 1.5rem;
           }
         }
@@ -329,34 +355,63 @@
     margin-top: 10rem;
     margin-bottom: 1rem;
     h2 {
-      font-size: 2rem;
       margin-bottom: 1rem;
       span {
-        font-size: 5rem;
-        font-family: $font5;
+        font-size: 5.3rem;
+        font-family: $font3-b;
         font-weight: bold;
         color: $light-blue;
       }
     }
     .step__container {
       margin-top: 2rem;
-
+      margin: 0;
       @include sm {
         margin-top: 5rem;
       }
+      .border {
+        position: relative;
+        &::after {
+          @include sm {
+            position: absolute;
+            content: "";
+            border-right: 2px solid;
+            border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
+            border-image-slice: 1;
+            left: 0;
+            top: 4rem;
+            width: 1rem;
+            height: 53rem;
+          }
+        }
+      }
+      .border2 {
+        position: relative;
+        &::after {
+          @include sm {
+            position: absolute;
+            content: "";
+            border-right: 2px solid;
+            border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
+            border-image-slice: 1;
+            left: 41rem;
+            top: 4rem;
+            width: 1rem;
+            height: 53rem;
+          }
+        }
+      }
+
       .step-card {
         max-width: 24%;
         padding-bottom: 0;
         display: inline-block;
-        min-width: 25rem;
+        min-width: 43rem;
         margin-bottom: 1rem;
+        padding-bottom: 3rem;
         @include sm {
           margin-bottom: 0;
           height: 48rem;
-          padding: 3rem;
-          border-right: 2px solid;
-          border-image: linear-gradient(to bottom, #9cdefb 0%, #ecdaff 100%);
-          border-image-slice: 1;
         }
         &:last-child {
           margin-bottom: 0;
@@ -369,7 +424,7 @@
 
           span {
             font-family: $font2;
-            font-size: 8rem;
+            font-size: 8.2rem;
             &:first-child {
               font-family: $font1-r;
               margin-right: 1.8rem;
@@ -387,7 +442,7 @@
           }
         }
         div {
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           margin-bottom: 5rem;
         }
         .card__text {

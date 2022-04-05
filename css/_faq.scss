@@ -1,7 +1,7 @@
 #faq {
   font-size: 1.4rem;
   padding-top: 5rem;
-  background-color: #dff2ff;
+  background: linear-gradient(to right, #f8e6f2 0%, #deeefd 100%);
   position: relative;
   .faq__container {
     font-family: $font1-l;
@@ -31,26 +31,25 @@
       }
       .box__icon {
         //Q-icon
-        font-family: $font1-r;
-        width: 5.5rem;
-        height: 5.5rem;
+        font-family: $font1-m;
+        width: 6rem;
+        height: 6rem;
         text-align: center;
         font-size: 2.5rem;
-        line-height: 2.1;
+        line-height: 2.3;
         background-color: #ffffff;
-        border: $section-title solid 1px;
+        border: $light-blue2 solid 1px;
         border-radius: 50%;
         display: inline-block;
         font-weight: 500;
         color: #000;
       }
       .cover {
+        position: relative;
+        left: 1px;
+        top: 1px;
         color: #acb6e5; //非対応のブラウザでの文字色を設定
-        background: -webkit-linear-gradient(
-          0deg,
-          #b89dff,
-          #43bcff
-        ); //背景色にグラデーションを指定
+        background: -webkit-linear-gradient(79deg, #cbcbff, #bbe7ff);
         -webkit-background-clip: text; //テキストでくり抜く
         -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
       }
@@ -98,24 +97,30 @@
   // .qa-list dl:first-child {
   //   border-top: 1px solid #000;
   // }
-  //   .qa-list dl::before {
-  //     //右アイコン
-  //     position: absolute;
-  //     top: 35px;
-  //     right: 35px;
-  //     display: block;
-  //     width: 7px;
-  //     height: 7px;
-  //     margin: auto;
-  //     content: "";
-  //     transform: rotate(135deg);
-  //     border-top: 2px solid #000;
-  //     border-right: 2px solid #000;
-  //   }
-  //   .qa-list .open::before {
-  //     transform: rotate(-45deg);
-  //     transition: 0.5s;
-  //   }
+  .qa-list dl::before {
+    //右アイコン
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    content: "";
+    transform: rotate(135deg);
+    // border-top: 2px solid $light-blue2;
+    border-right: 2px solid $light-blue;
+  }
+  .qa-list .open::before {
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    top: 23%;
+  }
+  .qa-list .open::after {
+    transform: rotate(-135deg);
+    transition: 0.5s;
+    top: 23%;
+  }
   /* 二本の横棒を作成する */
   .qa-list dl::before,
   .qa-list dl::after {
@@ -124,7 +129,7 @@
     width: 3rem;
     height: 1px;
     border-radius: 5px;
-    background: $section-title;
+    background: $light-blue2;
     position: absolute;
     right: 2%;
     top: 50%;
@@ -133,14 +138,13 @@
 
   /* 2本の横棒のうち一本は縦棒にする */
   .qa-list dl::after {
-    background: $section-title;
+    background: $light-blue;
     /* 横棒を縦にするために90℃回転させる */
     transform: translateY(-50%) rotate(90deg);
     /* プラスからマイナスへの切り替えをゆっくり行いアニメーションさせる */
     transition: 0.5s;
     &:active {
       transform: rotate(45deg);
-
       transition: 0.5s;
     }
   }
@@ -149,10 +153,11 @@
    プラスがクリックされたら縦棒を横にしてマイナスにする疑似要素
    jQueryで付け外しを行う
    */
-  //   .active::before,
+  .active::before,
   .active::after {
     transform: rotate(45deg);
     transition: 0.5s;
+    // top: 22% !important;
   }
   .qa-list dl dt {
     // question text css
