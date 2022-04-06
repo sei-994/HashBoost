@@ -40,13 +40,22 @@
       &:last-child {
         padding: 1.4rem 0.6rem 3.4rem;
       }
-      p {
-        border: 1px solid;
-        border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
-        border-image-slice: 1;
-        padding: 4px 6.2rem;
-        border-radius: 0.3em;
-        font-family: $font1-m;
+      .box {
+        background: linear-gradient(45deg, #cb9bfe, #9cdefb);
+        padding: 0.1rem;
+        border-radius: 4px;
+
+        .box__inner {
+          background: #fff;
+          padding: 6px 6.2rem;
+          border-radius: 4px;
+
+          p {
+            line-height: 1;
+            color: $light-blue2;
+            font-family: $font1-m;
+          }
+        }
       }
 
       .plan-card__title {

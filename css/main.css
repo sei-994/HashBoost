@@ -1552,14 +1552,21 @@ header .sm li a:hover {
   padding: 1.4rem 0.6rem 3.4rem;
 }
 
-#plan .plan__container .plan-card p {
-  border: 1px solid;
-  -o-border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(#cb9bfe), to(#9cdefb));
-     border-image: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
-  border-image-slice: 1;
-  padding: 4px 6.2rem;
-  border-radius: 0.3em;
+#plan .plan__container .plan-card .box {
+  background: linear-gradient(45deg, #cb9bfe, #9cdefb);
+  padding: 0.1rem;
+  border-radius: 4px;
+}
+
+#plan .plan__container .plan-card .box .box__inner {
+  background: #fff;
+  padding: 6px 6.2rem;
+  border-radius: 4px;
+}
+
+#plan .plan__container .plan-card .box .box__inner p {
+  line-height: 1;
+  color: #61b3f9;
   font-family: "A P-OTF A1ゴシック Std medium";
 }
 
@@ -1725,6 +1732,10 @@ header .sm li a:hover {
   padding-top: 0;
 }
 
+#result .divider {
+  margin: 5rem;
+}
+
 #result .result__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1733,7 +1744,16 @@ header .sm li a:hover {
   margin: 0 8%;
 }
 
-#result .result__container .result__box {
+#result .result__container .border-box {
+  background: linear-gradient(45deg, #4bc8fd, #dfc5fb);
+  padding: 0.5rem;
+  border-radius: 30px;
+}
+
+#result .result__container .border-box .result__box {
+  background: #fff;
+  border-radius: 28px;
+  padding: 1.6rem;
   font-family: "A P-OTF A1ゴシック Std bold";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1741,11 +1761,9 @@ header .sm li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid #479ef7;
-  border-radius: 2em;
 }
 
-#result .result__container .result__box .result__box__text {
+#result .result__container .border-box .result__box .result__box__text {
   background-image: url(../images/result/result2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1759,23 +1777,23 @@ header .sm li a:hover {
   white-space: nowrap;
 }
 
-#result .result__container .result__box .result__box__text:nth-child(2) {
+#result .result__container .border-box .result__box .result__box__text:nth-child(2) {
   background-image: url(../images/result/result1.png);
 }
 
-#result .result__container .result__box .result__box__text .box__title {
+#result .result__container .border-box .result__box .result__box__text .box__title {
   font-size: 2vw;
   font-weight: 100;
   margin-bottom: 1rem;
 }
 
-#result .result__container .result__box .result__box__text span {
+#result .result__container .border-box .result__box .result__box__text span {
   color: #479ef7;
   font-size: 2vw;
   font-family: "A P-OTF 秀英にじみ角ゴ金StdN B";
 }
 
-#result .result__container .result__box .result__box__text .text__emphasis {
+#result .result__container .border-box .result__box .result__box__text .text__emphasis {
   display: inline;
   background-image: -webkit-gradient(linear, left top, right top, from(#f9f0d2), color-stop(40%, #e6e5fb), to(#7ed7f1a3));
   background-image: linear-gradient(to right, #f9f0d2 0%, #e6e5fb 40%, #7ed7f1a3 100%);
@@ -1785,7 +1803,7 @@ header .sm li a:hover {
   padding-bottom: 0.4em;
 }
 
-#result .result__container .result__box .result__box__text .text__emphasis span {
+#result .result__container .border-box .result__box .result__box__text .text__emphasis span {
   font-size: 3vw;
 }
 
@@ -1794,17 +1812,9 @@ header .sm li a:hover {
   margin: 5rem;
 }
 
-#result .result__container .flight__box {
-  margin-bottom: 5rem;
-}
-
 #result .result__container .flight__box p:nth-child(3) {
   border-bottom: 6px solid;
   border: 1px black;
-}
-
-#result .result__container .restaurant__box {
-  margin-bottom: 6rem;
 }
 
 #result .result__container .restaurant__box p:nth-child(3) {
@@ -1814,6 +1824,10 @@ header .sm li a:hover {
 
 #result .result__container .restaurant__box p:nth-child(3) span {
   font-size: 3rem;
+}
+
+#result .result__container .campaign-btn {
+  margin-top: 10rem;
 }
 
 #faq {
