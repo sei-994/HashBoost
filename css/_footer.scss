@@ -2,29 +2,42 @@ footer {
   background-image: linear-gradient(90deg, #d9bbfd, #4da1e7);
   position: relative;
   z-index: 10;
-  ul {
-    margin: auto;
+  nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 11rem;
+    @include sm {
+      display: block;
+    }
+    ul {
+      margin: auto;
+      height: 11rem;
+      padding: 1rem 0;
 
-    li {
-      font-family: $font1-l;
-      margin-right: 3rem;
-      &::after {
-        content: "|";
-        color: white;
-        margin-left: 3rem;
+      @include sm {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-
-      &:last-child {
+      li {
+        font-family: $font1-l;
+        margin-right: 3rem;
         &::after {
-          display: none;
+          @include sm {
+            content: "|";
+            color: white;
+            margin-left: 3rem;
+          }
         }
-      }
-      a {
-        color: white;
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        a {
+          color: white;
+        }
       }
     }
   }

@@ -1,6 +1,12 @@
 #function {
-  padding-top: 12rem;
-  margin-top: 8rem;
+  padding: 0 1rem;
+  padding-top: 8rem;
+
+  @include sm {
+    padding: 3rem 1.5rem;
+    margin-top: 8rem;
+    padding-top: 12rem;
+  }
   margin-bottom: 0;
   background-image: linear-gradient(
     to left top,
@@ -35,11 +41,13 @@
     }
   }
   .function__container {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.8;
-    font-size: 1.6rem;
+    line-height: 2.23rem;
+    font-size: 1.45rem;
     font-family: $font1-r;
+    @include sm {
+      font-size: 1.6rem;
+      flex-direction: column;
+    }
     h3 {
       color: white;
       background-color: $light-blue;
@@ -47,33 +55,60 @@
       font-size: 2.6rem;
       padding: 0.5rem;
       line-height: 1.2;
+      font-size: 4vw;
+
+      @include sm {
+        font-size: 2.6rem;
+      }
     }
     .column__text {
       text-align: left;
-      margin: 2.5rem 0 0;
+      margin: 2rem 0 0;
+
+      @include sm {
+        margin: 2.5rem 0 0;
+      }
     }
     .column__text__blue {
       text-align: left;
       background-color: #dbf0fd;
       padding: 1rem 1rem;
       border-radius: 0.6em;
-      margin-top: 2.5rem;
       margin-bottom: 2rem;
+      margin-top: 2rem;
+
+      @include sm {
+        margin-top: 2.5rem;
+      }
       span {
         border-bottom: 2px solid white;
         color: $light-blue;
       }
     }
     .hashtag {
-      padding: 2rem 8rem;
+      margin-top: 24%;
+
+      @include sm {
+        padding: 2rem 8rem;
+        margin: 2.5rem;
+      }
+      .hashtag__br {
+        display: none;
+        @include sm {
+          display: block;
+        }
+      }
     }
     // 共通box
     .box {
       background-color: #fff;
-      padding: 4rem 3.5rem 1.5rem;
+      padding: 2rem 2.5rem 1.5rem;
+
       margin: 2.5rem 0;
       border-radius: 0.6em;
-
+      @include sm {
+        padding: 4rem 3.5rem 1.5rem;
+      }
       img {
         width: 65%;
       }
@@ -81,6 +116,10 @@
       .img2 {
         width: 35%;
         padding-top: 3rem;
+        @include sm {
+          width: 45%;
+          padding-top: 0;
+        }
       }
       .img3 {
         width: 25%;
@@ -91,34 +130,51 @@
         padding-top: 2rem;
       }
       .img5 {
-        width: 15%;
+        width: 23%;
         position: absolute;
-        top: 46%;
-        right: 6%;
+        top: 48%;
+        right: 9%;
+        @include sm {
+          width: 15%;
+          top: 46%;
+          right: 6%;
+        }
+      }
+      .img6 {
+        padding-top: 5%;
+        @include sm {
+          padding-top: 0;
+        }
       }
       .img7 {
         width: 28%;
-        padding-top: 3rem;
+        padding-top: 5%;
       }
       .img8 {
         width: 35%;
       }
     }
     .first-column {
-      display: flex;
-      justify-content: space-between;
-      height: 122rem;
+      @include sm {
+        display: flex;
+        height: 122rem;
+        justify-content: space-between;
+      }
       .column__left,
       .column__right {
-        flex-basis: 50%;
-        flex: 1;
-        align-items: stretch;
+        @include sm {
+          flex-basis: 50%;
+          flex: 1;
+          align-items: stretch;
+        }
       }
 
       .column__left {
         display: flex;
-        margin-right: 2rem;
         flex-direction: column;
+        @include sm {
+          margin-right: 2rem;
+        }
 
         .first-box {
           margin-top: 0;
@@ -128,7 +184,9 @@
         }
       }
       .column__right {
-        margin-left: 2rem;
+        @include sm {
+          margin-left: 2rem;
+        }
         .first-box {
           margin-top: 0;
         }
@@ -143,27 +201,44 @@
     }
     .third-column {
       display: flex;
-      height: 91rem;
+      flex-direction: column;
+      @include sm {
+        height: 91rem;
+        flex-direction: row;
+      }
       .first-box {
         margin-top: 0;
       }
       .column__left,
       .column__right {
-        width: 50%;
+        @include sm {
+          width: 50%;
+        }
       }
       .column__left {
-        margin-right: 2rem;
+        @include sm {
+          margin-right: 2rem;
+        }
         .second-box {
-          height: 40.8%;
+          @include sm {
+            height: 40.8%;
+          }
         }
       }
       .column__right {
-        margin-left: 2rem;
+        @include sm {
+          margin-left: 2rem;
+        }
       }
     }
   }
 }
 
-.campaign-btn {
-  margin: 2rem auto;
+.btn2 {
+  padding: 2rem 0 8rem;
+  margin: 0;
+  @include sm {
+    padding: 0;
+    margin: 2rem auto;
+  }
 }

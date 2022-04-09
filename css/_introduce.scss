@@ -354,6 +354,10 @@
   .step {
     margin-top: 10rem;
     margin-bottom: 1rem;
+    padding: 0rem 1.5rem;
+    @include sm {
+      padding: 3rem 1.5rem;
+    }
     h2 {
       margin-bottom: 1rem;
       span {
@@ -361,6 +365,9 @@
         font-family: $font3-b;
         font-weight: bold;
         color: $light-blue;
+        @include sm {
+          font-size: 4rem;
+        }
       }
     }
     .step__container {
@@ -403,13 +410,12 @@
       }
 
       .step-card {
-        max-width: 24%;
         padding-bottom: 0;
         display: inline-block;
-        min-width: 43rem;
-        margin-bottom: 1rem;
-        padding-bottom: 3rem;
         @include sm {
+          min-width: 43rem;
+          max-width: 24%;
+          padding-bottom: 3rem;
           margin-bottom: 0;
           height: 48rem;
         }
@@ -424,7 +430,14 @@
 
           span {
             font-family: $font2;
-            font-size: 8.2rem;
+            font-size: 6.2rem;
+
+            background: -webkit-linear-gradient(0deg, #cb9bfe 0%, #9cdefb 84%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include sm {
+              font-size: 8.2rem;
+            }
             &:first-child {
               font-family: $font1-r;
               margin-right: 1.8rem;
@@ -443,7 +456,11 @@
         }
         div {
           font-size: 1.6rem;
-          margin-bottom: 5rem;
+          margin-bottom: 2rem;
+
+          @include sm {
+            margin-bottom: 5rem;
+          }
         }
         .card__text {
           div {
@@ -452,11 +469,15 @@
           }
         }
         img {
-          max-width: 90%;
+          max-width: 60%;
+
+          @include sm {
+            max-width: 90%;
+          }
           max-height: 58%;
         }
         .step__img3 {
-          max-width: 46%;
+          max-width: 24%;
           @include sm {
             max-width: 90%;
           }

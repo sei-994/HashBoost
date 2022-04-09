@@ -1,14 +1,32 @@
 #contact {
   // LINE btn
+  margin-top: 7rem;
+  @include sm {
+    margin-top: 4rem;
+  }
   p {
+    font-size: 1.4rem;
+
     font-family: $font1-r;
+    @include sm {
+      font-size: 2rem;
+    }
+    .contact__br {
+      @include sm {
+        display: none;
+      }
+    }
   }
   font-size: 2rem;
   .contact__btn {
-    width: 260px;
+    width: 22.5rem;
     height: 50px;
     line-height: 50px;
-    margin: 2rem auto;
+    margin: 3rem auto;
+    @include sm {
+      width: 26rem;
+      margin: 2rem auto;
+    }
   }
   .contact__btn a {
     font-family: $font3-b;
@@ -18,9 +36,12 @@
     background: #43ca32;
     text-align: center;
     color: #ffffff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     border-radius: 8px;
+    @include sm {
+      font-size: 1.6rem;
+    }
   }
   .contact__btn a:hover {
     opacity: 0.7;

@@ -10,19 +10,27 @@
   position: relative;
 
   img {
-    height: 8rem;
-    width: 53rem;
+    height: 5rem;
+    width: 36rem;
+    @include sm {
+      height: 8rem;
+      width: 53rem;
+    }
   }
   .decoration__left {
     margin-top: 8rem;
   }
   .decoration__right {
-    height: 8rem;
-    width: 53rem;
+    height: 5rem;
+    width: 36rem;
     position: absolute;
-
     right: 0;
-    top: -15rem;
+    top: -28rem;
+    @include sm {
+      height: 8rem;
+      width: 53rem;
+      top: -15rem;
+    }
   }
 }
 // 3カラム
@@ -112,20 +120,23 @@
 
 // 無料キャンペーンボタン
 .campaign-btn {
-  margin: 0 2%;
+  margin: 0 6%;
+  @include sm {
+    margin: 0 2%;
+  }
   height: 7rem;
   line-height: 7rem;
   @include sm {
     margin: 7rem 2%;
-
     margin: 7rem auto;
     line-height: 9rem;
-
     width: 65rem;
     height: 9rem;
   }
   &:last-child {
-    margin-bottom: 15rem;
+    @include sm {
+      margin-bottom: 15rem;
+    }
   }
 }
 .campaign-btn a {
@@ -139,7 +150,7 @@
   color: #ffffff;
   letter-spacing: 0.1em;
   border-radius: 2em;
-  font-size: 2rem;
+  font-size: 4vw;
 
   @include sm {
     font-size: 3rem;
@@ -193,9 +204,15 @@
 .circle4 {
   img {
     position: absolute;
-    width: 15%;
-    top: -15rem;
-    right: 0;
+    width: 40%;
+    top: -12rem;
+    right: -6rem;
+
+    @include sm {
+      width: 15%;
+      top: -15rem;
+      right: 0;
+    }
   }
   // top: 0;
 }

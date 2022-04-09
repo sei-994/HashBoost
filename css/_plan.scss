@@ -1,33 +1,50 @@
 #plan {
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-bottom: 7rem;
   margin-top: 0;
   background-color: #e6e6e6;
+  @include sm {
+    padding-top: 6rem;
+  }
   h2 {
+    margin-bottom: 2.5rem;
+    @include sm {
+      margin-bottom: 3.5rem;
+    }
     span {
-      font-family: $font3;
-      font-size: 5rem;
+      font-family: $font3-b;
+      font-size: 3.5rem;
       line-height: 0.8;
       color: $light-blue;
+      @include sm {
+        font-size: 5rem;
+      }
     }
   }
   .plan__container {
-    margin: 0 9.5%;
+    margin: 0 5%;
     margin-top: 3rem;
-
+    @include sm {
+      margin: 0 9.5%;
+    }
     .plan-card {
       color: $section-title;
       height: 37rem;
       font-size: 1.4rem;
       font-family: $font1-r;
-      padding: 1.4rem 1rem 3.4rem;
+      padding: 1.4rem 2.5rem 3.4rem;
       padding-top: 2rem;
       margin: 0 3%;
+      margin-bottom: 3rem;
       min-width: 24%;
       background-color: #fff;
       border: 1px solid $section-title;
       border-radius: 0.8em;
       box-shadow: 5px 5px 6px 1px #c5c5c5;
+      @include sm {
+        margin-bottom: 0;
+        padding: 1.4rem 1rem 3.4rem;
+      }
       &:nth-child(2) {
         //2個目のcard
         color: white;
@@ -44,7 +61,14 @@
         background: linear-gradient(45deg, #cb9bfe, #9cdefb);
         padding: 0.1rem;
         border-radius: 4px;
+        width: 70%;
+        margin: 0 auto;
+        white-space: nowrap;
 
+        @include sm {
+          width: auto;
+          margin: 0;
+        }
         .box__inner {
           background: #fff;
           padding: 6px 6.2rem;
@@ -80,6 +104,11 @@
       }
       .card__detail {
         height: 20rem;
+        padding: 0 8%;
+
+        @include sm {
+          padding: 0;
+        }
         ul {
           height: 15rem;
           font-family: $font1-r;
@@ -93,6 +122,13 @@
       .plan__btn {
         height: 20px;
         margin-bottom: 1.2rem;
+        width: 86%;
+        margin: 0 auto;
+        white-space: nowrap;
+        @include sm {
+          width: auto;
+          margin: 0;
+        }
       }
       .plan__btn a {
         display: block;
