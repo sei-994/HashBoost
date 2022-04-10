@@ -171,12 +171,9 @@
     width: 28%;
     top: 36rem;
     @include sm {
-      // left: -6%;
-      // width: 24%;
-      // top: 33rem;
-      left: -9%;
-      width: 20%;
-      top: 40rem;
+      left: 0%;
+      width: 17%;
+      top: 57rem;
     }
   }
 }
@@ -185,8 +182,8 @@
     top: 0;
     width: 80%;
     @include sm {
-      width: 50%;
-      top: -15rem;
+      width: 49%;
+      top: 10rem;
     }
     position: absolute;
     right: 0;

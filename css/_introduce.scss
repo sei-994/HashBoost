@@ -4,10 +4,14 @@
   padding-top: 0;
   margin-top: 0;
   overflow: hidden;
+  @include sm {
+    padding-top: 10rem;
+  }
   .mainvisual {
     background-image: url(../images/mainvisual.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: 80% 50%;
+    background-repeat: no-repeat;
   }
   .intro__outer {
     font-size: 2.5rem;
@@ -23,7 +27,6 @@
     .intro__box__left {
       padding-top: 7rem;
       margin-left: 8%;
-      margin-right: 16%;
       @include sm {
         margin-left: 0;
       }
@@ -40,6 +43,9 @@
       .text__blue {
         color: $light-blue;
         font-size: 2.5rem;
+        @include sm {
+          font-size: inherit;
+        }
       }
       div {
         line-height: 100px;
@@ -53,9 +59,10 @@
       margin-left: 49%;
       max-width: 17rem;
       height: 45rem;
-      z-index: 10;
+      z-index: 9;
       @include sm {
         margin-left: 0;
+        margin-right: 5%;
         height: 70rem;
         max-width: 33rem;
       }
@@ -108,11 +115,8 @@
       .text-box {
         p {
           font-size: 1.4rem;
-          text-align: center;
-          max-height: 12rem;
           padding: 1rem 1.5rem;
           margin-bottom: 12rem;
-          font-weight: 500;
           border-style: Solid;
           border-color: $light-blue;
           border-width: 2px;
@@ -206,8 +210,10 @@
           }
         }
         &:last-child {
+          width: 62%;
+          margin: 0 auto;
           top: 36rem;
-          left: 0%;
+          left: -10%;
           padding: 2rem 3rem;
           @include sm {
             top: 0;

@@ -2,7 +2,7 @@
   padding-top: 3rem;
   padding-bottom: 7rem;
   margin-top: 0;
-  background-color: #e6e6e6;
+  background-color: #f6f6f6;
   @include sm {
     padding-top: 6rem;
   }
@@ -25,10 +25,10 @@
     margin: 0 5%;
     margin-top: 3rem;
     @include sm {
-      margin: 0 9.5%;
+      margin: 0 7%;
     }
     .plan-card {
-      color: $section-title;
+      color: $light-blue;
       height: 37rem;
       font-size: 1.4rem;
       font-family: $font1-r;
@@ -38,7 +38,7 @@
       margin-bottom: 3rem;
       min-width: 24%;
       background-color: #fff;
-      border: 1px solid $section-title;
+      border: 1px solid $light-blue;
       border-radius: 0.8em;
       box-shadow: 5px 5px 6px 1px #c5c5c5;
       @include sm {
@@ -48,14 +48,15 @@
       &:nth-child(2) {
         //2個目のcard
         color: white;
-        background-color: $section-title;
+        background-color: $light-blue;
         p {
-          color: $section-title;
+          color: $light-blue;
           background-color: #fff;
         }
       }
       &:last-child {
         padding: 1.4rem 0.6rem 3.4rem;
+        height: 37.3rem;
       }
       .box {
         background: linear-gradient(45deg, #cb9bfe, #9cdefb);
@@ -81,7 +82,9 @@
           }
         }
       }
-
+      .box2 {
+        background: $light-blue2;
+      }
       .plan-card__title {
         margin-top: 1.5rem;
         font-size: 1.8rem;

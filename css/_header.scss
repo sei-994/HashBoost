@@ -1,10 +1,12 @@
 header {
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
-  position: relative;
   z-index: 10;
+  width: 100%;
   background-color: #fff;
   img {
     width: 50%;
@@ -185,6 +187,11 @@ header {
           opacity: 0.7;
         }
       }
+    }
+  }
+  .sp {
+    @include sm {
+      display: none;
     }
   }
 }

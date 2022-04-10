@@ -390,9 +390,9 @@ input, select {
 
 @media (min-width: 768px) {
   .circle1 img {
-    left: -9%;
-    width: 20%;
-    top: 40rem;
+    left: 0%;
+    width: 17%;
+    top: 57rem;
   }
 }
 
@@ -405,8 +405,8 @@ input, select {
 
 @media (min-width: 768px) {
   .circle2 img {
-    width: 50%;
-    top: -15rem;
+    width: 49%;
+    top: 10rem;
   }
 }
 
@@ -486,7 +486,9 @@ section {
 }
 
 header {
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,8 +496,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.4rem;
-  position: relative;
   z-index: 10;
+  width: 100%;
   background-color: #fff;
 }
 
@@ -713,6 +715,12 @@ header .sm li a:hover {
   opacity: 0.7;
 }
 
+@media (min-width: 768px) {
+  header .sp {
+    display: none;
+  }
+}
+
 #introduce {
   padding-left: 0;
   padding-right: 0;
@@ -721,10 +729,17 @@ header .sm li a:hover {
   overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  #introduce {
+    padding-top: 10rem;
+  }
+}
+
 #introduce .mainvisual {
   background-image: url(../images/mainvisual.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: 80% 50%;
+  background-repeat: no-repeat;
 }
 
 #introduce .intro__outer {
@@ -748,7 +763,6 @@ header .sm li a:hover {
 #introduce .intro__outer .intro__box__left {
   padding-top: 7rem;
   margin-left: 8%;
-  margin-right: 16%;
 }
 
 @media (min-width: 768px) {
@@ -776,6 +790,12 @@ header .sm li a:hover {
   font-size: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  #introduce .intro__outer .intro__box__left .text__blue {
+    font-size: inherit;
+  }
+}
+
 #introduce .intro__outer .intro__box__left div {
   line-height: 100px;
 }
@@ -788,12 +808,13 @@ header .sm li a:hover {
   margin-left: 49%;
   max-width: 17rem;
   height: 45rem;
-  z-index: 10;
+  z-index: 9;
 }
 
 @media (min-width: 768px) {
   #introduce .intro__outer .intro__box__right {
     margin-left: 0;
+    margin-right: 5%;
     height: 70rem;
     max-width: 33rem;
   }
@@ -861,11 +882,8 @@ header .sm li a:hover {
 
 #introduce #Problem .column-box .text-box p {
   font-size: 1.4rem;
-  text-align: center;
-  max-height: 12rem;
   padding: 1rem 1.5rem;
   margin-bottom: 12rem;
-  font-weight: 500;
   border-style: Solid;
   border-color: #479ef7;
   border-width: 2px;
@@ -997,8 +1015,10 @@ header .sm li a:hover {
 }
 
 #introduce #Problem .box__right p:last-child {
+  width: 62%;
+  margin: 0 auto;
   top: 36rem;
-  left: 0%;
+  left: -10%;
   padding: 2rem 3rem;
 }
 
@@ -1417,16 +1437,15 @@ header .sm li a:hover {
 #function .function__container h3 {
   color: white;
   background-color: #479ef7;
-  font-weight: 400;
-  font-size: 2.6rem;
-  padding: 0.5rem;
+  padding: 0.7rem 0 0.4rem;
   line-height: 1.2;
   font-size: 4vw;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
   #function .function__container h3 {
-    font-size: 2.6rem;
+    font-size: 1.6vw;
   }
 }
 
@@ -1524,8 +1543,8 @@ header .sm li a:hover {
 #function .function__container .box .img5 {
   width: 23%;
   position: absolute;
-  top: 48%;
-  right: 9%;
+  top: 41%;
+  right: 4%;
 }
 
 @media (min-width: 768px) {
@@ -1689,7 +1708,7 @@ header .sm li a:hover {
   padding-top: 3rem;
   padding-bottom: 7rem;
   margin-top: 0;
-  background-color: #e6e6e6;
+  background-color: #f6f6f6;
 }
 
 @media (min-width: 768px) {
@@ -1728,7 +1747,7 @@ header .sm li a:hover {
 
 @media (min-width: 768px) {
   #plan .plan__container {
-    margin: 0 9.5%;
+    margin: 0 7%;
   }
 }
 
@@ -1768,6 +1787,7 @@ header .sm li a:hover {
 
 #plan .plan__container .plan-card:last-child {
   padding: 1.4rem 0.6rem 3.4rem;
+  height: 37.3rem;
 }
 
 #plan .plan__container .plan-card .box {
@@ -1796,6 +1816,10 @@ header .sm li a:hover {
   line-height: 1;
   color: #61b3f9;
   font-family: "A P-OTF A1ゴシック Std medium";
+}
+
+#plan .plan__container .plan-card .box2 {
+  background: #61b3f9;
 }
 
 #plan .plan__container .plan-card .plan-card__title {
@@ -1918,6 +1942,10 @@ header .sm li a:hover {
   top: 1.8rem;
 }
 
+#comparison .comparison__container .circle__a {
+  margin-bottom: 1em;
+}
+
 #comparison .comparison__container table tr *:nth-child(4) {
   background: #61b3f9;
   font-size: 1.2vw;
@@ -1933,7 +1961,7 @@ header .sm li a:hover {
 #comparison .comparison__container table th {
   padding: 0 8rem;
   font-size: 2.6rem;
-  color: #4d4d4d;
+  color: white;
   width: 23%;
   font-weight: 600;
   padding-bottom: 2rem;
@@ -1961,7 +1989,7 @@ header .sm li a:hover {
 }
 
 #comparison .comparison__container table .dark-gray {
-  background-color: #b3b3b3;
+  background-color: #c5c5c5;
   color: black;
 }
 
@@ -2166,8 +2194,8 @@ header .sm li a:hover {
 #faq {
   font-size: 1.4rem;
   padding-top: 5rem;
-  background: -webkit-gradient(linear, left top, right top, from(#f8e6f2), to(#deeefd));
-  background: linear-gradient(to right, #f8e6f2 0%, #deeefd 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f7ebff), to(#deeefd));
+  background: linear-gradient(to right, #f7ebff 0%, #deeefd 100%);
   position: relative;
   /* 二本の横棒を作成する */
   /* 2本の横棒のうち一本は縦棒にする */
@@ -2269,7 +2297,7 @@ header .sm li a:hover {
   #faq .faq__container .faq__box .box__common .box__common__text {
     font-size: 1.8rem;
     max-width: 91%;
-    margin-left: 3rem;
+    margin-left: 2%;
   }
 }
 

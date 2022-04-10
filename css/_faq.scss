@@ -1,7 +1,7 @@
 #faq {
   font-size: 1.4rem;
   padding-top: 5rem;
-  background: linear-gradient(to right, #f8e6f2 0%, #deeefd 100%);
+  background: linear-gradient(to right, #f7ebff 0%, #deeefd 100%);
   position: relative;
   .faq__container {
     margin: 0;
@@ -76,7 +76,7 @@
           @include sm {
             font-size: 1.8rem;
             max-width: 91%;
-            margin-left: 3rem;
+            margin-left: 2%;
           }
         }
       }
