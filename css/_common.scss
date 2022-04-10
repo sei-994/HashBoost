@@ -29,7 +29,7 @@
     @include sm {
       height: 8rem;
       width: 53rem;
-      top: -15rem;
+      top: -3rem;
     }
   }
 }
@@ -190,12 +190,29 @@
   }
 }
 .circle3 {
-  img {
+  z-index: 10;
+  @include sm {
+    z-index: 0;
+  }
+  .circle3__pc {
+    display: none;
+    @include sm {
+      display: block;
+      position: absolute;
+      left: -6%;
+      width: 21%;
+      top: 13rem;
+    }
+  }
+  .circle3__sp {
     position: absolute;
-
-    left: -6%;
-    width: 21%;
-    top: 13rem;
+    z-index: 10;
+    left: -39%;
+    width: 51%;
+    top: 31rem;
+    @include sm {
+      display: none;
+    }
   }
 }
 .circle4 {

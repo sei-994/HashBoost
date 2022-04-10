@@ -207,7 +207,7 @@ input, select {
   .line__container .decoration__right {
     height: 8rem;
     width: 53rem;
-    top: -15rem;
+    top: -3rem;
   }
 }
 
@@ -410,11 +410,42 @@ input, select {
   }
 }
 
-.circle3 img {
+.circle3 {
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .circle3 {
+    z-index: 0;
+  }
+}
+
+.circle3 .circle3__pc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .circle3 .circle3__pc {
+    display: block;
+    position: absolute;
+    left: -6%;
+    width: 21%;
+    top: 13rem;
+  }
+}
+
+.circle3 .circle3__sp {
   position: absolute;
-  left: -6%;
-  width: 21%;
-  top: 13rem;
+  z-index: 10;
+  left: -39%;
+  width: 51%;
+  top: 31rem;
+}
+
+@media (min-width: 768px) {
+  .circle3 .circle3__sp {
+    display: none;
+  }
 }
 
 .circle4 img {
@@ -2205,6 +2236,12 @@ header .sm li a:hover {
    */
 }
 
+@media (min-width: 768px) {
+  #faq {
+    margin-top: 18rem;
+  }
+}
+
 #faq .faq__container {
   margin: 0;
   font-family: "A P-OTF A1ゴシック Std light";
@@ -2583,7 +2620,7 @@ footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#d9bbfd), to(#4da1e7));
   background-image: linear-gradient(90deg, #d9bbfd, #4da1e7);
   position: relative;
-  z-index: 10;
+  z-index: 8;
 }
 
 footer nav {
