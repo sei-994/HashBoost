@@ -5,15 +5,29 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
-  z-index: 10;
+  z-index: 12;
   width: 100%;
+  height: 10rem;
   background-color: #fff;
+  @include sm {
+    overflow: scroll;
+  }
   img {
     width: 50%;
+    @include xs {
+      max-height: 10rem;
+      width: auto;
+    }
     @include sm {
+      margin-left: 10%;
+      margin-right: 5%;
+      min-width: 22rem;
+    }
+    @include md {
+    }
+    @include lg {
       margin-left: 25%;
-      width: 22rem;
-      height: 9.5rem;
+      // width: 22rem;
     }
   }
   .pc {
@@ -21,6 +35,8 @@ header {
     @include sm {
       display: block;
       margin-right: 3%;
+      margin-left: 10%;
+
       .nav__menu {
         display: flex;
         li {
@@ -92,6 +108,9 @@ header {
         }
       }
     }
+    @include lg {
+      margin-left: 0;
+    }
   }
   .active {
     &::after {
@@ -124,8 +143,8 @@ header {
       position: absolute; /*親要素である#hamburgerを基準に位置を指定*/
       width: 30px;
       height: 1px; /*横線の高さが4px*/
-      background-color: rgb(0, 0, 0); /*横線を白色*/
-      transition: ease 0.65s; /*変化の時間（easeは初期値）*/
+      background-color: $light-blue2; /*横線を白色*/
+      transition: ease 0.5s; /*変化の時間（easeは初期値）*/
       @include xxs {
         width: 40px; /*横線の幅が30px*/
         right: 2.5rem;
@@ -134,17 +153,23 @@ header {
         top: 29px;
       }
       &:nth-of-type(2) {
-        top: 36px;
+        top: 39px;
+        @include xxs {
+          top: 42px;
+        }
       }
       &:nth-of-type(3) {
-        top: 43px;
+        top: 49px;
+        @include xxs {
+          top: 55px;
+        }
       }
     }
   }
   // ハンバーガークリック後
   .close span:nth-of-type(1) {
     transform: rotate(45deg); /*反時計回りに45度回転*/
-    top: 41px;
+    top: 43px !important;
   }
 
   .close span:nth-of-type(2) {
@@ -153,21 +178,22 @@ header {
 
   .close span:nth-of-type(3) {
     transform: rotate(-45deg); /*時計回りに45度回転*/
-    top: 41px;
+    top: 43px !important;
   }
   // スマホメニュー
   .sm {
     font-size: 1.4rem;
     color: white;
-    top: 8.2rem; /*headerの余白分*/
+    top: 10rem; /*headerの余白分*/
     left: 0px; /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
     position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
     z-index: 10;
     width: 100%;
+    height: 100vh;
+
     display: none;
-    text-align: right; /*メニューリストの文字を中央寄せ*/
-    background-color: black; /*透明の背景*/
-    opacity: 0.8;
+    text-align: center; /*メニューリストの文字を中央寄せ*/
+    background-color: $light-blue2; /*透明の背景*/
     @include sm {
       display: none;
     }
@@ -182,10 +208,31 @@ header {
         margin-right: 3%;
       }
       a {
-        color: black;
+        color: white;
         &:hover {
           opacity: 0.7;
         }
+      }
+    }
+    .btn {
+      width: 23.5rem;
+      height: 5rem;
+      line-height: 5rem;
+      // margin-top: 3rem;
+      font-size: 1.5rem;
+      margin: 3rem auto;
+      @include xxs {
+      }
+      a {
+        font-family: $font1-l;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-weight: 400;
+        background: white;
+        text-align: center;
+        color: $light-blue2;
+        border-radius: 5em;
       }
     }
   }

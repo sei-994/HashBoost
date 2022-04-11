@@ -17,7 +17,8 @@ $font5: "result";
 $xxs: 360px;
 $xs: 400px;
 $sm: 768px;
-$lg: 1233px;
+$md: 960px;
+$lg: 1230px;
 
 @mixin xxs {
   @media (min-width: ($xxs)) {
@@ -34,11 +35,11 @@ $lg: 1233px;
     @content;
   }
 }
-// @mixin md {
-//   @media (min-width: ($md)) {
-//     @content;
-//   }
-// }
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
 @mixin lg {
   @media (min-width: ($lg)) {
     @content;
