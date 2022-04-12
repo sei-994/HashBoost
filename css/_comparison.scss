@@ -1,31 +1,53 @@
 #comparison {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  @include xs {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    @include xs {
+      margin-bottom: 0;
+    }
   }
   .comparison__container {
     margin: 0 1%;
 
     table {
       overflow: scroll;
-      width: 77%;
+      width: 100%;
       border-collapse: collapse;
       line-height: 1.3;
       font-family: $font1-r;
       font-size: 1vw;
-      white-space: nowrap;
+      @include sm {
+        width: 77%;
+        white-space: nowrap;
+      }
     }
     .first-row {
       background-color: white;
       td {
         color: black;
-        padding: 1rem;
-        font-size: 2rem;
+        font-size: 1.4rem;
+        @include xxs {
+          font-size: 2rem;
+        }
+
+        @include sm {
+          padding: 1rem;
+        }
       }
       .data {
         background-color: #fff;
         img {
           position: relative;
-          top: 1.8rem;
+          top: 0.2rem;
+
+          @include xs {
+            top: 1.8rem;
+          }
         }
       }
     }
@@ -51,20 +73,38 @@
       text-align: center;
     }
     table th {
-      padding: 0 8rem;
-      font-size: 2.6rem;
+      padding: 0 0.5rem;
+      font-size: 1.4rem;
       color: white;
-      width: 23%;
-      font-weight: 600;
-      padding-bottom: 2rem;
+      width: 13%;
+      writing-mode: vertical-lr;
+      vertical-align: middle;
+
+      @include xxs {
+        width: 10%;
+      }
+      @include sm {
+        width: 23%;
+
+        padding: 0 8rem;
+        font-size: 2.6rem;
+
+        writing-mode: initial;
+      }
       span {
-        position: relative;
-        bottom: 1.5rem;
+        @include sm {
+          position: relative;
+          left: 0.7rem;
+          top: 0;
+          bottom: 1.5rem;
+        }
       }
     }
     table td {
       width: 19%;
-      padding-bottom: 1rem;
+      @include xxs {
+        padding-bottom: 1rem;
+      }
     }
     // グラデーション
     table {
@@ -92,6 +132,15 @@
       margin-top: 2rem;
       margin-bottom: 0.8em;
       display: block;
+    }
+    .comparison__br {
+      display: none;
+      @include xs {
+        display: block;
+      }
+    }
+    .last {
+      margin-bottom: 1rem;
     }
   }
 }

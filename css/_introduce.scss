@@ -4,6 +4,12 @@
   padding-top: 0;
   margin-top: 0;
   overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  @include xxs {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
   @include sm {
     padding-top: 10rem;
   }
@@ -13,7 +19,6 @@
     background-repeat: no-repeat;
     @include sm {
       background-size: contain;
-
       background-image: url(../images/mainvisual.jpg);
       background-position: 80% 50%;
       overflow: scroll;
@@ -23,14 +28,20 @@
     font-size: 2.5rem;
 
     @include sm {
-      font-size: 5rem;
+      font-size: 4rem;
       display: flex;
-      margin: 0 8%;
+      margin: 0 1%;
       justify-content: space-around;
       padding-top: 5rem;
-      font-family: $font1;
+      font-family: $font1-r;
       overflow: scroll;
       white-space: nowrap;
+    }
+    @include md {
+      margin: 0 8%;
+    }
+    @include lg {
+      font-size: 5rem;
     }
     .intro__box__left {
       padding-top: 10rem;
@@ -46,10 +57,10 @@
       @include sm {
         margin-left: 0;
         padding-top: 7rem;
-        padding-left: 33%;
+        // padding-left: 33%;
+        padding-left: 0;
       }
       @include md {
-        padding-left: 0;
       }
       p {
         font-size: 1.4rem;
@@ -67,7 +78,7 @@
       .text__blue {
         color: $light-blue;
         font-size: 2rem;
-
+        font-family: $font1;
         @include xxs {
           font-size: 7vw;
         }
@@ -77,6 +88,8 @@
       }
       h1:nth-child(3) {
         font-size: 1.8rem;
+        font-family: $font1;
+
         @include xxs {
           font-size: inherit;
         }
@@ -103,12 +116,15 @@
       }
       @include sm {
         margin-left: 0;
-        margin-right: 5%;
-        height: 70rem;
+        height: 63rem;
         max-width: 33rem;
       }
       @include md {
         flex-shrink: inherit;
+        height: 70rem;
+      }
+      @include lg {
+        margin-right: 5%;
       }
       img {
         padding-top: 2rem;
@@ -158,6 +174,7 @@
     }
   }
   #Problem {
+    font-size: 4rem;
     h2 {
       margin-bottom: 5.5rem;
 
@@ -165,7 +182,6 @@
         margin-bottom: 3.5rem;
       }
     }
-    font-size: 4rem;
     @include xxs {
       margin-top: 5rem;
     }
@@ -322,6 +338,7 @@
           @include sm {
             top: 5%;
             left: -3%;
+            font-size: 1.8rem;
           }
         }
         &:last-child {
@@ -356,6 +373,9 @@
     @include sm {
       margin-top: 0;
       overflow: scroll;
+    }
+    @include lg {
+      overflow: hidden;
     }
     .solution__heading__logo {
       font-family: $font1-r;
@@ -466,8 +486,19 @@
         @include sm {
           // margin: 7%;
           margin: 1%;
-          width: 37rem;
+          width: 27rem;
+          height: 27rem;
+          font-size: 1.1rem;
+        }
+        @include md {
+          width: 27rem;
+        }
+        @include lg {
+          font-size: 1.4rem;
+
           height: 37rem;
+          width: 37rem;
+          margin: 1%;
         }
         // 円　枠色
         background: linear-gradient(to right, #cb9bfe 0%, #9cdefb 100%);
@@ -498,6 +529,13 @@
           color: $light-blue;
           line-height: 1.4;
           @include sm {
+            font-size: 1.6rem;
+            margin-top: 1.8rem;
+          }
+          @include md {
+            font-size: 2rem;
+          }
+          @include lg {
             font-size: 2.4rem;
             margin-top: 3.8rem;
           }
@@ -507,6 +545,12 @@
 
           line-height: 1.7;
           @include xxs {
+            margin-top: 1.6rem;
+          }
+          @include sm {
+            margin-top: 1rem;
+          }
+          @include lg {
             margin-top: 1.6rem;
           }
         }
@@ -520,6 +564,11 @@
             height: 9rem;
           }
           @include sm {
+            width: 7rem;
+            margin-top: 1rem;
+            height: 7rem;
+          }
+          @include lg {
             width: 9rem;
             margin-top: 2rem;
             height: 9rem;
@@ -537,6 +586,10 @@
             height: 7rem;
           }
           @include sm {
+            width: 6rem;
+            height: 7rem;
+          }
+          @include lg {
             width: 8rem;
             height: 9rem;
           }
@@ -545,19 +598,30 @@
     }
   }
   .step {
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
     padding: 0rem 1.5rem;
+
+    @include xxs {
+      margin-top: 10rem;
+    }
     @include sm {
       padding: 3rem 1.5rem;
+      overflow: scroll;
+    }
+    @include lg {
+      overflow: hidden;
     }
     h2 {
       margin-bottom: 1rem;
       span {
-        font-size: 5.3rem;
+        font-size: 3.3rem;
         font-family: $font3-b;
         font-weight: bold;
         color: $light-blue;
+        @include xxs {
+          font-size: 5.3rem;
+        }
         @include sm {
           font-size: 4rem;
         }
@@ -623,11 +687,13 @@
 
           span {
             font-family: $font2;
-            font-size: 6.2rem;
-
+            font-size: 5.2rem;
             background: -webkit-linear-gradient(0deg, #cb9bfe 0%, #9cdefb 84%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            @include xxs {
+              font-size: 6.2rem;
+            }
             @include sm {
               font-size: 8.2rem;
             }
@@ -648,9 +714,14 @@
           }
         }
         div {
-          font-size: 1.6rem;
-          margin-bottom: 2rem;
+          font-size: 1.2rem;
 
+          margin-bottom: 3rem;
+          @include xxs {
+            margin-bottom: 2rem;
+
+            font-size: 1.6rem;
+          }
           @include sm {
             margin-bottom: 5rem;
           }
@@ -662,15 +733,30 @@
           }
         }
         img {
-          max-width: 60%;
-
+          margin-bottom: 2rem;
+          max-width: 79%;
+          @include xxs {
+            margin-bottom: 0;
+          }
+          @include xs {
+            max-width: 55%;
+            max-height: 55rem;
+            padding-bottom: 10%;
+          }
           @include sm {
+            max-height: 58%;
             max-width: 90%;
           }
-          max-height: 58%;
         }
         .step__img3 {
-          max-width: 24%;
+          max-width: 33%;
+          margin-bottom: 0;
+          @include xxs {
+            max-width: 24%;
+          }
+          @include xs {
+            max-width: 55%;
+          }
           @include sm {
             max-width: 90%;
           }

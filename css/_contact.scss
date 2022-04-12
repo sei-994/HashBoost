@@ -5,24 +5,37 @@
     margin-top: 4rem;
   }
   p {
-    font-size: 1.4rem;
-
+    font-size: 1.2rem;
     font-family: $font1-r;
+    @include xxs {
+      font-size: 1.4rem;
+    }
     @include sm {
       font-size: 2rem;
     }
     .contact__br {
-      @include sm {
+      @include md {
         display: none;
+      }
+    }
+    &:last-child {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      @include xxs {
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
       }
     }
   }
   font-size: 2rem;
   .contact__btn {
-    width: 22.5rem;
+    width: 20.5rem;
     height: 50px;
     line-height: 50px;
     margin: 3rem auto;
+    @include xxs {
+      width: 22.5rem;
+    }
     @include sm {
       width: 26rem;
       margin: 2rem auto;

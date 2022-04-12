@@ -29,14 +29,22 @@
       border: none;
       margin: 0;
       position: relative;
-      margin-left: 19rem;
+      margin-left: 14.5rem;
+      @include xxs {
+        margin-left: 19rem;
+      }
       &::before {
         content: url(../images/header_logo.png);
         display: inline-block;
         position: absolute;
-        top: -24rem;
-        left: -64rem;
-        transform: scale(0.2, 0.2);
+        top: -25rem;
+        left: -61rem;
+        transform: scale(0.15, 0.15);
+        @include xxs {
+          top: -24rem;
+          left: -64rem;
+          transform: scale(0.2, 0.2);
+        }
       }
     }
   }
@@ -53,17 +61,21 @@
       background-color: $light-blue;
       padding: 0.7rem 0 0.4rem;
       line-height: 1.2;
-      font-size: 4vw;
+      font-size: 3vw;
       white-space: nowrap;
-
+      @include xxs {
+        font-size: 4vw;
+      }
       @include sm {
         font-size: 1.6vw;
       }
     }
     .column__text {
       text-align: left;
-      margin: 2rem 0 0;
-
+      margin: 1rem 0 0;
+      @include xxs {
+        margin: 2rem 0 0;
+      }
       @include sm {
         margin: 2.5rem 0 0;
       }
@@ -101,10 +113,13 @@
     // 共通box
     .box {
       background-color: #fff;
-      padding: 2rem 2.5rem 1.5rem;
+      padding: 2rem 1.5rem 1.5rem;
 
       margin: 2.5rem 0;
       border-radius: 0.6em;
+      @include xxs {
+        padding: 2rem 2.5rem 1.5rem;
+      }
       @include sm {
         padding: 4rem 3.5rem 1.5rem;
       }
@@ -129,10 +144,20 @@
         padding-top: 2rem;
       }
       .img5 {
-        width: 23%;
         position: absolute;
-        top: 41%;
-        right: 4%;
+        width: 28%;
+        top: 47%;
+        right: 12%;
+        @include xxs {
+          width: 27%;
+          top: 46%;
+          right: 4%;
+        }
+        @include xs {
+          top: 44%;
+          right: 3%;
+          width: 22%;
+        }
         @include sm {
           width: 15%;
           top: 46%;

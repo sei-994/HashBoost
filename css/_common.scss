@@ -10,22 +10,34 @@
   position: relative;
 
   img {
-    height: 5rem;
-    width: 36rem;
+    height: 4rem;
+    width: 23rem;
+    @include xxs {
+      width: 36rem;
+      height: 5rem;
+    }
     @include sm {
-      height: 8rem;
       width: 53rem;
+      height: 8rem;
     }
   }
   .decoration__left {
-    margin-top: 8rem;
+    margin-top: 5rem;
+
+    @include xs {
+      margin-top: 8rem;
+    }
   }
   .decoration__right {
-    height: 5rem;
-    width: 36rem;
+    height: 4rem;
+    width: 23rem;
     position: absolute;
     right: 0;
     top: -28rem;
+    @include xxs {
+      width: 36rem;
+      height: 5rem;
+    }
     @include sm {
       height: 8rem;
       width: 53rem;
@@ -58,10 +70,14 @@
   position: relative;
   display: block;
   transform: scale(var(--ggs, 1));
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   border: 3px solid;
   border-radius: 100px;
+  @include xs {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .gg-close {
   box-sizing: border-box;
@@ -79,12 +95,17 @@
   display: block;
   box-sizing: border-box;
   position: absolute;
-  width: 33px;
+  width: 20px;
   height: 3px;
   background: currentColor;
   transform: rotate(45deg);
-  top: 8px;
-  left: -7px;
+  top: 16px;
+  left: 1px;
+  @include xs {
+    width: 33px;
+    top: 8px;
+    left: -7px;
+  }
 }
 .gg-close::after {
   transform: rotate(-45deg);
@@ -93,11 +114,14 @@
 .gg-shape-triangle {
   position: relative;
   transform: scale(var(--ggs, 1));
-  width: 41px;
+  width: 22px;
   height: 17px;
   bottom: 1rem;
   border-left: 3px solid transparent;
   border-bottom: 3px solid;
+  @include xs {
+    width: 41px;
+  }
 }
 .gg-shape-triangle,
 .gg-shape-triangle::before {
@@ -108,26 +132,33 @@
 .gg-shape-triangle::before {
   content: "";
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   border-left: 3px solid;
   border-top: 3px solid;
   border-bottom: 3px solid transparent;
   transform: rotate(45deg) skew(10deg, 10deg);
-  left: 0px;
-  bottom: -20px;
+  left: -1px;
+  bottom: -13px;
+  @include xs {
+    width: 35px;
+    height: 35px;
+    left: 0px;
+    bottom: -20px;
+  }
 }
 
 // 無料キャンペーンボタン
 .campaign-btn {
   margin: 0 6%;
-  @include sm {
-    margin: 0 2%;
+
+  height: 5rem;
+  line-height: 5rem;
+  @include xxs {
+    height: 7rem;
+    line-height: 7rem;
   }
-  height: 7rem;
-  line-height: 7rem;
   @include sm {
-    margin: 7rem 2%;
     margin: 7rem auto;
     line-height: 9rem;
     width: 65rem;
@@ -149,9 +180,12 @@
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.1em;
-  border-radius: 2em;
+  border-radius: 3em;
   font-size: 4vw;
-
+  @include xs {
+    border-radius: 2em;
+    font-size: 4vw;
+  }
   @include sm {
     font-size: 3rem;
   }
@@ -208,6 +242,16 @@
       display: block;
       position: absolute;
       left: -6%;
+      width: 24%;
+      top: 21rem;
+    }
+    @include md {
+      left: -6%;
+      width: 22%;
+      top: 17rem;
+    }
+    @include lg {
+      left: -6%;
       width: 21%;
       top: 13rem;
     }
@@ -215,9 +259,19 @@
   .circle3__sp {
     position: absolute;
     z-index: 10;
-    left: -39%;
-    width: 51%;
-    top: 31rem;
+    left: -34%;
+    width: 53%;
+    top: -5rem;
+    @include xxs {
+      left: -34%;
+      width: 50%;
+      top: -6rem;
+    }
+    @include xs {
+      left: -37%;
+      width: 51%;
+      top: -17rem;
+    }
     @include sm {
       display: none;
     }
@@ -226,10 +280,19 @@
 .circle4 {
   img {
     position: absolute;
-    width: 40%;
+    width: 49%;
     top: -12rem;
     right: -6rem;
-
+    @include xxs {
+      width: 44%;
+      top: -12rem;
+      right: -6rem;
+    }
+    @include xs {
+      width: 24%;
+      top: -12rem;
+      right: 0;
+    }
     @include sm {
       width: 15%;
       top: -15rem;
