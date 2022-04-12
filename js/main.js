@@ -3,10 +3,16 @@ const hamburger = document.getElementById("hamburger");
 const hamburgerBorder = document.querySelector(".header_box_right");
 // const hamburgerBorderText = document.querySelector(".header_box_right_text");
 const sm = document.querySelector(".sm");
+// PCメニュー
 const Introduce = document.getElementById("Introduce");
 const Function = document.getElementById("Function");
 const Plan = document.getElementById("Plan");
 const Result = document.getElementById("Result");
+// スマホメニュー
+const IntroduceSp = document.getElementById("Introduce_sp");
+const FunctionSp = document.getElementById("Function_sp");
+const PlanSp = document.getElementById("Plan_sp");
+const ResultSp = document.getElementById("Result_sp");
 const IntroduceContent = document.getElementById("Problem");
 const FunctionContent = document.getElementById("function");
 const PlanContent = document.getElementById("plan");
@@ -199,6 +205,17 @@ Introduce.onclick = function () {
     behavior: "smooth",
   });
 };
+IntroduceSp.onclick = function () {
+  const IntroduceContentPosition =
+    window.pageYOffset + IntroduceContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: IntroduceContentPosition,
+    behavior: "smooth",
+  });
+
+  slideToggle(sm, 500);
+  hamburgerBorder.classList.toggle("close");
+};
 Function.onclick = function () {
   if (!Function.classList.contains("active")) {
     // 押したやつ
@@ -224,6 +241,17 @@ Function.onclick = function () {
     top: FunctionContentPosition,
     behavior: "smooth",
   });
+};
+FunctionSp.onclick = function () {
+  const FunctionContentPosition =
+    window.pageYOffset + FunctionContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: FunctionContentPosition,
+    behavior: "smooth",
+  });
+
+  slideToggle(sm, 500);
+  hamburgerBorder.classList.toggle("close");
 };
 
 Plan.onclick = function () {
@@ -252,6 +280,17 @@ Plan.onclick = function () {
     behavior: "smooth",
   });
 };
+
+PlanSp.onclick = function () {
+  const PlanContentPosition =
+    window.pageYOffset + PlanContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: PlanContentPosition,
+    behavior: "smooth",
+  });
+  slideToggle(sm, 500);
+  hamburgerBorder.classList.toggle("close");
+};
 Result.onclick = function () {
   if (!Result.classList.contains("active")) {
     // 押したやつ
@@ -277,4 +316,15 @@ Result.onclick = function () {
     top: ResultontentPosition,
     behavior: "smooth",
   });
+};
+ResultSp.onclick = function () {
+  const ResultontentPosition =
+    window.pageYOffset + ResultContent.getBoundingClientRect().top;
+  window.scrollTo({
+    top: ResultontentPosition,
+    behavior: "smooth",
+  });
+
+  slideToggle(sm, 500);
+  hamburgerBorder.classList.toggle("close");
 };
