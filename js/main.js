@@ -152,7 +152,7 @@ function check_renda() {
     navigation();
     setTimeout(() => {
       clickFlg = false;
-    }, 650);
+    }, 500);
   }
 }
 hamburger.onclick = function () {
