@@ -12,6 +12,9 @@ header {
   @include sm {
     overflow: scroll;
   }
+  .header-logo__box {
+    display: inline;
+  }
   img {
     width: 50%;
     @include xs {
@@ -240,4 +243,10 @@ header {
       display: none;
     }
   }
+}
+.is-menuOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

@@ -650,6 +650,10 @@ header {
   }
 }
 
+header .header-logo__box {
+  display: inline;
+}
+
 header img {
   width: 50%;
 }
@@ -923,6 +927,13 @@ header .sm .btn a {
   header .sp {
     display: none;
   }
+}
+
+.is-menuOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #introduce {

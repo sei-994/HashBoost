@@ -328,3 +328,36 @@ ResultSp.onclick = function () {
   slideToggle(sm, 500);
   hamburgerBorder.classList.toggle("close");
 };
+
+const html = document.querySelector("html");
+
+const menu = document.getElementById("sm");
+const headerHeight = 60; //ヘッダーの高さ
+let bodyHeight; //ウィンドウの高さを入れる場所
+let scrollpos; //スクロールの位置を入れる場所
+
+// ハンバーガーメニューの開閉
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("is-active");
+  if (hamburger.classList.contains("is-active")) {
+    // 開く処理
+    // 現在のスクロール位置を取得する
+    scrollpos = window.pageYOffset;
+    // メニューが開いたことを示すクラスをhtmlに付与する
+    html.classList.add("is-menuOpen");
+    // bodyのtopにスクロール位置を付与する
+    document.body.style.top = scrollpos * -1 + "px";
+    // ウィンドウの高さを取得
+    bodyHeight = window.innerHeight;
+    // 取得した高さを、メニューに付与する（ヘッダーの高さを引いた数）
+    sm.style.height = bodyHeight - headerHeight + "px";
+  } else {
+    // 閉じる処理
+    // メニューが開いたことを示すクラスをはずす
+    html.classList.remove("is-menuOpen");
+    // スクロール位置を開いた時の位置へ戻す
+    window.scrollTo(0, scrollpos);
+    //メニューを閉じる（高さを0にする）
+    sm.style.height = 0;
+  }
+});
