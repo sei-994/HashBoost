@@ -78,7 +78,7 @@
       color: white;
       width: 13%;
       vertical-align: middle;
-
+      // writing-mode: vertical-lr;
       @include xxs {
         width: 10%;
       }
@@ -88,15 +88,15 @@
         font-size: 2.6rem;
       }
       span {
-        writing-mode: vertical-lr;
         -webkit-writing-mode: vertical-rl;
-
+        white-space: pre;
         @include sm {
+          writing-mode: initial;
+
           position: relative;
           left: 0.7rem;
           top: 0;
           bottom: 1.5rem;
-          writing-mode: initial;
         }
       }
     }

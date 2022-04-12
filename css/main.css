@@ -2840,20 +2840,19 @@ header .sm .btn a {
 }
 
 #comparison .comparison__container table th span {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-rl;
+  white-space: pre;
 }
 
 @media (min-width: 768px) {
   #comparison .comparison__container table th span {
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
     position: relative;
     left: 0.7rem;
     top: 0;
     bottom: 1.5rem;
-    -webkit-writing-mode: initial;
-        -ms-writing-mode: initial;
-            writing-mode: initial;
   }
 }
 
