@@ -2772,6 +2772,7 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #comparison .comparison__container table {
+    font-size: 1vw;
     width: 77%;
     white-space: nowrap;
   }
@@ -2820,6 +2821,12 @@ header .sm .btn a {
 #comparison .comparison__container table tr *:nth-child(4) {
   background: #61b3f9;
   font-size: 2.2vw;
+}
+
+@media (min-width: 768px) {
+  #comparison .comparison__container table tr *:nth-child(4) {
+    font-size: 1.2vw;
+  }
 }
 
 #comparison .comparison__container table th,
