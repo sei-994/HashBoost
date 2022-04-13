@@ -94,7 +94,7 @@
       margin-top: 2rem;
 
       @include sm {
-        margin-top: 2.5rem;
+        margin-top: 4%;
       }
       span {
         border-bottom: 2px solid white;
@@ -105,13 +105,14 @@
       margin-top: 24%;
 
       @include sm {
-        padding: 2rem 8rem;
-        margin: 2.5rem;
+        padding: 2rem 11%;
+        margin: 3% 0;
       }
+
       .hashtag__br {
         display: none;
-        @include sm {
-          display: block;
+        @include lg {
+          // display: block;
         }
       }
     }
@@ -168,7 +169,7 @@
           padding-top: 10%;
         }
         @include lg {
-          max-width: 31rem;
+          max-width: 38rem;
           padding-top: 2rem;
         }
       }
@@ -189,22 +190,35 @@
         }
         @include sm {
           width: 15%;
-          top: 46%;
-          right: 6%;
+          top: 35%;
+          right: 0%;
+        }
+        @include lg {
+          top: 31%;
+          right: 2%;
+          max-width: 13rem;
         }
       }
       .img6 {
         padding-top: 5%;
         @include sm {
-          padding-top: 0;
+          max-width: 30rem;
         }
       }
       .img7 {
         width: 28%;
         padding-top: 5%;
+        @include lg {
+          padding-top: 2rem;
+          max-width: 10rem;
+        }
       }
       .img8 {
         width: 35%;
+        @include lg {
+          padding-top: 2rem;
+          max-width: 21rem;
+        }
       }
     }
     .first-column {
@@ -241,6 +255,7 @@
           height: 32%;
           @include sm {
             margin-top: 0;
+            margin-bottom: 0;
           }
         }
       }
@@ -264,8 +279,9 @@
         }
         .third-box {
           @include sm {
-            height: 40%;
+            height: 42%;
             box-sizing: border-box;
+            margin-bottom: 0;
           }
         }
       }
@@ -275,13 +291,16 @@
       .first-box {
         margin: 0;
         margin-bottom: 2.5rem;
+        @include sm {
+          padding: 4% 7% 1%;
+        }
       }
     }
     .third-column {
       display: flex;
       flex-direction: column;
       @include sm {
-        height: 91rem;
+        height: 77rem;
         flex-direction: row;
       }
       .first-box {
@@ -297,15 +316,35 @@
         @include sm {
           margin-right: 2rem;
         }
+        .first-box {
+          @include sm {
+            height: 46%;
+            box-sizing: border-box;
+          }
+        }
         .second-box {
           @include sm {
-            height: 40.8%;
+            height: 46%;
           }
+          box-sizing: border-box;
         }
       }
       .column__right {
         @include sm {
           margin-left: 2rem;
+          font-size: 1.3rem;
+        }
+        @include md {
+          font-size: 1.45rem;
+        }
+        @include lg {
+          font-size: 1.6rem;
+        }
+        .first-box {
+          @include sm {
+            height: 95.3%;
+            box-sizing: border-box;
+          }
         }
       }
     }

@@ -607,11 +607,9 @@
     }
     @include sm {
       padding: 3rem 1.5rem;
-      overflow: scroll;
     }
-    @include lg {
-      overflow: hidden;
-    }
+    // @include lg {
+    // }
     h2 {
       margin-bottom: 1rem;
       span {
@@ -632,6 +630,10 @@
       margin: 0;
       @include sm {
         margin-top: 5rem;
+        justify-content: baseline;
+      }
+      @include md {
+        justify-content: center;
       }
       .border {
         position: relative;
@@ -645,7 +647,13 @@
             left: 0;
             top: 4rem;
             width: 1rem;
-            height: 53rem;
+            height: 47rem;
+          }
+          @include md {
+            left: -2rem;
+          }
+          @include lg {
+            left: 0;
           }
         }
       }
@@ -658,10 +666,16 @@
             border-right: 2px solid;
             border-image: linear-gradient(to bottom, #ecdaff 0%, #ecdaff 100%);
             border-image-slice: 1;
-            left: 41rem;
+            left: 22.5rem;
             top: 4rem;
             width: 1rem;
-            height: 53rem;
+            height: 47rem;
+          }
+          @include md {
+            left: 23.6rem;
+          }
+          @include lg {
+            left: 41rem;
           }
         }
       }
@@ -670,11 +684,20 @@
         padding-bottom: 0;
         display: inline-block;
         @include sm {
-          min-width: 43rem;
-          max-width: 24%;
+          max-width: 22rem;
+          padding: 1rem;
           padding-bottom: 3rem;
           margin-bottom: 0;
           height: 48rem;
+        }
+        @include md {
+          max-width: 34rem;
+          box-sizing: border-box;
+        }
+        @include lg {
+          padding: 0;
+          padding-bottom: 3rem;
+          min-width: 43rem;
         }
         &:last-child {
           margin-bottom: 0;
@@ -694,7 +717,8 @@
             @include xxs {
               font-size: 6.2rem;
             }
-            @include sm {
+
+            @include md {
               font-size: 8.2rem;
             }
             &:first-child {
@@ -724,6 +748,10 @@
           }
           @include sm {
             margin-bottom: 5rem;
+            font-size: 1.4rem;
+          }
+          @include md {
+            font-size: 1.6rem;
           }
         }
         .card__text {
@@ -745,6 +773,10 @@
           }
           @include sm {
             max-height: 58%;
+            max-width: 84%;
+          }
+          @include md {
+            max-height: 55%;
             max-width: 90%;
           }
         }
