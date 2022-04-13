@@ -52,6 +52,9 @@
           }
           @include sm {
             font-size: 1.5vw;
+            margin: 3rem 1rem;
+          }
+          @include md {
             margin: 3rem 3rem;
           }
           &:nth-child(2) {
@@ -117,6 +120,9 @@
       margin: 1rem 0;
       @include sm {
         max-width: 40%;
+        margin: 3rem;
+      }
+      @include md {
         margin: 5rem;
       }
     }

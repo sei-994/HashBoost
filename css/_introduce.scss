@@ -21,7 +21,6 @@
       background-size: contain;
       background-image: url(../images/mainvisual.jpg);
       background-position: 80% 50%;
-      overflow: scroll;
     }
   }
   .intro__outer {
@@ -34,7 +33,7 @@
       justify-content: space-around;
       padding-top: 5rem;
       font-family: $font1-r;
-      overflow: scroll;
+
       white-space: nowrap;
     }
     @include md {
@@ -148,10 +147,14 @@
         font-size: 1.8rem;
         left: 50%;
       }
+
       @include sm {
-        top: 74rem;
+        top: 67rem;
         font-size: 2.5rem;
         left: 50%;
+      }
+      @include md {
+        top: 74rem;
       }
       &::after {
         content: "";
@@ -175,6 +178,10 @@
   }
   #Problem {
     font-size: 4rem;
+    @include sm {
+      margin-bottom: 7rem;
+    }
+
     h2 {
       margin-bottom: 5.5rem;
 
@@ -190,7 +197,6 @@
     }
     @include sm {
       margin-top: 8rem;
-      overflow: scroll;
     }
     .problem__container {
       @include sm {
@@ -225,9 +231,12 @@
           }
           @include sm {
             border-radius: 23px;
-            padding: 2rem 1.5rem;
+            padding: 1.6rem 1rem;
             border-width: 3px;
-
+            font-size: 1.6rem;
+          }
+          @include lg {
+            padding: 2rem 1.5rem;
             font-size: 1.8rem;
           }
         }
@@ -255,8 +264,23 @@
 
               padding: 1.8rem 1.5rem;
             }
+            @include xs {
+              left: initial;
+              right: 9rem;
+            }
             @include sm {
               padding: 2.8rem 1.5rem;
+              right: -16rem;
+              top: -1rem;
+              width: 30rem;
+            }
+            @include md {
+              width: auto;
+              right: -7rem;
+            }
+            @include lg {
+              top: 1rem;
+              left: -2%;
             }
           }
           &:nth-child(2) {
@@ -267,9 +291,23 @@
               top: 8rem;
               right: 13%;
             }
+
             @include sm {
               top: 0;
+              left: initial;
+              right: -11rem;
+              padding: 1.8rem 1.1rem;
+              margin-bottom: 6rem;
+              display: inline-block;
+            }
+            @include md {
+              display: block;
+              right: -6rem;
+            }
+            @include lg {
+              top: 0;
               left: 4%;
+              right: initial;
               padding: 1.8rem 1.5rem;
               margin-bottom: 6rem;
             }
@@ -281,9 +319,28 @@
               left: 0;
               top: 18rem;
             }
+            @include xs {
+              left: initial;
+              right: 12rem;
+            }
             @include sm {
               top: 0;
-              left: 7%;
+              left: initial;
+              right: -11rem;
+              padding: 1.8rem 1.1rem;
+              margin-bottom: 6rem;
+              display: inline-block;
+            }
+            @include md {
+              display: block;
+              right: -8rem;
+            }
+            @include lg {
+              top: 0;
+              left: 10%;
+              right: initial;
+              padding: 1.8rem 1.5rem;
+              margin-bottom: 6rem;
             }
           }
         }
@@ -293,20 +350,34 @@
       background-color: transparent;
       @include sm {
         display: block;
+        height: 41rem;
+        width: 21rem;
+        margin: auto 0;
+      }
+      @include lg {
         height: 44rem;
         width: 24rem;
         margin: auto 2%;
       }
       img {
         width: 17rem;
-
+        opacity: 0.4;
+        height: 100%;
         @include xxs {
           width: 23rem;
         }
         @include sm {
           width: 100%;
+          opacity: 1;
+          margin: 5rem 0;
         }
-        height: 100%;
+        @include md {
+          height: 107%;
+        }
+        @include lg {
+          margin: 0;
+          height: 100%;
+        }
       }
     }
     .box__right {
@@ -326,7 +397,6 @@
         }
         &:first-child {
           top: 19rem;
-
           right: -5%;
           font-size: 0.6rem;
           padding: 1rem 1rem;
@@ -335,10 +405,24 @@
             padding: 1rem 1.5rem;
             top: 27rem;
           }
+          @include xs {
+            right: 2rem;
+          }
           @include sm {
+            top: 4rem;
+            width: 64%;
+            left: -3rem;
+            font-size: 1.4rem;
+          }
+          @include md {
             top: 5%;
-            left: -3%;
+            left: -14%;
+            width: auto;
             font-size: 1.8rem;
+          }
+          @include lg {
+            left: -3%;
+            padding: 2rem 1.5rem;
           }
         }
         &:last-child {
@@ -354,10 +438,26 @@
 
             padding: 2rem 3rem;
           }
+          @include xs {
+            width: auto;
+            left: 6rem;
+            right: 6rem;
+            left: initial;
+          }
           @include sm {
-            top: 0;
-            left: 3%;
+            width: 53%;
+            top: 9rem;
+            left: -7rem;
             padding: 2.5rem 1.5rem;
+          }
+          @include md {
+            width: 62%;
+            top: 6rem;
+            left: -5%;
+          }
+          @include lg {
+            top: 0;
+            left: -15%;
           }
         }
       }
@@ -384,6 +484,10 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      width: 24rem;
+      @include xxs {
+        width: 36rem;
+      }
       @include sm {
         width: 50rem;
       }
@@ -496,8 +600,8 @@
         @include lg {
           font-size: 1.4rem;
 
-          height: 37rem;
-          width: 37rem;
+          height: 36rem;
+          width: 36rem;
           margin: 1%;
         }
         // 円　枠色
@@ -551,7 +655,7 @@
             margin-top: 1rem;
           }
           @include lg {
-            margin-top: 1.6rem;
+            margin-top: 1rem;
           }
         }
         img {

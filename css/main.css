@@ -970,7 +970,6 @@ header .sm .btn a {
     background-size: contain;
     background-image: url(../images/mainvisual.jpg);
     background-position: 80% 50%;
-    overflow: scroll;
   }
 }
 
@@ -989,7 +988,6 @@ header .sm .btn a {
         justify-content: space-around;
     padding-top: 5rem;
     font-family: "A P-OTF A1ゴシック Std regular";
-    overflow: scroll;
     white-space: nowrap;
   }
 }
@@ -1158,9 +1156,15 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #introduce .intro__outer .arrow-box {
-    top: 74rem;
+    top: 67rem;
     font-size: 2.5rem;
     left: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce .intro__outer .arrow-box {
+    top: 74rem;
   }
 }
 
@@ -1193,6 +1197,12 @@ header .sm .btn a {
   font-size: 4rem;
 }
 
+@media (min-width: 768px) {
+  #introduce #Problem {
+    margin-bottom: 7rem;
+  }
+}
+
 #introduce #Problem h2 {
   margin-bottom: 5.5rem;
 }
@@ -1218,7 +1228,6 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #introduce #Problem {
     margin-top: 8rem;
-    overflow: scroll;
   }
 }
 
@@ -1270,8 +1279,15 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #introduce #Problem .column-box .text-box p {
     border-radius: 23px;
-    padding: 2rem 1.5rem;
+    padding: 1.6rem 1rem;
     border-width: 3px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .column-box .text-box p {
+    padding: 2rem 1.5rem;
     font-size: 1.8rem;
   }
 }
@@ -1311,9 +1327,33 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 400px) {
+  #introduce #Problem .column-box .box__left p:first-child {
+    left: initial;
+    right: 9rem;
+  }
+}
+
 @media (min-width: 768px) {
   #introduce #Problem .column-box .box__left p:first-child {
     padding: 2.8rem 1.5rem;
+    right: -16rem;
+    top: -1rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #Problem .column-box .box__left p:first-child {
+    width: auto;
+    right: -7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .column-box .box__left p:first-child {
+    top: 1rem;
+    left: -2%;
   }
 }
 
@@ -1332,7 +1372,26 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #introduce #Problem .column-box .box__left p:nth-child(2) {
     top: 0;
+    left: initial;
+    right: -11rem;
+    padding: 1.8rem 1.1rem;
+    margin-bottom: 6rem;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #Problem .column-box .box__left p:nth-child(2) {
+    display: block;
+    right: -6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .column-box .box__left p:nth-child(2) {
+    top: 0;
     left: 4%;
+    right: initial;
     padding: 1.8rem 1.5rem;
     margin-bottom: 6rem;
   }
@@ -1350,10 +1409,38 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 400px) {
+  #introduce #Problem .column-box .box__left p:last-child {
+    left: initial;
+    right: 12rem;
+  }
+}
+
 @media (min-width: 768px) {
   #introduce #Problem .column-box .box__left p:last-child {
     top: 0;
-    left: 7%;
+    left: initial;
+    right: -11rem;
+    padding: 1.8rem 1.1rem;
+    margin-bottom: 6rem;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #Problem .column-box .box__left p:last-child {
+    display: block;
+    right: -8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .column-box .box__left p:last-child {
+    top: 0;
+    left: 10%;
+    right: initial;
+    padding: 1.8rem 1.5rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -1364,6 +1451,14 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #introduce #Problem .box__middle {
     display: block;
+    height: 41rem;
+    width: 21rem;
+    margin: auto 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .box__middle {
     height: 44rem;
     width: 24rem;
     margin: auto 2%;
@@ -1372,6 +1467,7 @@ header .sm .btn a {
 
 #introduce #Problem .box__middle img {
   width: 17rem;
+  opacity: 0.4;
   height: 100%;
 }
 
@@ -1384,6 +1480,21 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #introduce #Problem .box__middle img {
     width: 100%;
+    opacity: 1;
+    margin: 5rem 0;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #Problem .box__middle img {
+    height: 107%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .box__middle img {
+    margin: 0;
+    height: 100%;
   }
 }
 
@@ -1423,11 +1534,34 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 400px) {
+  #introduce #Problem .box__right p:first-child {
+    right: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   #introduce #Problem .box__right p:first-child {
+    top: 4rem;
+    width: 64%;
+    left: -3rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #Problem .box__right p:first-child {
     top: 5%;
-    left: -3%;
+    left: -14%;
+    width: auto;
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .box__right p:first-child {
+    left: -3%;
+    padding: 2rem 1.5rem;
   }
 }
 
@@ -1447,11 +1581,36 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 400px) {
+  #introduce #Problem .box__right p:last-child {
+    width: auto;
+    left: 6rem;
+    right: 6rem;
+    left: initial;
+  }
+}
+
 @media (min-width: 768px) {
   #introduce #Problem .box__right p:last-child {
-    top: 0;
-    left: 3%;
+    width: 53%;
+    top: 9rem;
+    left: -7rem;
     padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #Problem .box__right p:last-child {
+    width: 62%;
+    top: 6rem;
+    left: -5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #introduce #Problem .box__right p:last-child {
+    top: 0;
+    left: -15%;
   }
 }
 
@@ -1494,6 +1653,13 @@ header .sm .btn a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 24rem;
+}
+
+@media (min-width: 360px) {
+  #introduce #solution .solution__heading__logo {
+    width: 36rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1659,8 +1825,8 @@ header .sm .btn a {
 @media (min-width: 1200px) {
   #introduce #solution .card__container .solve-card {
     font-size: 1.4rem;
-    height: 37rem;
-    width: 37rem;
+    height: 36rem;
+    width: 36rem;
     margin: 1%;
   }
 }
@@ -1733,7 +1899,7 @@ header .sm .btn a {
 
 @media (min-width: 1200px) {
   #introduce #solution .card__container .solve-card .card__content {
-    margin-top: 1.6rem;
+    margin-top: 1rem;
   }
 }
 
@@ -3293,6 +3459,12 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #result .result__container .border-box .result__box .result__box__text {
     font-size: 1.5vw;
+    margin: 3rem 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #result .result__container .border-box .result__box .result__box__text {
     margin: 3rem 3rem;
   }
 }
@@ -3376,6 +3548,12 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #result .result__container img {
     max-width: 40%;
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #result .result__container img {
     margin: 5rem;
   }
 }
