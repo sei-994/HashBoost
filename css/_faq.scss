@@ -105,9 +105,12 @@
             font-size: 3vw;
           }
           @include sm {
+            font-size: 1.4rem;
+            max-width: 88%;
+          }
+          @include md {
             font-size: 1.8rem;
             max-width: 91%;
-            margin-left: 2%;
           }
         }
       }
@@ -205,8 +208,11 @@
       width: 3rem;
     }
     @include sm {
-      right: 2%;
+      right: -1%;
       top: 50%;
+    }
+    @include md {
+      right: 2%;
     }
   }
 

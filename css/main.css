@@ -3578,9 +3578,15 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #faq .faq__container .faq__box .box__common .box__common__text {
+    font-size: 1.4rem;
+    max-width: 88%;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq__container .faq__box .box__common .box__common__text {
     font-size: 1.8rem;
     max-width: 91%;
-    margin-left: 2%;
   }
 }
 
@@ -3713,8 +3719,15 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #faq .qa-list dl::before,
   #faq .qa-list dl::after {
-    right: 2%;
+    right: -1%;
     top: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .qa-list dl::before,
+  #faq .qa-list dl::after {
+    right: 2%;
   }
 }
 
