@@ -2629,8 +2629,6 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #plan {
     padding-top: 6rem;
-    overflow: scroll;
-    padding-left: 14rem;
   }
 }
 
@@ -2720,7 +2718,16 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #plan .plan__container .plan-card {
     margin-bottom: 0;
+    margin: 0 1%;
+    max-width: 21rem;
     padding: 1.4rem 1rem 3.4rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #plan .plan__container .plan-card {
+    min-width: 24%;
+    margin: 0 3%;
   }
 }
 
@@ -2751,9 +2758,15 @@ header .sm .btn a {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #plan .plan__container .plan-card:last-child {
-    min-width: 24%;
+    max-width: 21rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #plan .plan__container .plan-card:last-child {
+    max-width: 24%;
   }
 }
 
@@ -2824,12 +2837,36 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 768px) {
+  #plan .plan__container .plan-card .plan-card__price {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #plan .plan__container .plan-card .plan-card__price {
+    font-size: 2rem;
+  }
+}
+
 #plan .plan__container .plan-card .plan-card__price span {
   font-family: "小塚ゴシック Regular";
   font-size: 3rem;
 }
 
 @media (min-width: 360px) {
+  #plan .plan__container .plan-card .plan-card__price span {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #plan .plan__container .plan-card .plan-card__price span {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
   #plan .plan__container .plan-card .plan-card__price span {
     font-size: 4rem;
   }
@@ -2842,6 +2879,18 @@ header .sm .btn a {
 @media (min-width: 360px) {
   #plan .plan__container .plan-card .third-price {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #plan .plan__container .plan-card .third-price {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #plan .plan__container .plan-card .third-price {
+    font-size: 1.6rem;
   }
 }
 
@@ -2871,6 +2920,7 @@ header .sm .btn a {
   #plan .plan__container .plan-card .card__detail {
     display: block;
     padding: 0;
+    height: 22rem;
   }
 }
 
@@ -2889,6 +2939,19 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 960px) {
+  #plan .plan__container .plan-card .card__detail ul {
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  #plan .plan__container .plan-card .card__detail ul {
+    font-size: 1.2rem;
+  }
+}
+
 #plan .plan__container .plan-card .plan__btn {
   height: 20px;
   margin-bottom: 1.2rem;
@@ -2899,8 +2962,13 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #plan .plan__container .plan-card .plan__btn {
-    width: auto;
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #plan .plan__container .plan-card .plan__btn {
+    width: auto;
   }
 }
 
@@ -2928,7 +2996,15 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #plan .plan__container .plan-card .plan__btn a {
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #plan .plan__container .plan-card .plan__btn a {
     padding: 0.8rem 4rem;
+    font-size: 1.8rem;
   }
 }
 

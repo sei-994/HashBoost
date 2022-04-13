@@ -8,8 +8,6 @@
   }
   @include sm {
     padding-top: 6rem;
-    overflow: scroll;
-    padding-left: 14rem;
   }
   @include lg {
     padding-left: 0;
@@ -40,6 +38,7 @@
     @include xs {
       margin: 0;
     }
+
     @include lg {
       margin: 0 7%;
     }
@@ -66,7 +65,13 @@
       }
       @include sm {
         margin-bottom: 0;
+        margin: 0 1%;
+        max-width: 21rem;
         padding: 1.4rem 1rem 3.4rem;
+      }
+      @include md {
+        min-width: 24%;
+        margin: 0 3%;
       }
       @include lg {
         min-width: 24%;
@@ -86,8 +91,15 @@
         @include xs {
           max-width: 30rem;
         }
+        @include sm {
+          max-width: 21rem;
+        }
+        @include md {
+          max-width: 24%;
+        }
+
         @include lg {
-          min-width: 24%;
+          // min-width: 24%;
         }
       }
       .box {
@@ -139,10 +151,22 @@
         @include xxs {
           font-size: 2rem;
         }
+        @include sm {
+          font-size: 1.6rem;
+        }
+        @include md {
+          font-size: 2rem;
+        }
         span {
           font-family: $font3-r;
           font-size: 3rem;
           @include xxs {
+            font-size: 4rem;
+          }
+          @include sm {
+            font-size: 3rem;
+          }
+          @include lg {
             font-size: 4rem;
           }
         }
@@ -151,6 +175,12 @@
         font-size: 1.6rem;
         @include xxs {
           font-size: 2rem;
+        }
+        @include sm {
+          font-size: 1.5rem;
+        }
+        @include md {
+          font-size: 1.6rem;
         }
       }
       .card__detail {
@@ -167,6 +197,10 @@
         @include sm {
           display: block;
           padding: 0;
+          height: 22rem;
+        }
+        @include md {
+          // height: 21rem;
         }
         ul {
           height: 15rem;
@@ -176,6 +210,13 @@
           text-align: left;
           padding: 0 2rem;
           @include xxs {
+            font-size: 1.2rem;
+          }
+          @include md {
+            font-size: 1.1rem;
+            white-space: nowrap;
+          }
+          @include lg {
             font-size: 1.2rem;
           }
         }
@@ -188,8 +229,10 @@
         margin: 0 auto;
         white-space: nowrap;
         @include sm {
-          width: auto;
           margin: 0;
+        }
+        @include lg {
+          width: auto;
         }
       }
       .plan__btn a {
@@ -210,7 +253,12 @@
           padding: 0.8rem 2rem;
         }
         @include sm {
+          padding: 0.8rem 1rem;
+          font-size: 1.6rem;
+        }
+        @include lg {
           padding: 0.8rem 4rem;
+          font-size: 1.8rem;
         }
       }
       .middle-btn {
