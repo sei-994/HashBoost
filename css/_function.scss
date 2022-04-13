@@ -60,6 +60,11 @@
     @include md {
       margin: 0 12%;
     }
+    @include lg {
+      font-size: 1.8rem;
+      max-width: 109rem;
+      margin: 0 auto;
+    }
     h3 {
       color: white;
       background-color: $light-blue;
@@ -72,6 +77,9 @@
       }
       @include sm {
         font-size: 1.6vw;
+      }
+      @include lg {
+        font-size: 2.5rem;
       }
     }
     .column__text {
@@ -108,11 +116,14 @@
         padding: 2rem 11%;
         margin: 3% 0;
       }
+      @include lg {
+        padding: 2rem 7%;
+      }
 
       .hashtag__br {
         display: none;
         @include lg {
-          // display: block;
+          display: block;
         }
       }
     }
@@ -136,16 +147,21 @@
           padding-top: 5%;
         }
       }
-
+      .img1 {
+        @include lg {
+          width: 62%;
+          padding-top: 2%;
+        }
+      }
       .img2 {
         width: 35%;
         padding-top: 3rem;
         @include sm {
-          width: 45%;
+          max-width: 45%;
           padding-top: 8%;
         }
         @include lg {
-          max-width: 23rem;
+          max-width: 40%;
           padding-top: 2rem;
         }
       }
@@ -157,8 +173,8 @@
           padding-top: 11%;
         }
         @include lg {
-          padding-top: 2rem;
-          max-width: 13rem;
+          padding-top: 2.3rem;
+          max-width: 26%;
         }
       }
       .img4 {
@@ -169,7 +185,7 @@
           padding-top: 10%;
         }
         @include lg {
-          max-width: 38rem;
+          max-width: 32rem;
           padding-top: 2rem;
         }
       }
@@ -194,7 +210,7 @@
           right: 0%;
         }
         @include lg {
-          top: 31%;
+          top: 36%;
           right: 2%;
           max-width: 13rem;
         }
@@ -240,7 +256,7 @@
         display: flex;
         flex-direction: column;
         @include sm {
-          height: 115rem;
+          height: 107rem;
           margin-right: 2rem;
         }
 
@@ -249,6 +265,9 @@
           @include sm {
             height: 68%;
             box-sizing: border-box;
+          }
+          @include lg {
+            height: 63%;
           }
         }
         .second-box {
@@ -262,7 +281,7 @@
       .column__right {
         @include sm {
           margin-left: 2rem;
-          height: 117.5rem;
+          height: 109rem;
         }
         .first-box {
           margin-top: 0;
@@ -293,6 +312,10 @@
         margin-bottom: 2.5rem;
         @include sm {
           padding: 4% 7% 1%;
+        }
+        @include lg {
+          margin-bottom: 3rem;
+          margin-top: 1.2rem;
         }
       }
     }

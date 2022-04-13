@@ -2334,6 +2334,14 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 1200px) {
+  #function .function__container {
+    font-size: 1.8rem;
+    max-width: 109rem;
+    margin: 0 auto;
+  }
+}
+
 #function .function__container h3 {
   color: white;
   background-color: #479ef7;
@@ -2352,6 +2360,12 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #function .function__container h3 {
     font-size: 1.6vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #function .function__container h3 {
+    font-size: 2.5rem;
   }
 }
 
@@ -2404,8 +2418,20 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 1200px) {
+  #function .function__container .hashtag {
+    padding: 2rem 7%;
+  }
+}
+
 #function .function__container .hashtag .hashtag__br {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  #function .function__container .hashtag .hashtag__br {
+    display: block;
+  }
 }
 
 #function .function__container .box {
@@ -2438,6 +2464,13 @@ header .sm .btn a {
   }
 }
 
+@media (min-width: 1200px) {
+  #function .function__container .box .img1 {
+    width: 62%;
+    padding-top: 2%;
+  }
+}
+
 #function .function__container .box .img2 {
   width: 35%;
   padding-top: 3rem;
@@ -2445,14 +2478,14 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #function .function__container .box .img2 {
-    width: 45%;
+    max-width: 45%;
     padding-top: 8%;
   }
 }
 
 @media (min-width: 1200px) {
   #function .function__container .box .img2 {
-    max-width: 23rem;
+    max-width: 40%;
     padding-top: 2rem;
   }
 }
@@ -2471,8 +2504,8 @@ header .sm .btn a {
 
 @media (min-width: 1200px) {
   #function .function__container .box .img3 {
-    padding-top: 2rem;
-    max-width: 13rem;
+    padding-top: 2.3rem;
+    max-width: 26%;
   }
 }
 
@@ -2490,7 +2523,7 @@ header .sm .btn a {
 
 @media (min-width: 1200px) {
   #function .function__container .box .img4 {
-    max-width: 38rem;
+    max-width: 32rem;
     padding-top: 2rem;
   }
 }
@@ -2528,7 +2561,7 @@ header .sm .btn a {
 
 @media (min-width: 1200px) {
   #function .function__container .box .img5 {
-    top: 31%;
+    top: 36%;
     right: 2%;
     max-width: 13rem;
   }
@@ -2605,7 +2638,7 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #function .function__container .first-column .column__left {
-    height: 115rem;
+    height: 107rem;
     margin-right: 2rem;
   }
 }
@@ -2619,6 +2652,12 @@ header .sm .btn a {
     height: 68%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1200px) {
+  #function .function__container .first-column .column__left .first-box {
+    height: 63%;
   }
 }
 
@@ -2636,7 +2675,7 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #function .function__container .first-column .column__right {
     margin-left: 2rem;
-    height: 117.5rem;
+    height: 109rem;
   }
 }
 
@@ -2681,6 +2720,13 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #function .function__container .second-column .first-box {
     padding: 4% 7% 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #function .function__container .second-column .first-box {
+    margin-bottom: 3rem;
+    margin-top: 1.2rem;
   }
 }
 
@@ -2899,7 +2945,8 @@ header .sm .btn a {
 
 @media (min-width: 1200px) {
   #plan .plan__container .plan-card {
-    min-width: 24%;
+    max-width: 24rem;
+    min-width: auto;
   }
 }
 
@@ -2933,6 +2980,12 @@ header .sm .btn a {
 @media (min-width: 960px) {
   #plan .plan__container .plan-card:last-child {
     max-width: 24%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #plan .plan__container .plan-card:last-child {
+    max-width: 24rem;
   }
 }
 

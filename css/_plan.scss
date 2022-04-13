@@ -74,7 +74,8 @@
         margin: 0 3%;
       }
       @include lg {
-        min-width: 24%;
+        max-width: 24rem;
+        min-width: auto;
       }
       &:nth-child(2) {
         //2個目のcard
@@ -99,7 +100,7 @@
         }
 
         @include lg {
-          // min-width: 24%;
+          max-width: 24rem;
         }
       }
       .box {
