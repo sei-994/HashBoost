@@ -55,6 +55,10 @@
     @include sm {
       font-size: 1.6rem;
       flex-direction: column;
+      margin: 0 7%;
+    }
+    @include md {
+      margin: 0 12%;
     }
     h3 {
       color: white;
@@ -78,6 +82,7 @@
       }
       @include sm {
         margin: 2.5rem 0 0;
+        margin-top: 3%;
       }
     }
     .column__text__blue {
@@ -121,10 +126,14 @@
         padding: 2rem 2.5rem 1.5rem;
       }
       @include sm {
-        padding: 4rem 3.5rem 1.5rem;
+        padding: 7% 7% 3%;
       }
       img {
         width: 65%;
+        @include sm {
+          width: 78%;
+          padding-top: 5%;
+        }
       }
 
       .img2 {
@@ -132,16 +141,36 @@
         padding-top: 3rem;
         @include sm {
           width: 45%;
-          padding-top: 0;
+          padding-top: 8%;
+        }
+        @include lg {
+          max-width: 23rem;
+          padding-top: 2rem;
         }
       }
       .img3 {
         width: 25%;
         padding-top: 3rem;
+        @include sm {
+          width: 33%;
+          padding-top: 11%;
+        }
+        @include lg {
+          padding-top: 2rem;
+          max-width: 13rem;
+        }
       }
       .img4 {
         width: 76%;
         padding-top: 2rem;
+        @include sm {
+          width: 89%;
+          padding-top: 10%;
+        }
+        @include lg {
+          max-width: 31rem;
+          padding-top: 2rem;
+        }
       }
       .img5 {
         position: absolute;
@@ -181,7 +210,6 @@
     .first-column {
       @include sm {
         display: flex;
-        height: 122rem;
         justify-content: space-between;
       }
       .column__left,
@@ -190,6 +218,7 @@
           flex-basis: 50%;
           flex: 1;
           align-items: stretch;
+          height: 100%;
         }
       }
 
@@ -197,22 +226,47 @@
         display: flex;
         flex-direction: column;
         @include sm {
+          height: 115rem;
           margin-right: 2rem;
         }
 
         .first-box {
           margin-top: 0;
+          @include sm {
+            height: 68%;
+            box-sizing: border-box;
+          }
         }
         .second-box {
           height: 32%;
+          @include sm {
+            margin-top: 0;
+          }
         }
       }
       .column__right {
         @include sm {
           margin-left: 2rem;
+          height: 117.5rem;
         }
         .first-box {
           margin-top: 0;
+          @include sm {
+            height: 20.5%;
+            box-sizing: border-box;
+          }
+        }
+        .second-box {
+          @include sm {
+            height: 31%;
+            box-sizing: border-box;
+          }
+        }
+        .third-box {
+          @include sm {
+            height: 40%;
+            box-sizing: border-box;
+          }
         }
       }
     }
