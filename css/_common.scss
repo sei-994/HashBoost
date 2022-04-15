@@ -99,12 +99,15 @@
   height: 3px;
   background: currentColor;
   transform: rotate(45deg);
-  top: 16px;
+  top: 22px;
   left: 1px;
   @include xs {
     width: 33px;
-    top: 8px;
+    top: 12px;
     left: -7px;
+  }
+  @include sm {
+    top: 8px;
   }
 }
 .gg-close::after {
@@ -116,11 +119,15 @@
   transform: scale(var(--ggs, 1));
   width: 22px;
   height: 17px;
-  bottom: 1rem;
+  bottom: 0.5rem;
   border-left: 3px solid transparent;
   border-bottom: 3px solid;
   @include xs {
     width: 41px;
+    bottom: 0.8rem;
+  }
+  @include sm {
+    bottom: 1rem;
   }
 }
 .gg-shape-triangle,

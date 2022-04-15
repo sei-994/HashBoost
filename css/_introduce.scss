@@ -52,11 +52,9 @@
         margin-left: 8%;
         padding-top: 35%;
       }
-
       @include sm {
         margin-left: 0;
         padding-top: 7rem;
-        // padding-left: 33%;
         padding-left: 0;
       }
       @include md {
@@ -66,6 +64,7 @@
         display: inline-block;
         border-bottom: 2px solid black;
         margin-bottom: 1rem;
+        font-family: $font1-r;
         @include xxs {
           font-size: 4.5vw;
         }
@@ -472,7 +471,6 @@
     }
     @include sm {
       margin-top: 0;
-
     }
     @include lg {
       overflow: hidden;
@@ -594,7 +592,7 @@
           font-size: 1.8rem;
         }
         @include md {
-          margin: 1% ;
+          margin: 1%;
           width: 27rem;
           height: 27rem;
           font-size: 1.1rem;
@@ -640,7 +638,6 @@
           @include md {
             font-size: 2rem;
             margin-top: 1.8rem;
-
           }
           @include lg {
             font-size: 2.4rem;
@@ -657,15 +654,14 @@
           @include sm {
             margin-top: 3rem;
           }
-          @include md{
+          @include md {
             margin-top: 1rem;
-
           }
-&::nth-child(2){
-  @include sm {
-    margin-top: 1rem;
-  }
-}
+          &::nth-child(2) {
+            @include sm {
+              margin-top: 1rem;
+            }
+          }
         }
         img {
           width: 6rem;
@@ -681,7 +677,7 @@
             height: 9rem;
             margin-top: 2rem;
           }
-          @include md{
+          @include md {
             width: 7rem;
             margin-top: 1rem;
             height: 7rem;
@@ -706,19 +702,16 @@
           @include sm {
             width: 8rem;
             height: 9rem;
-            
           }
           @include md {
             width: 6rem;
             height: 7rem;
-          margin-top: 0.5rem;
-
+            margin-top: 0.5rem;
           }
           @include lg {
             width: 8rem;
             height: 9rem;
-          margin-top: 1.2rem;
-
+            margin-top: 1.2rem;
           }
         }
       }

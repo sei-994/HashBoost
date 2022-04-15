@@ -138,8 +138,13 @@
     }
     .comparison__br {
       display: none;
-      @include xs {
+      @include sm {
         display: block;
+      }
+    }
+    .comparison__br__sp {
+      @include sm {
+        display: none;
       }
     }
     .last {

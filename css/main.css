@@ -309,7 +309,7 @@ input, select {
   background: currentColor;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 16px;
+  top: 22px;
   left: 1px;
 }
 
@@ -317,8 +317,15 @@ input, select {
   .gg-close::after,
   .gg-close::before {
     width: 33px;
-    top: 8px;
+    top: 12px;
     left: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gg-close::after,
+  .gg-close::before {
+    top: 8px;
   }
 }
 
@@ -333,7 +340,7 @@ input, select {
           transform: scale(var(--ggs, 1));
   width: 22px;
   height: 17px;
-  bottom: 1rem;
+  bottom: 0.5rem;
   border-left: 3px solid transparent;
   border-bottom: 3px solid;
 }
@@ -341,6 +348,13 @@ input, select {
 @media (min-width: 400px) {
   .gg-shape-triangle {
     width: 41px;
+    bottom: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .gg-shape-triangle {
+    bottom: 1rem;
   }
 }
 
@@ -1056,6 +1070,7 @@ header .sm .btn a {
   display: inline-block;
   border-bottom: 2px solid black;
   margin-bottom: 1rem;
+  font-family: "A P-OTF A1ゴシック Std regular";
 }
 
 @media (min-width: 360px) {
@@ -2989,21 +3004,20 @@ header .sm .btn a {
 
 @media (min-width: 960px) {
   #plan .plan__container .plan-card {
-    min-width: 24%;
+    min-width: 24rem;
     margin: 0 3%;
   }
 }
 
 @media (min-width: 1200px) {
   #plan .plan__container .plan-card {
-    max-width: 24rem;
-    min-width: auto;
+    min-width: 26rem;
   }
 }
 
 #plan .plan__container .plan-card:nth-child(2) {
   color: white;
-  background-color: #479ef7;
+  background-color: #61b3f9;
 }
 
 #plan .plan__container .plan-card:nth-child(2) p {
@@ -3013,7 +3027,7 @@ header .sm .btn a {
 
 #plan .plan__container .plan-card:last-child {
   padding: 1.4rem 0.6rem 3.4rem;
-  height: 37.3rem;
+  height: 37rem;
 }
 
 @media (min-width: 400px) {
@@ -3030,13 +3044,13 @@ header .sm .btn a {
 
 @media (min-width: 960px) {
   #plan .plan__container .plan-card:last-child {
-    max-width: 24%;
+    min-width: 24rem;
   }
 }
 
 @media (min-width: 1200px) {
   #plan .plan__container .plan-card:last-child {
-    max-width: 24rem;
+    min-width: 26rem;
   }
 }
 
@@ -3166,12 +3180,13 @@ header .sm .btn a {
 
 #plan .plan__container .plan-card .card__detail {
   height: 18rem;
+  white-space: nowrap;
 }
 
 @media (min-width: 360px) {
   #plan .plan__container .plan-card .card__detail {
     height: 20rem;
-    padding: 0 8%;
+    padding: 0;
   }
 }
 
@@ -3209,10 +3224,11 @@ header .sm .btn a {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   #plan .plan__container .plan-card .card__detail ul {
+    padding: 0;
     font-size: 1.1rem;
-    white-space: nowrap;
+    letter-spacing: 0;
   }
 }
 
@@ -3464,9 +3480,15 @@ header .sm .btn a {
   display: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   #comparison .comparison__container .comparison__br {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #comparison .comparison__container .comparison__br__sp {
+    display: none;
   }
 }
 
