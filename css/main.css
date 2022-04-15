@@ -1654,7 +1654,6 @@ header .sm .btn a {
 @media (min-width: 768px) {
   #introduce #solution {
     margin-top: 0;
-    overflow: scroll;
   }
 }
 
@@ -1800,7 +1799,7 @@ header .sm .btn a {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   #introduce #solution .card__container {
     width: auto;
     display: -webkit-box;
@@ -1834,16 +1833,19 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #introduce #solution .card__container .solve-card {
-    margin: 1%;
-    width: 27rem;
-    height: 27rem;
-    font-size: 1.1rem;
+    margin: 5% auto;
+    width: 43rem;
+    height: 43rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (min-width: 960px) {
   #introduce #solution .card__container .solve-card {
+    margin: 1%;
     width: 27rem;
+    height: 27rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1887,14 +1889,15 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #introduce #solution .card__container .solve-card .card__title {
-    font-size: 1.6rem;
-    margin-top: 1.8rem;
+    font-size: 2.2rem;
+    margin-top: 4.8rem;
   }
 }
 
 @media (min-width: 960px) {
   #introduce #solution .card__container .solve-card .card__title {
     font-size: 2rem;
+    margin-top: 1.8rem;
   }
 }
 
@@ -1918,12 +1921,18 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #introduce #solution .card__container .solve-card .card__content {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #solution .card__container .solve-card .card__content {
     margin-top: 1rem;
   }
 }
 
-@media (min-width: 1200px) {
-  #introduce #solution .card__container .solve-card .card__content {
+@media (min-width: 768px) {
+  #introduce #solution .card__container .solve-card .card__content::nth-child(2) {
     margin-top: 1rem;
   }
 }
@@ -1943,6 +1952,14 @@ header .sm .btn a {
 }
 
 @media (min-width: 768px) {
+  #introduce #solution .card__container .solve-card img {
+    width: 9rem;
+    height: 9rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 960px) {
   #introduce #solution .card__container .solve-card img {
     width: 7rem;
     margin-top: 1rem;
@@ -1977,8 +1994,16 @@ header .sm .btn a {
 
 @media (min-width: 768px) {
   #introduce #solution .card__container .solve-card .card__img2 {
+    width: 8rem;
+    height: 9rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #introduce #solution .card__container .solve-card .card__img2 {
     width: 6rem;
     height: 7rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1986,6 +2011,7 @@ header .sm .btn a {
   #introduce #solution .card__container .solve-card .card__img2 {
     width: 8rem;
     height: 9rem;
+    margin-top: 1.2rem;
   }
 }
 
