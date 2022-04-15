@@ -13,6 +13,7 @@ const IntroduceSp = document.getElementById("Introduce_sp");
 const FunctionSp = document.getElementById("Function_sp");
 const PlanSp = document.getElementById("Plan_sp");
 const ResultSp = document.getElementById("Result_sp");
+// 各項目コンテンツ
 const IntroduceContent = document.getElementById("Problem");
 const FunctionContent = document.getElementById("function");
 const PlanContent = document.getElementById("plan");
@@ -159,24 +160,6 @@ hamburger.onclick = function () {
   check_renda();
 };
 
-// MessageNav.onclick = function () {
-//   check_renda();
-// };
-// MoviesNav.onclick = function () {
-//   check_renda();
-// };
-// NewsNav.onclick = function () {
-//   check_renda();
-// };
-// HistoryNav.onclick = function () {
-//   check_renda();
-// };
-// FaqNav.onclick = function () {
-//   check_renda();
-// };
-// ContactNav.onclick = function () {
-//   check_renda();
-// };
 
 //navigatino auto scroll
 Introduce.onclick = function () {
@@ -199,7 +182,7 @@ Introduce.onclick = function () {
     }
   }
   const IntroduceContentPosition =
-    window.pageYOffset + IntroduceContent.getBoundingClientRect().top;
+    window.pageYOffset + IntroduceContent.getBoundingClientRect().top -100;
   window.scrollTo({
     top: IntroduceContentPosition,
     behavior: "smooth",
@@ -207,12 +190,11 @@ Introduce.onclick = function () {
 };
 IntroduceSp.onclick = function () {
   const IntroduceContentPosition =
-    window.pageYOffset + IntroduceContent.getBoundingClientRect().top;
+    window.pageYOffset + IntroduceContent.getBoundingClientRect().top -100;
   window.scrollTo({
     top: IntroduceContentPosition,
     behavior: "smooth",
   });
-
   slideToggle(sm, 500);
   hamburgerBorder.classList.toggle("close");
 };
@@ -236,7 +218,7 @@ Function.onclick = function () {
     }
   }
   const FunctionContentPosition =
-    window.pageYOffset + FunctionContent.getBoundingClientRect().top;
+    window.pageYOffset + FunctionContent.getBoundingClientRect().top -50;
   window.scrollTo({
     top: FunctionContentPosition,
     behavior: "smooth",
@@ -244,7 +226,7 @@ Function.onclick = function () {
 };
 FunctionSp.onclick = function () {
   const FunctionContentPosition =
-    window.pageYOffset + FunctionContent.getBoundingClientRect().top;
+    window.pageYOffset + FunctionContent.getBoundingClientRect().top -100;
   window.scrollTo({
     top: FunctionContentPosition,
     behavior: "smooth",
@@ -274,7 +256,7 @@ Plan.onclick = function () {
     }
   }
   const PlanContentPosition =
-    window.pageYOffset + PlanContent.getBoundingClientRect().top;
+    window.pageYOffset + PlanContent.getBoundingClientRect().top -50;
   window.scrollTo({
     top: PlanContentPosition,
     behavior: "smooth",
@@ -283,7 +265,7 @@ Plan.onclick = function () {
 
 PlanSp.onclick = function () {
   const PlanContentPosition =
-    window.pageYOffset + PlanContent.getBoundingClientRect().top;
+    window.pageYOffset + PlanContent.getBoundingClientRect().top -100;
   window.scrollTo({
     top: PlanContentPosition,
     behavior: "smooth",
@@ -310,18 +292,18 @@ Result.onclick = function () {
       Introduce.classList.add("a__border");
     }
   }
-  const ResultontentPosition =
-    window.pageYOffset + ResultContent.getBoundingClientRect().top;
+  const ResultContentPosition =
+    window.pageYOffset + ResultContent.getBoundingClientRect().top -100;
   window.scrollTo({
-    top: ResultontentPosition,
+    top: ResultContentPosition,
     behavior: "smooth",
   });
 };
 ResultSp.onclick = function () {
-  const ResultontentPosition =
-    window.pageYOffset + ResultContent.getBoundingClientRect().top;
+  const ResultContentPosition =
+    window.pageYOffset + ResultContent.getBoundingClientRect().top -100;
   window.scrollTo({
-    top: ResultontentPosition,
+    top: ResultContentPosition,
     behavior: "smooth",
   });
 
@@ -330,7 +312,6 @@ ResultSp.onclick = function () {
 };
 
 const html = document.querySelector("html");
-
 const menu = document.getElementById("sm");
 const headerHeight = 60; //ヘッダーの高さ
 let bodyHeight; //ウィンドウの高さを入れる場所
