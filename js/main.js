@@ -160,7 +160,6 @@ hamburger.onclick = function () {
   check_renda();
 };
 
-
 //navigatino auto scroll
 Introduce.onclick = function () {
   if (!Introduce.classList.contains("active")) {
@@ -170,19 +169,20 @@ Introduce.onclick = function () {
     // その他
     if (Function.classList.contains("active")) {
       Function.classList.remove("active");
-      Introduce.classList.add("a__border");
+      Function.classList.add("a__border");
     }
     if (Plan.classList.contains("active")) {
       Plan.classList.remove("active");
-      Introduce.classList.add("a__border");
+      Plan.classList.add("a__border");
     }
     if (Result.classList.contains("active")) {
       Result.classList.remove("active");
-      Introduce.classList.add("a__border");
+      Result.classList.add("a__border");
     }
   }
+
   const IntroduceContentPosition =
-    window.pageYOffset + IntroduceContent.getBoundingClientRect().top -100;
+    window.pageYOffset + IntroduceContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: IntroduceContentPosition,
     behavior: "smooth",
@@ -190,7 +190,7 @@ Introduce.onclick = function () {
 };
 IntroduceSp.onclick = function () {
   const IntroduceContentPosition =
-    window.pageYOffset + IntroduceContent.getBoundingClientRect().top -100;
+    window.pageYOffset + IntroduceContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: IntroduceContentPosition,
     behavior: "smooth",
@@ -218,7 +218,7 @@ Function.onclick = function () {
     }
   }
   const FunctionContentPosition =
-    window.pageYOffset + FunctionContent.getBoundingClientRect().top -50;
+    window.pageYOffset + FunctionContent.getBoundingClientRect().top - 50;
   window.scrollTo({
     top: FunctionContentPosition,
     behavior: "smooth",
@@ -226,12 +226,11 @@ Function.onclick = function () {
 };
 FunctionSp.onclick = function () {
   const FunctionContentPosition =
-    window.pageYOffset + FunctionContent.getBoundingClientRect().top -100;
+    window.pageYOffset + FunctionContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: FunctionContentPosition,
     behavior: "smooth",
   });
-
   slideToggle(sm, 500);
   hamburgerBorder.classList.toggle("close");
 };
@@ -256,7 +255,7 @@ Plan.onclick = function () {
     }
   }
   const PlanContentPosition =
-    window.pageYOffset + PlanContent.getBoundingClientRect().top -50;
+    window.pageYOffset + PlanContent.getBoundingClientRect().top - 50;
   window.scrollTo({
     top: PlanContentPosition,
     behavior: "smooth",
@@ -265,7 +264,7 @@ Plan.onclick = function () {
 
 PlanSp.onclick = function () {
   const PlanContentPosition =
-    window.pageYOffset + PlanContent.getBoundingClientRect().top -100;
+    window.pageYOffset + PlanContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: PlanContentPosition,
     behavior: "smooth",
@@ -293,7 +292,7 @@ Result.onclick = function () {
     }
   }
   const ResultContentPosition =
-    window.pageYOffset + ResultContent.getBoundingClientRect().top -100;
+    window.pageYOffset + ResultContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: ResultContentPosition,
     behavior: "smooth",
@@ -301,12 +300,11 @@ Result.onclick = function () {
 };
 ResultSp.onclick = function () {
   const ResultContentPosition =
-    window.pageYOffset + ResultContent.getBoundingClientRect().top -100;
+    window.pageYOffset + ResultContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: ResultContentPosition,
     behavior: "smooth",
   });
-
   slideToggle(sm, 500);
   hamburgerBorder.classList.toggle("close");
 };
@@ -318,27 +316,27 @@ let bodyHeight; //ウィンドウの高さを入れる場所
 let scrollpos; //スクロールの位置を入れる場所
 
 // ハンバーガーメニューの開閉
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("is-active");
-  if (hamburger.classList.contains("is-active")) {
-    // 開く処理
-    // 現在のスクロール位置を取得する
-    scrollpos = window.pageYOffset;
-    // メニューが開いたことを示すクラスをhtmlに付与する
-    html.classList.add("is-menuOpen");
-    // bodyのtopにスクロール位置を付与する
-    document.body.style.top = scrollpos * -1 + "px";
-    // ウィンドウの高さを取得
-    bodyHeight = window.innerHeight;
-    // 取得した高さを、メニューに付与する（ヘッダーの高さを引いた数）
-    sm.style.height = bodyHeight - headerHeight + "px";
-  } else {
-    // 閉じる処理
-    // メニューが開いたことを示すクラスをはずす
-    html.classList.remove("is-menuOpen");
-    // スクロール位置を開いた時の位置へ戻す
-    window.scrollTo(0, scrollpos);
-    //メニューを閉じる（高さを0にする）
-    sm.style.height = 0;
-  }
-});
+// hamburger.addEventListener("click", () => {
+//   hamburger.classList.toggle("is-active");
+//   if (hamburger.classList.contains("is-active")) {
+//     // 開く処理
+//     // 現在のスクロール位置を取得する
+//     scrollpos = window.pageYOffset;
+//     // メニューが開いたことを示すクラスをhtmlに付与する
+//     html.classList.add("is-menuOpen");
+//     // bodyのtopにスクロール位置を付与する
+//     document.body.style.top = scrollpos * -1 + "px";
+//     // ウィンドウの高さを取得
+//     bodyHeight = window.innerHeight;
+//     // 取得した高さを、メニューに付与する（ヘッダーの高さを引いた数）
+//     sm.style.height = bodyHeight - headerHeight + "px";
+//   } else {
+//     // 閉じる処理
+//     // メニューが開いたことを示すクラスをはずす
+//     html.classList.remove("is-menuOpen");
+//     // スクロール位置を開いた時の位置へ戻す
+//     window.scrollTo(0, scrollpos);
+//     //メニューを閉じる（高さを0にする）
+//     sm.style.height = 0;
+//   }
+// });
