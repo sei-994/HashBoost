@@ -2453,6 +2453,10 @@ header .sm .btn a {
   }
 }
 
+#function .function__container .column__text span {
+  display: inline-block;
+}
+
 #function .function__container .column__text__blue {
   text-align: left;
   background-color: #dbf0fd;
@@ -2528,10 +2532,6 @@ header .sm .btn a {
     width: 78%;
     padding-top: 5%;
   }
-}
-
-#function .function__container .box span {
-  display: inline-block;
 }
 
 @media (min-width: 1200px) {
