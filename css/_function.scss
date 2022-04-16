@@ -8,12 +8,7 @@
     padding-top: 12rem;
   }
   margin-bottom: 0;
-  background-image: linear-gradient(
-    to left top,
-    #f9f0d2 0%,
-    #cac4ff 40%,
-    #66ceeda3 100%
-  );
+  background-image: linear-gradient(to left top, #f9f0d2 0%, #cac4ff 40%, #66ceeda3 100%);
   //   width: 100%;
   .function__header {
     margin-bottom: 4rem;
@@ -146,6 +141,9 @@
           width: 78%;
           padding-top: 5%;
         }
+      }
+      span {
+        display: inline-block;
       }
       .img1 {
         @include lg {

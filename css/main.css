@@ -2530,6 +2530,10 @@ header .sm .btn a {
   }
 }
 
+#function .function__container .box span {
+  display: inline-block;
+}
+
 @media (min-width: 1200px) {
   #function .function__container .box .img1 {
     width: 62%;
@@ -3912,6 +3916,10 @@ header .sm .btn a {
   #faq .faq__container .faq__box .box__answer .box__text__a {
     margin-top: 1.5rem;
   }
+}
+
+#faq .faq__container .faq__box .box__answer .box__text__a span {
+  display: inline-block !important;
 }
 
 #faq .qa {
