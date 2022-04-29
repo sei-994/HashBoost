@@ -153,7 +153,7 @@ function check_renda() {
     navigation();
     setTimeout(() => {
       clickFlg = false;
-    }, 500);
+    }, 350);
   }
 }
 hamburger.onclick = function () {
@@ -181,16 +181,14 @@ Introduce.onclick = function () {
     }
   }
 
-  const IntroduceContentPosition =
-    window.pageYOffset + IntroduceContent.getBoundingClientRect().top - 100;
+  const IntroduceContentPosition = window.pageYOffset + IntroduceContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: IntroduceContentPosition,
     behavior: "smooth",
   });
 };
 IntroduceSp.onclick = function () {
-  const IntroduceContentPosition =
-    window.pageYOffset + IntroduceContent.getBoundingClientRect().top - 100;
+  const IntroduceContentPosition = window.pageYOffset + IntroduceContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: IntroduceContentPosition,
     behavior: "smooth",
@@ -217,16 +215,14 @@ Function.onclick = function () {
       Result.classList.add("a__border");
     }
   }
-  const FunctionContentPosition =
-    window.pageYOffset + FunctionContent.getBoundingClientRect().top - 50;
+  const FunctionContentPosition = window.pageYOffset + FunctionContent.getBoundingClientRect().top - 50;
   window.scrollTo({
     top: FunctionContentPosition,
     behavior: "smooth",
   });
 };
 FunctionSp.onclick = function () {
-  const FunctionContentPosition =
-    window.pageYOffset + FunctionContent.getBoundingClientRect().top - 100;
+  const FunctionContentPosition = window.pageYOffset + FunctionContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: FunctionContentPosition,
     behavior: "smooth",
@@ -254,8 +250,7 @@ Plan.onclick = function () {
       Result.classList.add("a__border");
     }
   }
-  const PlanContentPosition =
-    window.pageYOffset + PlanContent.getBoundingClientRect().top - 50;
+  const PlanContentPosition = window.pageYOffset + PlanContent.getBoundingClientRect().top - 50;
   window.scrollTo({
     top: PlanContentPosition,
     behavior: "smooth",
@@ -263,8 +258,7 @@ Plan.onclick = function () {
 };
 
 PlanSp.onclick = function () {
-  const PlanContentPosition =
-    window.pageYOffset + PlanContent.getBoundingClientRect().top - 100;
+  const PlanContentPosition = window.pageYOffset + PlanContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: PlanContentPosition,
     behavior: "smooth",
@@ -291,16 +285,14 @@ Result.onclick = function () {
       Introduce.classList.add("a__border");
     }
   }
-  const ResultContentPosition =
-    window.pageYOffset + ResultContent.getBoundingClientRect().top - 100;
+  const ResultContentPosition = window.pageYOffset + ResultContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: ResultContentPosition,
     behavior: "smooth",
   });
 };
 ResultSp.onclick = function () {
-  const ResultContentPosition =
-    window.pageYOffset + ResultContent.getBoundingClientRect().top - 100;
+  const ResultContentPosition = window.pageYOffset + ResultContent.getBoundingClientRect().top - 100;
   window.scrollTo({
     top: ResultContentPosition,
     behavior: "smooth",
