@@ -7,14 +7,26 @@ header {
   font-size: 1.4rem;
   z-index: 12;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   background-color: #fff;
-
+  @include xxs {
+    height: 10rem;
+  }
   .header-logo__box {
     display: inline;
+    width: 59%;
+    @include xxs {
+      width: 51%;
+    }
+    @include xs {
+      width: 100%;
+    }
+    @include md {
+      width: auto;
+    }
   }
   img {
-    width: 50%;
+    width: 100%;
     @include xs {
       max-height: 10rem;
       width: auto;
@@ -131,6 +143,15 @@ header {
     }
   }
   #hamburger {
+    width: 19%;
+
+    @include xxs {
+      width: 27%;
+    }
+    @include xs {
+      width: 86px;
+      height: 64px;
+    }
     @include md {
       display: none;
     }
