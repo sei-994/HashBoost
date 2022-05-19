@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: rgb(215, 214, 214) 1px solid;
+  margin-bottom: 3rem;
+  .header-logo__box {
+    display: inline;
+    width: 59%;
+    @include xxs {
+      width: 51%;
+    }
+    @include xs {
+      width: 100%;
+    }
+    @include md {
+      width: auto;
+    }
+  }
+  img {
+    width: 100%;
+    @include xs {
+      max-height: 10rem;
+      width: auto;
+    }
+    @include sm {
+      min-width: 22rem;
+    }
+    @include md {
+      min-width: 18rem;
+    }
+    @include lg {
+      min-width: 4rem;
+    }
+  }
+}
+.container {
+  padding: 0 3rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  h1 {
+    font-size: 3rem;
+    font-weight: lighter !important;
+    margin: 4rem 0;
+  }
+  p {
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  div {
+    font-size: 1.6rem;
+  }
+  .mypage-btn {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .mypage-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #11f3ffa1 0%, #7cb2feb3 50%, #cb9bfe5e 100%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 0.3em;
+  }
+  .btn a:hover {
+    opacity: 0.7;
+  }
+}
+
+// 円の装飾線
+.circle {
+  position: relative;
+  z-index: -1;
+}
+.circle1 {
+  img {
+    display: none;
+    @include sm {
+      display: block;
+      width: 19%;
+      top: -5rem;
+    }
+    position: absolute;
+    right: 0;
+  }
+}
+
+.circle2 {
+  z-index: 10;
+  @include sm {
+    z-index: 0;
+  }
+  .circle2__pc {
+    @include sm {
+      display: block;
+      position: absolute;
+      left: -6%;
+      width: 24%;
+      top: 21rem;
+    }
+    @include md {
+      left: -6%;
+      width: 22%;
+      top: 17rem;
+    }
+    @include lg {
+      left: -6%;
+      width: 21%;
+      top: 13rem;
+    }
+  }
+}

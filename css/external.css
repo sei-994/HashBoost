@@ -1,0 +1,282 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: #d7d6d6 1px solid;
+  margin-bottom: 3rem;
+}
+
+header .header-logo__box {
+  display: inline;
+  width: 59%;
+}
+
+@media (min-width: 360px) {
+  header .header-logo__box {
+    width: 51%;
+  }
+}
+
+@media (min-width: 400px) {
+  header .header-logo__box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  header .header-logo__box {
+    width: auto;
+  }
+}
+
+header img {
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  header img {
+    max-height: 10rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  header img {
+    min-width: 22rem;
+  }
+}
+
+@media (min-width: 960px) {
+  header img {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header img {
+    min-width: 4rem;
+  }
+}
+
+.container {
+  padding: 0 3rem;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-weight: lighter !important;
+  margin: 4rem 0;
+}
+
+.container p {
+  line-height: 2;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.container div {
+  font-size: 1.6rem;
+}
+
+.container .mypage-btn {
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.container .mypage-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#11f3ffa1), color-stop(50%, #7cb2feb3), to(#cb9bfe5e));
+  background: linear-gradient(to bottom, #11f3ffa1 0%, #7cb2feb3 50%, #cb9bfe5e 100%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  border-radius: 0.3em;
+}
+
+.container .btn a:hover {
+  opacity: 0.7;
+}
+
+.circle {
+  position: relative;
+  z-index: -1;
+}
+
+.circle1 img {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .circle1 img {
+    display: block;
+    width: 19%;
+    top: -5rem;
+  }
+}
+
+.circle2 {
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .circle2 {
+    z-index: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .circle2 .circle2__pc {
+    display: block;
+    position: absolute;
+    left: -6%;
+    width: 24%;
+    top: 21rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .circle2 .circle2__pc {
+    left: -6%;
+    width: 22%;
+    top: 17rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .circle2 .circle2__pc {
+    left: -6%;
+    width: 21%;
+    top: 13rem;
+  }
+}
+/*# sourceMappingURL=external.css.map */
