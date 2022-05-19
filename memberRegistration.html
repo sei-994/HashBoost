@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <center>
+<p>会員登録</p>
+<br><br>
+<p>申込者名</p>
+<input type="text" name="" value="">
+<br><br>
+<p>メールアドレス</p>
+<input type="text" name="" value="">
+<br><br>
+<p>電話番号</p>
+<input type="text" name="" value="">
+<br><br>
+<p>Instagramアカウントユーザーネーム</p>
+<input type="text" name="" value="">
+<br><br>
+<p>Instagramアカウントパスワード</p>
+<input type="text" name="" placeholder="Hashboostのマイページログイン時に利用します">
+<br><br>
+<p>申し込みプラン</p>
+<select >
+  <option value="【7日間無料】ビジネスプラン：月額￥24,800(税抜)">【7日間無料】ビジネスプラン：月額￥24,800(税抜)</option>
+    <option value="【7日間無料】スタンダードプラン：月額￥19,800(税抜)">【7日間無料】スタンダードプラン：月額￥19,800(税抜)</option>
+</select>
+<br><br>
+<p>クレジットカード情報</p>
+<input type="text" name="" placeholder="カード番号">
+<input type="text" name="" placeholder="月">
+<input type="text" name="" placeholder="年">
+<input type="text" name="" placeholder="cvv">
+
+<p>性別</p>
+<input type="radio" name="" value="男"　class="radio-label">男性
+<input type="radio" name="" value="女"　class="radio-label">女性
+<br><br>
+
+<p>年代</p>
+<input type="radio" name="" value="10">10代
+<input type="radio" name="" value="20">20代
+<input type="radio" name="" value="30">30代
+<input type="radio" name="" value="40">40代
+<input type="radio" name="" value="50">50代以上
+
+<br><br>
+
+<p>商圏となるエリア</p>
+<input type="text" name="" placeholder="例：東京都渋谷区(ECサイトなどの場合はなしと記入)">
+<br><br>
+
+<p>ターゲットの趣味趣向</p>
+<input type="text" name="" placeholder="例：コスメ好き">
+<br><br>
+
+<p>競合他社/類似アカウント</p>
+<input type="text" name="" placeholder="">
+<br><br>
+
+<p></p>
+<input type="radio" name="" value=""><a href="">利用規約</a>に同意する
+
+<br><br>
+
+<p></p>
+<button type="button" name="button">申し込む</button>
+<br><br>
+
+
+<br><br>
+    </center>
+  </body>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    // 要素を取得してクリックイベントを付与
+    var radioLabel = document.getElementsByClassName('radio-label');
+    for (var i = 0; i < radioLabel.length; i++) {
+      radioLabel[i].addEventListener('click', function(event){
+        // 既定の動作をキャンセル(今回はinputにcheckedが入るのをキャンセル)
+        event.preventDefault();
+
+        // チェック済みの場合はチェックを外し、未チェックの場合はチェックを入れる
+        var inputEl = this.querySelector('input');
+        inputEl.checked = !inputEl.checked;
+      });
+    }
+  });
+</script>
+</html>
